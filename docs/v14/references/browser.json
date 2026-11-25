@@ -1,0 +1,58 @@
+{
+  "source": "http://127.0.0.1:5188",
+  "totals": {
+    "all": 187,
+    "current": 22,
+    "history": 181
+  },
+  "unconfirmedLinks": 11,
+  "distinctHosts": 83,
+  "checks": [
+    {
+      "key": "desktop",
+      "viewport": {
+        "width": 1366,
+        "height": 830
+      },
+      "script": true,
+      "touch": false,
+      "scheme": "http:",
+      "ok": true
+    },
+    {
+      "key": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "script": true,
+      "touch": true,
+      "scheme": "http:",
+      "ok": true
+    },
+    {
+      "key": "local-file",
+      "viewport": {
+        "width": 1280,
+        "height": 780
+      },
+      "script": true,
+      "touch": false,
+      "scheme": "file:",
+      "ok": true
+    },
+    {
+      "key": "file-no-js",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "script": false,
+      "touch": true,
+      "scheme": "file:",
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "errors": []
+}

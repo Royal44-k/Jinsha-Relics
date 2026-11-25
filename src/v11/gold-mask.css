@@ -1,0 +1,21 @@
+.gold-mask-room { display:grid; grid-template-columns:minmax(0,1.08fr) minmax(0,1fr); gap:clamp(14px,2.5vw,30px); color:#f0e7ce; }
+.gold-mask-plate { position:relative; min-width:0; margin:0; align-self:start; }
+.gold-mask-stills,.gold-mask-live { border:1px solid #b59a6d62; background:#0b181b; }
+.gold-mask-stills { aspect-ratio:1; display:grid; place-items:center; overflow:hidden; }
+.gold-mask-stills img { display:block; width:100%; height:100%; object-fit:cover; }
+.gold-mask-room:not([data-mode=live]) .gold-mask-live { position:absolute; inset:0 0 auto; width:100%; max-height:100%; overflow:hidden; opacity:0; pointer-events:none; }
+.gold-mask-room[data-mode=live] .gold-mask-stills { display:none; }
+.gold-mask-live { min-width:0; }
+.gold-mask-caption { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:6px; padding:6px 0; color:#bcbea9; font-size:11px; }
+.gold-mask-room button { color:#e8d9b9; background:#1c312e; border:1px solid #b59a6d60; padding:6px 9px; font:inherit; font-size:12px; min-height:32px; }
+.gold-mask-room button[aria-pressed=true] { border-color:#efd39c; background:#423d2b; }
+.gold-mask-room .gold-mask-guide h4 { margin:8px 0 12px; font-size:clamp(20px,3vw,30px); line-height:1.35; }
+#folio .gold-mask-room .gold-mask-reading,.gold-mask-room .gold-mask-reading { margin:5px 0 12px; color:#e2dfcf; line-height:1.85; font-size:14px; }
+.gold-mask-views { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:5px; margin:12px 0 15px; }
+.gold-mask-room .gold-mask-measures { margin:10px 0 7px; padding-top:9px; border-top:1px solid #b39a6b50; color:#c9c3ad; font-size:12px; }
+.gold-mask-label { display:block; margin-top:5px; font-size:11px; color:#abb7a8; }
+@media(max-width:620px) {
+  .gold-mask-room { grid-template-columns:1fr; }
+  .gold-mask-plate { width:min(100%,370px); margin-inline:auto; }
+}
+

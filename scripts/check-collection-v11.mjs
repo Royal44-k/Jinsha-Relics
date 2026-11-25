@@ -1,0 +1,97 @@
+import assert from 'node:assert/strict';
+import {existsSync} from 'node:fs';
+import {mkdir,writeFile} from 'node:fs/promises';
+import {createServer} from 'vite';
+import {chromium} from 'playwright';
+import {chapterIds,saveKey} from '../src/v10/ledger.js';
+
+const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const server=await createServer({server:{host:'127.0.0.1',port:0,strictPort:false},logLevel:'error'});
+await server.listen();
+const dir='docs/v11/collection';
+await mkdir(dir,{recursive:true});
+let browser;
+const report={method:'Real title-page navigation, restored nine-station fixture, pointer and keyboard.',
+  tests:[],errors:[]};
+try {
+  browser=await chromium.launch({headless:true,executablePath:existsSync(edge)?edge:undefined,
+    args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+  const page=await browser.newPage({viewport:{width:1130,height:810}});
+  await page.routeWebSocket(/^ws:\/\/(127\.0\.0\.1|localhost):/,()=>{});
+  page.setDefaultTimeout(120000);
+  page.on('pageerror',error=>report.errors.push(error.message));
+  await page.addInitScript(({key,ids})=>{
+    if (sessionStorage.getItem('collection-test-initialized')) return;
+    localStorage.setItem(key,JSON.stringify({version:1,completed:ids,started:true}));
+    sessionStorage.setItem('collection-test-initialized','1');
+  },{key:saveKey,ids:chapterIds});
+  const state=()=>page.evaluate(()=>window.__JINSHA_SURVEY__.snapshot().collection);
+  const ctl=key=>page.locator('[data-collection-control="'+key+'"]');
+  const click=key=>ctl(key).click();
+  await page.goto(server.resolvedUrls.local[0],{waitUntil:'domcontentloaded',timeout:120000});
+  await page.locator('#cover-profile').click();
+  await page.waitForSelector('.jc-form img');
+  assert.equal((await state()).totalXP,270);
+  await click('equip-jade');
+  await page.waitForFunction(()=>window.__JINSHA_SURVEY__.snapshot().collection.traits.id==='jade');
+  await click('buy-jade');
+  await page.waitForFunction(()=>window.__JINSHA_SURVEY__.snapshot().collection.traits.level===2);
+  assert.equal((await state()).availableXP,230);
+  assert.equal((await state()).traits.airEfficiency,.79);
+  await page.getByRole('button',{name:'查看珍藏',exact:true}).click();
+  await click('relic-river-trench');
+  await click('quiz-river-trench');
+  await click('option-0');
+  assert.ok(await page.locator('.jc-feedback').isVisible());
+  await click('option-1');
+  assert.equal((await state()).totalXP,288);
+  assert.ok(await page.getByText('鉴定完成',{exact:false}).isVisible());
+  report.tests.push('Inventory embeds a retryable once-only quiz. Gameplay upgrade changes the equipped flight cost.');
+  await click('relic-jade-cut');
+  await page.getByRole('button',{name:'放大 · 通孔'}).click();
+  assert.ok(await page.getByRole('button',{name:'还原全貌'}).isVisible());
+  await page.getByRole('button',{name:'还原全貌'}).click();
+  await click('model-jade-cut');
+  const left=page.getByRole('button',{name:'向左转',exact:true});
+  await left.click({timeout:180000});
+  const model=page.locator('.jc-model canvas');
+  const rendered=()=>model.evaluate(c=>c.toDataURL('image/jpeg',.7));
+  const beforeDrag=await rendered();
+  const bounds=await model.boundingBox();
+  await page.mouse.move(bounds.x+bounds.width*.35,bounds.y+bounds.height*.5);
+  await page.mouse.down();
+  await page.mouse.move(bounds.x+bounds.width*.68,bounds.y+bounds.height*.62,{steps:9});
+  await page.mouse.up();
+  assert.notEqual(await rendered(),beforeDrag,'dragging should change rendered specimen pixels');
+  const beforeKey=await rendered();
+  await model.focus();
+  await page.keyboard.press('ArrowUp');
+  assert.notEqual(await rendered(),beforeKey,'keyboard orbit should change rendered pixels');
+  await page.getByRole('button',{name:'换侧光'}).click();
+  assert.equal(await page.getByRole('button',{name:'换正光'}).getAttribute('aria-pressed'),'true');
+  await page.getByRole('button',{name:'看细部'}).click();
+  await page.screenshot({path:dir+'/jade-inspection.jpg',type:'jpeg',quality:84});
+  await page.getByRole('button',{name:'收起模型'}).click();
+  assert.equal(await page.locator('.jc-model').count(),0);
+  report.tests.push('Jade museum model opens, responds to keyboard orbit, raking light and zoom, and closes cleanly.');
+  await page.getByRole('button',{name:'查看羽装',exact:true}).click();
+  await page.waitForFunction(()=>[...document.querySelectorAll('.jc-form img')].every(i=>i.complete&&i.naturalWidth>0));
+  await page.screenshot({path:dir+'/feather-forms.jpg',type:'jpeg',quality:84});
+  await page.reload({waitUntil:'domcontentloaded'});
+  await page.locator('#cover-profile').click();
+  assert.equal((await state()).availableXP,248);
+  assert.equal((await state()).traits.level,2);
+  report.tests.push('Reload retains solved questions, expense and equipped two-tier skin.');
+  await page.setViewportSize({width:385,height:750});
+  await page.screenshot({path:dir+'/feather-mobile.jpg',type:'jpeg',quality:82});
+  assert.ok(await page.locator('dialog').evaluate(node=>node.scrollWidth<=node.clientWidth+2));
+  await page.getByRole('button',{name:'查看珍藏',exact:true}).click();
+  assert.ok(await page.locator('dialog').evaluate(node=>node.scrollWidth<=node.clientWidth+2));
+  report.tests.push('Wardrobe and gallery fit a 385px viewport.');
+  assert.deepEqual(report.errors,[]);
+  console.log(report.tests);
+} finally {
+  await writeFile(dir+'/checks.json',JSON.stringify(report,null,2));
+  await browser?.close();await server.close();
+}
+

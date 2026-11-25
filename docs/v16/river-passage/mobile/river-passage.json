@@ -1,0 +1,202 @@
+{
+  "origin": "http://127.0.0.1:5188",
+  "entry": "/assets/expedition-C9veOaSg.js",
+  "controls": "touch / reduced motion",
+  "approachYaw": -0.9790173592123842,
+  "start": {
+    "position": [
+      -11,
+      1.3446119932027967,
+      40
+    ],
+    "target": 0,
+    "count": 0,
+    "mode": "grounded",
+    "cruise": false,
+    "perchId": null,
+    "boundary": "",
+    "oxygen": 1,
+    "yaw": -0.16514867741462683,
+    "cameraY": 3.466619004372231,
+    "waterMix": 0,
+    "fogDensity": 0.0142,
+    "drawCalls": 79,
+    "triangles": 239826,
+    "ratio": 1,
+    "perches": 30,
+    "waterbirds": {
+      "visible": true,
+      "phase": "游弋",
+      "flights": 0,
+      "pool": 0,
+      "nearest": 17.36,
+      "center": [
+        5.76,
+        0.02,
+        29.17
+      ]
+    },
+    "footContacts": [
+      {
+        "at": [
+          -11.080463901567247,
+          1.3524329002877096,
+          39.88727299170009
+        ],
+        "planted": true,
+        "ground": 1.3399626962658011,
+        "rendered": 1.3399626962658011
+      },
+      {
+        "at": [
+          -10.875673881163664,
+          1.374661867655807,
+          39.919494036169894
+        ],
+        "planted": true,
+        "ground": 1.362061817825599,
+        "rendered": 1.362061817825599
+      }
+    ],
+    "modelForm": {
+      "id": "reed",
+      "level": 1
+    },
+    "traits": {
+      "groundSpeed": 1.08,
+      "airEfficiency": 1,
+      "dashRecovery": 1
+    }
+  },
+  "rise": {
+    "position": [
+      -2.494546799901869,
+      3.7492796330474336,
+      34.34999907672805
+    ],
+    "target": 0,
+    "count": 0,
+    "mode": "flying",
+    "cruise": true,
+    "perchId": null,
+    "boundary": "",
+    "oxygen": 1,
+    "yaw": -0.9790173592123842,
+    "cameraY": 5.871974731954057,
+    "waterMix": 0,
+    "fogDensity": 0.0142,
+    "drawCalls": 144,
+    "triangles": 293422,
+    "ratio": 1,
+    "perches": 30,
+    "waterbirds": {
+      "visible": true,
+      "phase": "踏水",
+      "flights": 1,
+      "pool": 0,
+      "nearest": 7.3,
+      "center": [
+        5.54,
+        0.01,
+        28.89
+      ]
+    },
+    "footContacts": [
+      {
+        "at": [
+          -2.9237780310416266,
+          4.183583687935223,
+          34.5118596810294
+        ],
+        "planted": false,
+        "ground": 2.2183659069560573,
+        "rendered": 1.8001130700299441
+      },
+      {
+        "at": [
+          -2.8066319728105222,
+          4.1835836954203875,
+          34.686149098496195
+        ],
+        "planted": false,
+        "ground": 2.1495729359548292,
+        "rendered": 1.7773765791664924
+      }
+    ],
+    "modelForm": {
+      "id": "reed",
+      "level": 1
+    },
+    "traits": {
+      "groundSpeed": 1.08,
+      "airEfficiency": 1,
+      "dashRecovery": 1
+    }
+  },
+  "settled": {
+    "position": [
+      -0.9136160167558436,
+      3.7477192559312407,
+      33.45354782296448
+    ],
+    "target": 0,
+    "count": 0,
+    "mode": "flying",
+    "cruise": true,
+    "perchId": null,
+    "boundary": "",
+    "oxygen": 1,
+    "yaw": -0.850708190092821,
+    "cameraY": 5.869726267139975,
+    "waterMix": 0,
+    "fogDensity": 0.0142,
+    "drawCalls": 148,
+    "triangles": 292846,
+    "ratio": 1,
+    "perches": 30,
+    "waterbirds": {
+      "visible": true,
+      "phase": "落水",
+      "flights": 1,
+      "pool": 1,
+      "nearest": 20.63,
+      "center": [
+        9.1,
+        0.04,
+        13.2
+      ]
+    },
+    "footContacts": [
+      {
+        "at": [
+          -0.966075146610724,
+          3.838600378101055,
+          33.359856303538486
+        ],
+        "planted": false,
+        "ground": 1.4436531950858222,
+        "rendered": 1.2132618947628737
+      },
+      {
+        "at": [
+          -0.827590451082269,
+          3.838600378101055,
+          33.5177233016869
+        ],
+        "planted": false,
+        "ground": 1.1846010161363814,
+        "rendered": 0.9907372311638644
+      }
+    ],
+    "modelForm": {
+      "id": "reed",
+      "level": 1
+    },
+    "traits": {
+      "groundSpeed": 1.08,
+      "airEfficiency": 1,
+      "dashRecovery": 1
+    }
+  },
+  "errors": []
+}

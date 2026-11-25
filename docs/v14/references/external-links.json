@@ -1,0 +1,762 @@
+{
+  "checkedAt": "2026-11-24T12:19:10.485Z",
+  "method": "HTTPS GET, follow redirects, stop after headers",
+  "counts": {
+    "readable": 160,
+    "restricted": 15,
+    "unavailable": 12
+  },
+  "items": [
+    {
+      "href": "https://505games.com/games/abzu/",
+      "status": 200
+    },
+    {
+      "href": "https://academy.allaboutbirds.org/feathers-article/",
+      "status": 403
+    },
+    {
+      "href": "https://ambientcg.com/view?id=Ground015",
+      "status": 200
+    },
+    {
+      "href": "https://annapurnainteractive.com/zh-cn/games/gorogoa",
+      "status": 200
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-bell/jAEx2apytSzZIA?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-bird/7QH-c8Zpgsixjg?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-standing-figure/HAGgFD7-L5VZAA?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/stone-tiger/ygHjq8_EHD6vcA?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/sun-and-immortal-bird-gold-foil/DgGM_XRre4GIRQ?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://artsandculture.google.com/story/lAURhxUUEBAA8A?hl=zh-cn",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://ashorthike.com/",
+      "status": 200
+    },
+    {
+      "href": "https://asia.si.edu/whats-on/exhibitions/body-of-devotion-the-cosmic-buddha-in-3d/",
+      "status": 403
+    },
+    {
+      "href": "https://blog.playdead.com/articles/inside_presentations/inside_publications.html",
+      "status": 200
+    },
+    {
+      "href": "https://blog.playstation.com/2015/06/12/explore-a-lush-and-mysterious-ocean-world-in-giant-squids-abzu/",
+      "status": 200
+    },
+    {
+      "href": "https://blog.playstation.com/2020/05/29/ghost-of-tsushima-your-questions-answered/",
+      "status": 200
+    },
+    {
+      "href": "https://bruno-simon.com/",
+      "status": 200
+    },
+    {
+      "href": "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/gpu/command_buffer/service/gr_shader_cache.cc",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "status": 200
+    },
+    {
+      "href": "https://dev.epicgames.com/community/learning/tutorials/XYeP/unreal-engine-5-forest-path-tutorial-full-workflow-breakdown",
+      "status": 200
+    },
+    {
+      "href": "https://dev.epicgames.com/documentation/unreal-engine/07-adjust-environment-lighting-features?lang=en-US",
+      "status": 200
+    },
+    {
+      "href": "https://dev.epicgames.com/documentation/unreal-engine/shading-models?application_version=4.27",
+      "status": 200
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/resume",
+      "status": 200
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/AudioEncoder",
+      "status": 200
+    },
+    {
+      "href": "https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-28-practical-post-process-depth-field",
+      "status": 200
+    },
+    {
+      "href": "https://docs.ambientcg.com/license/",
+      "status": 200
+    },
+    {
+      "href": "https://docs.unity.cn/Packages/com.unity.cinemachine%402.8/manual/Cinemachine3rdPersonFollow.html",
+      "status": 200
+    },
+    {
+      "href": "https://docs.unity.cn/Packages/com.unity.cinemachine%403.1/manual/ThirdPersonCameras.html",
+      "status": 200
+    },
+    {
+      "href": "https://dont-nod.com/en/games/jusant/",
+      "status": 200
+    },
+    {
+      "href": "https://elevenlabs.io/docs/eleven-creative/voices/voice-design",
+      "status": 200
+    },
+    {
+      "href": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-i-select-the-language-and-accent",
+      "status": 200
+    },
+    {
+      "href": "https://elevenlabs.io/docs/overview/administration/billing",
+      "status": 200
+    },
+    {
+      "href": "https://freesound.org/help/faq/",
+      "status": 200
+    },
+    {
+      "href": "https://freesound.org/people/guidofm/sounds/509176/",
+      "status": 200
+    },
+    {
+      "href": "https://freesound.org/people/RyanKingArt/sounds/695769/",
+      "status": 200
+    },
+    {
+      "href": "https://freesound.org/people/Yuval/sounds/197023/",
+      "status": 200
+    },
+    {
+      "href": "https://gdc.sonniss.com/gdc-game-audio-bundle/",
+      "status": 403,
+      "destination": "https://gdc.sonniss.com/"
+    },
+    {
+      "href": "https://giantsquidstudios.com/ABZU-Concept-Art",
+      "status": 200
+    },
+    {
+      "href": "https://giantsquidstudios.com/Introduction",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/brunosimon/folio-2025",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/gkjohnson/three-mesh-bvh",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/JosephASG/codrops-cinematic-scroll-animations",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/Motionsites-AI/claude-skill",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/notofonts/noto-cjk/tree/main/Serif",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/sgossner/VSCO-2-CE",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/sgossner/VSCO-2-CE/blob/440300901dfe9275fd84e0b7763af1f8443ae62e/LICENSE",
+      "status": 200
+    },
+    {
+      "href": "https://github.com/Unity-Technologies/Graphics/blob/master/Packages/com.unity.render-pipelines.high-definition/Documentation~/diffusion-profile-reference.md",
+      "status": 200
+    },
+    {
+      "href": "https://google.github.io/filament/Filament.html",
+      "status": 200
+    },
+    {
+      "href": "https://graphics.unizar.es/projects/FeathersAppearance_2024/",
+      "status": 200
+    },
+    {
+      "href": "https://historicengland.org.uk/content/docs/research/historic-england-archaeological-recording-manual-2018/",
+      "status": 403
+    },
+    {
+      "href": "https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://lusion.co/projects/of_the_oak/",
+      "status": 200
+    },
+    {
+      "href": "https://mooc1.chaoxing.com/mooc-ans/ztnodedetailcontroller/visitnodedetail?courseId=84740038&knowledgeId=84740048",
+      "status": 200
+    },
+    {
+      "href": "https://motionsites.ai/",
+      "status": 200
+    },
+    {
+      "href": "https://motionsites.ai/3d-websites",
+      "status": 200
+    },
+    {
+      "href": "https://motionsites.ai/backgrounds",
+      "status": 200
+    },
+    {
+      "href": "https://motionsites.ai/terms",
+      "status": 200
+    },
+    {
+      "href": "https://news.xbox.com/en-us/2022/03/16/tunic-launches-today-with-xbox-game-pass/",
+      "status": 200
+    },
+    {
+      "href": "https://obradinn.com/",
+      "status": 200
+    },
+    {
+      "href": "https://oftheoak.co.uk/",
+      "status": 200
+    },
+    {
+      "href": "https://onlinelibrary.wiley.com/doi/10.1111/arcm.70103",
+      "status": 403
+    },
+    {
+      "href": "https://pbr-book.org/4ed/Reflection_Models/Specular_Reflection_and_Transmission",
+      "status": 200
+    },
+    {
+      "href": "https://pentiment.obsidian.net/",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/aerial_grass_rock",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/bark_brown_02",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/fern_02",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/forest_floor",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/forest_slope",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/island_tree_01",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/rock_07",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/rock_boulder_dry",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/rock_face_01",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/rock_moss_set_02",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/a/tree_stump_01",
+      "status": 200
+    },
+    {
+      "href": "https://polyhaven.com/license",
+      "status": 200
+    },
+    {
+      "href": "https://raw.githubusercontent.com/Motionsites-AI/claude-skill/main/LICENSE",
+      "status": 200
+    },
+    {
+      "href": "https://raw.githubusercontent.com/mrdoob/three.js/dev/LICENSE",
+      "status": 200
+    },
+    {
+      "href": "https://research.pixar.com/docs/2026.SiggraphTalks.PCB.pdf",
+      "status": 200
+    },
+    {
+      "href": "https://sael.net/",
+      "status": 200
+    },
+    {
+      "href": "https://sael.net/demo/farewell-light/",
+      "status": 200
+    },
+    {
+      "href": "https://sael.net/interior/",
+      "status": 200
+    },
+    {
+      "href": "https://sael.net/plane-of-focus/",
+      "status": 200
+    },
+    {
+      "href": "https://sael.net/river-bend/",
+      "status": 200
+    },
+    {
+      "href": "https://showreel.design/",
+      "status": 200
+    },
+    {
+      "href": "https://showreel.design/about/",
+      "status": 200
+    },
+    {
+      "href": "https://showreel.design/category/3d-cgi/",
+      "status": 200
+    },
+    {
+      "href": "https://showreel.design/category/uiux-motion/",
+      "status": 200
+    },
+    {
+      "href": "https://showreel.design/videos/aixsponza-aixsponza-design-reel/",
+      "status": 200
+    },
+    {
+      "href": "https://smithsonian.github.io/dpo-voyager/explorer/overview/",
+      "status": 200
+    },
+    {
+      "href": "https://sonniss.com/gdc-bundle-license/",
+      "status": 403
+    },
+    {
+      "href": "https://store.steampowered.com/app/553420/TUNIC/",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://studio.blender.org/blog/sprite-fright-weeklies-recordings/",
+      "status": 200
+    },
+    {
+      "href": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+      "status": 200
+    },
+    {
+      "href": "https://studio.blender.org/projects/sprite-fright/sprite/",
+      "status": 200
+    },
+    {
+      "href": "https://tapestry.cyark.org/content/petra",
+      "status": 200
+    },
+    {
+      "href": "https://thatgamecompany.com/flower/",
+      "status": 200
+    },
+    {
+      "href": "https://thatgamecompany.com/journey/",
+      "status": 200
+    },
+    {
+      "href": "https://thatgamecompany.helpshift.com/hc/es/17-sky-children-of-the-light/faq/890-patch-notes---april-5-2022---0-17-0-187527/?l=zh&p=all&s=seasons",
+      "status": 200
+    },
+    {
+      "href": "https://the-witness.net/info",
+      "status": 200
+    },
+    {
+      "href": "https://thepathless.com/Description",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/AnimationMixer.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/DirectionalLightShadow.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/GLTFLoader.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/InstancedMesh.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/KTX2Loader.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/LoadingManager.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/MeshPhysicalMaterial.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/MeshStandardMaterial.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/Reflector.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/SkinnedMesh.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/docs/pages/WebGLRenderer.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/examples/?q=water",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/examples/games_fps.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/examples/webgl_animation_skinning_additive_blending.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/examples/webgl_animation_skinning_morph.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/examples/webgpu_volume_lighting.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/manual/pages/how-to-update-things.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/manual/pages/materials.html",
+      "status": 200
+    },
+    {
+      "href": "https://threejs.org/manual/pages/optimize-lots-of-objects.html",
+      "status": 200
+    },
+    {
+      "href": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
+      "status": 403
+    },
+    {
+      "href": "https://tympanus.net/codrops/2019/01/17/interactive-particles-with-three-js/",
+      "status": 403
+    },
+    {
+      "href": "https://tympanus.net/codrops/2025/04/08/3d-world-in-the-browser-with-blender-and-three-js/",
+      "status": 403
+    },
+    {
+      "href": "https://tympanus.net/codrops/2025/12/04/crafting-nature-beyond-technology-a-project-from-roots-to-leaves/",
+      "status": 403
+    },
+    {
+      "href": "https://tympanus.net/codrops/2026/07/10/the-sleepers-creating-an-atmospheric-webgl-experience-with-lightweight-techniques/",
+      "status": 403
+    },
+    {
+      "href": "https://tympanus.net/codrops/2026/07/17/zero-the-engineering-behind-a-defiant-interactive-narrative/",
+      "status": 403
+    },
+    {
+      "href": "https://ustwogames.co.uk/news/the-environment-art-of-alba-a-wildlife-adventure/",
+      "status": 200
+    },
+    {
+      "href": "https://versilian-studios.com/vsco-community/",
+      "status": 200
+    },
+    {
+      "href": "https://www.adfg.alaska.gov/index.cfm?adfg=americandipper.main",
+      "status": 200
+    },
+    {
+      "href": "https://www.allaboutbirds.org/guide/American_Dipper/lifehistory",
+      "status": 403
+    },
+    {
+      "href": "https://www.babylonjs.com/featureDemos/",
+      "status": 200
+    },
+    {
+      "href": "https://www.chnmuseum.cn/zx/gbxw/202606/t20260613_279138.shtml",
+      "status": 200
+    },
+    {
+      "href": "https://www.cyark.org/collections/guided-tours",
+      "status": 200
+    },
+    {
+      "href": "https://www.disneyanimation.com/process/look-development/",
+      "status": 200
+    },
+    {
+      "href": "https://www.disneyanimation.com/publications/physically-based-shading-at-disney/",
+      "status": 200
+    },
+    {
+      "href": "https://www.dpm.org.cn/learing_detail/254454.html",
+      "status": 200
+    },
+    {
+      "href": "https://www.fireproofgames.com/games/the-room-three-2",
+      "status": 200
+    },
+    {
+      "href": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2017.00551/full",
+      "status": 200
+    },
+    {
+      "href": "https://www.fws.gov/lab/featheratlas/glossary.html",
+      "status": 200
+    },
+    {
+      "href": "https://www.gdcvault.com/play/1029384/-TUNIC-This-Was-Here",
+      "status": 200
+    },
+    {
+      "href": "https://www.heritage.gov.hk/filemanager/heritage/en/content_46/Heritage_Newsletter_issue85.pdf",
+      "status": 200
+    },
+    {
+      "href": "https://www.heygen.com/terms",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://www.heygen.com/voice-terms",
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    },
+    {
+      "href": "https://www.inklestudios.com/a-highland-song/",
+      "status": 200
+    },
+    {
+      "href": "https://www.inklestudios.com/heavensvault/",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/1406",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/2029",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/2172",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/2200",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/2611",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/4060",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/4877",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/4897",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/info/706",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/node/174",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/node/177",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/node/188",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/node/197",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/node/216",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/1095",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/2191",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/2208",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/2382",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/3793",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/679",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/681",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/699",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/714",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/seardetail/715",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/site-75/node/315",
+      "status": 200
+    },
+    {
+      "href": "https://www.jinshasitemuseum.com/site-85/info/3541",
+      "status": 200
+    },
+    {
+      "href": "https://www.mobiusdigitalgames.com/news/category/all/11",
+      "status": 403
+    },
+    {
+      "href": "https://www.mobiusdigitalgames.com/outer-wilds.html",
+      "status": 403
+    },
+    {
+      "href": "https://www.monumentvalleygame.com/",
+      "status": 200
+    },
+    {
+      "href": "https://www.nopss.gov.cn/n/2015/0727/c358567-27367530.html",
+      "status": 200
+    },
+    {
+      "href": "https://www.play-season.com/media",
+      "status": 200
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc7845.html",
+      "status": 200
+    },
+    {
+      "href": "https://www.rhs.org.uk/plants/types/grasses/bamboo-control",
+      "status": 200
+    },
+    {
+      "href": "https://www.rundisc.io/chants-of-sennaar/",
+      "status": 200
+    },
+    {
+      "href": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159740",
+      "status": 200
+    },
+    {
+      "href": "https://www.strezov-sampling.com/data/uploads/products/64/f72bae6527fe8ab7edc1033bf56a69d5.pdf",
+      "status": 200
+    },
+    {
+      "href": "https://www.strezov-sampling.com/products/view/jade.html",
+      "status": 200
+    },
+    {
+      "href": "https://www.subnautica.com/",
+      "status": 200,
+      "destination": "https://www.subnautica.com/en"
+    },
+    {
+      "href": "https://www.thegoldenidol.com/the-case-of-the-golden-idol/",
+      "status": 200
+    },
+    {
+      "href": "https://www.ubisoft.com/en-us/game/assassins-creed/discovery-tour",
+      "status": 200
+    },
+    {
+      "href": "https://www.ubisoft.com/en-us/game/assassins-creed/discovery-tour/curriculum-guide/ancient-egypt/gameplay-and-pedagody-guide?highlights=temples-and-priests",
+      "status": 200
+    },
+    {
+      "href": "https://www2.ville.montreal.qc.ca/jardin/en/chine/bambou/chaumes.htm",
+      "status": 200,
+      "destination": "https://montreal.ca/maintenance"
+    },
+    {
+      "href": "https://yoshiscraftedworld.nintendo.com/story/",
+      "error": "UNABLE_TO_VERIFY_LEAF_SIGNATURE"
+    }
+  ]
+}

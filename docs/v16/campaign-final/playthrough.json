@@ -1,0 +1,368 @@
+{
+  "route": "http://127.0.0.1:5188",
+  "driver": "Production DOM, keyboard, pointer, navigation assistance. No injected progress.",
+  "stages": [
+    {
+      "id": "river-trench",
+      "record": "陶片层位标本",
+      "approachFrames": {
+        "frames": 31,
+        "medianMs": 16.7,
+        "p95Ms": 33.8,
+        "maxMs": 167,
+        "above50Ms": 1,
+        "longest": [
+          {
+            "ms": 181,
+            "blockingMs": 0,
+            "scripts": [
+              {
+                "fn": "$",
+                "invoker": "FrameRequestCallback",
+                "ms": 6,
+                "file": "traverse-CToXLwPP.js",
+                "position": 95141
+              }
+            ]
+          }
+        ]
+      },
+      "activityFrames": {
+        "frames": 198,
+        "medianMs": 16.7,
+        "p95Ms": 50.4,
+        "maxMs": 1218.3,
+        "above50Ms": 10,
+        "longest": [
+          {
+            "ms": 1235,
+            "blockingMs": 1180,
+            "scripts": []
+          },
+          {
+            "ms": 924,
+            "blockingMs": 789,
+            "scripts": [
+              {
+                "fn": "T",
+                "invoker": "FrameRequestCallback",
+                "ms": 637,
+                "file": "fieldwork-ByeyTBNv.js",
+                "position": 3727
+              },
+              {
+                "fn": "",
+                "invoker": "BUTTON.onclick",
+                "ms": 178,
+                "file": "fieldwork-ByeyTBNv.js",
+                "position": 10911
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "paleochannel",
+      "record": "古河岸线图",
+      "approachFrames": {
+        "frames": 149,
+        "medianMs": 16.9,
+        "p95Ms": 50.3,
+        "maxMs": 162.4,
+        "above50Ms": 11,
+        "longest": [
+          {
+            "ms": 176,
+            "blockingMs": 0,
+            "scripts": [
+              {
+                "fn": "$",
+                "invoker": "FrameRequestCallback",
+                "ms": 8,
+                "file": "traverse-CToXLwPP.js",
+                "position": 95141
+              }
+            ]
+          },
+          {
+            "ms": 113,
+            "blockingMs": 0,
+            "scripts": []
+          }
+        ]
+      },
+      "activityFrames": {
+        "frames": 764,
+        "medianMs": 16.7,
+        "p95Ms": 33.4,
+        "maxMs": 501.3,
+        "above50Ms": 16,
+        "longest": [
+          {
+            "ms": 504,
+            "blockingMs": 0,
+            "scripts": []
+          },
+          {
+            "ms": 360,
+            "blockingMs": 296,
+            "scripts": [
+              {
+                "fn": "a",
+                "invoker": "FrameRequestCallback",
+                "ms": 346,
+                "file": "fieldwork-ByeyTBNv.js",
+                "position": 81521
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "root-survey",
+      "record": "秋枫鉴定标本",
+      "approachFrames": {
+        "frames": 1,
+        "medianMs": 15.9,
+        "p95Ms": 15.9,
+        "maxMs": 15.9,
+        "above50Ms": 0,
+        "longest": []
+      },
+      "activityFrames": {
+        "frames": 346,
+        "medianMs": 16.7,
+        "p95Ms": 18.5,
+        "maxMs": 500.6,
+        "above50Ms": 6,
+        "longest": [
+          {
+            "ms": 531,
+            "blockingMs": 468,
+            "scripts": [
+              {
+                "fn": "a",
+                "invoker": "FrameRequestCallback",
+                "ms": 515,
+                "file": "fieldwork-ByeyTBNv.js",
+                "position": 81521
+              }
+            ]
+          },
+          {
+            "ms": 244,
+            "blockingMs": 0,
+            "scripts": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "jade-cut",
+      "record": "玉口规",
+      "approachFrames": {
+        "frames": 102,
+        "medianMs": 16.7,
+        "p95Ms": 16.9,
+        "maxMs": 66.9,
+        "above50Ms": 1,
+        "longest": [
+          {
+            "ms": 84,
+            "blockingMs": 24,
+            "scripts": [
+              {
+                "fn": "$",
+                "invoker": "FrameRequestCallback",
+                "ms": 73,
+                "file": "traverse-CToXLwPP.js",
+                "position": 95141
+              }
+            ]
+          }
+        ]
+      },
+      "activityFrames": {
+        "frames": 106,
+        "medianMs": 16.7,
+        "p95Ms": 17.1,
+        "maxMs": 50,
+        "above50Ms": 0,
+        "longest": [
+          {
+            "ms": 76,
+            "blockingMs": 10,
+            "scripts": [
+              {
+                "fn": "",
+                "invoker": "FrameRequestCallback",
+                "ms": 30,
+                "file": "workshops-DFBro7Ui.js",
+                "position": 30869
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clay-fit",
+      "record": "复原陶托",
+      "approachFrames": {
+        "frames": 180,
+        "medianMs": 16.7,
+        "p95Ms": 17.5,
+        "maxMs": 35.4,
+        "above50Ms": 0,
+        "longest": [
+          {
+            "ms": 59,
+            "blockingMs": 0,
+            "scripts": [
+              {
+                "fn": "$",
+                "invoker": "FrameRequestCallback",
+                "ms": 46,
+                "file": "traverse-CToXLwPP.js",
+                "position": 95141
+              }
+            ]
+          }
+        ]
+      },
+      "activityFrames": {
+        "frames": 92,
+        "medianMs": 16.7,
+        "p95Ms": 17.4,
+        "maxMs": 19.8,
+        "above50Ms": 0,
+        "longest": []
+      }
+    },
+    {
+      "id": "bronze-shadow",
+      "record": "铜鸟支护图",
+      "approachFrames": {
+        "frames": 142,
+        "medianMs": 16.7,
+        "p95Ms": 17.1,
+        "maxMs": 684.2,
+        "above50Ms": 1,
+        "longest": [
+          {
+            "ms": 700,
+            "blockingMs": 638,
+            "scripts": [
+              {
+                "fn": "$",
+                "invoker": "FrameRequestCallback",
+                "ms": 688,
+                "file": "traverse-CToXLwPP.js",
+                "position": 95141
+              }
+            ]
+          }
+        ]
+      },
+      "activityFrames": {
+        "frames": 167,
+        "medianMs": 16.7,
+        "p95Ms": 17,
+        "maxMs": 17.9,
+        "above50Ms": 0,
+        "longest": []
+      }
+    },
+    {
+      "id": "ivory-record",
+      "record": "原位底片",
+      "approachFrames": {
+        "frames": 240,
+        "medianMs": 16.7,
+        "p95Ms": 16.9,
+        "maxMs": 17.3,
+        "above50Ms": 0,
+        "longest": []
+      },
+      "activityFrames": {
+        "frames": 168,
+        "medianMs": 16.7,
+        "p95Ms": 16.9,
+        "maxMs": 300.4,
+        "above50Ms": 2,
+        "longest": [
+          {
+            "ms": 312,
+            "blockingMs": 0,
+            "scripts": []
+          },
+          {
+            "ms": 139,
+            "blockingMs": 0,
+            "scripts": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "sunfoil",
+      "record": "金箔透光图版",
+      "approachFrames": {
+        "frames": 145,
+        "medianMs": 16.7,
+        "p95Ms": 17,
+        "maxMs": 17.5,
+        "above50Ms": 0,
+        "longest": []
+      },
+      "activityFrames": {
+        "frames": 71,
+        "medianMs": 16.7,
+        "p95Ms": 17,
+        "maxMs": 17.2,
+        "above50Ms": 0,
+        "longest": []
+      }
+    },
+    {
+      "id": "nine-posts",
+      "record": "九柱基线测图",
+      "approachFrames": {
+        "frames": 265,
+        "medianMs": 16.7,
+        "p95Ms": 17,
+        "maxMs": 18.8,
+        "above50Ms": 0,
+        "longest": []
+      },
+      "activityFrames": {
+        "frames": 32,
+        "medianMs": 16.7,
+        "p95Ms": 17.4,
+        "maxMs": 33.9,
+        "above50Ms": 0,
+        "longest": []
+      }
+    }
+  ],
+  "issues": [],
+  "checks": [
+    "Selectable field evidence reveals a distinct visual and research question before departure",
+    "Normal entry and manual locomotion",
+    "An optional enlarged cross-section supports keyboard depth selection and specimen comparison without interrupting the dig",
+    "First collection identification awards XP on the live receipt",
+    "Voluntary river encounter won through three dodges and counters before resuming the two moorings",
+    "Three-record checkpoint survives reload and hand-book return",
+    "A measured baseline leads through the playable winter sunrise to the museum ending",
+    "Three archived field prints persist in this journey and reopen from its journal",
+    "Ending unlocks a repeatable mask exhibit with an interactive rendered reverse view",
+    "Three player-captured photographs survive in the notebook",
+    "Nine earned records, winter solstice ending, free exploration and replay destination",
+    "Switching from a replay to the main route restores the finale, and a tracked destination stays distinct from a nearby interaction"
+  ],
+  "bundle": "/assets/expedition-C9veOaSg.js",
+  "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "ok": true
+}

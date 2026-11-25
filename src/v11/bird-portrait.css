@@ -1,0 +1,85 @@
+.bp-studio {
+  --bp-rule: #b5a37566;
+  --bp-ink: #f1e8d7;
+  --bp-muted: #c4c9b9;
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(190px, .92fr);
+  gap: clamp(14px, 2.5vw, 28px);
+  color: var(--bp-ink);
+  text-align: left;
+}
+.bp-studio [hidden] { display: none !important; }
+.bp-stage, .bp-sheet { min-width: 0; }
+.bp-view {
+  position: relative;
+  isolation: isolate;
+  height: clamp(248px, 42vh, 408px);
+  overflow: hidden;
+  border: 1px solid var(--bp-rule);
+  background: radial-gradient(ellipse at 40% 42%, #607369 0%, #465a4d 34%, #283c35 67%, #172a27);
+  touch-action: none;
+  outline-offset: 2px;
+}
+.bp-view::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, #202d27a6, #172d261a 57%, #6b624549), url('/assets/v11/piedmont.webp') center 52% / cover;
+  filter: blur(4px) saturate(.58);
+  opacity: .23;
+}
+.bp-studio[data-state="ready"] .bp-view { cursor: grab; }
+.bp-studio[data-state="ready"] .bp-view:active { cursor: grabbing; }
+.bp-poster, .bp-canvas-slot, .bp-canvas-slot canvas {
+  display: block; position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+}
+.bp-poster { object-fit: contain; }
+.bp-canvas-slot { opacity: 0; }
+.bp-poster, .bp-canvas-slot { transition: opacity .23s ease; }
+.bp-studio[data-state="ready"] .bp-poster { opacity: 0; }
+.bp-studio[data-state="ready"] .bp-canvas-slot { opacity: 1; }
+.bp-caption, .bp-heading {
+  position: absolute; z-index: 1; pointer-events: none; color: #faf0d9;
+  text-shadow: 0 1px 5px #0c1915, 0 0 16px #10231c;
+}
+.bp-caption { top: 12px; left: 14px; display: grid; gap: 1px; }
+.bp-caption strong { font-family: var(--serif, serif); font-weight: 500; font-size: 18px; letter-spacing: .12em; }
+.bp-caption span, .bp-heading { font-size: 11px; letter-spacing: .08em; }
+.bp-heading { bottom: 9px; right: 12px; }
+#folio .bp-status {
+  position: absolute; bottom: 7px; left: 9px; max-width: calc(100% - 90px); margin: 0;
+  padding: 5px 8px; background: #142720e8; border-left: 2px solid #bfaa7b; font-size: 12px; line-height: 1.5; color: var(--bp-ink);
+}
+.bp-status button { margin: 5px 0 2px; display: block; }
+.bp-camera, .bp-pose-group { display: flex; flex-wrap: wrap; gap: 5px; }
+.bp-camera { margin-top: 7px; justify-content: flex-start; }
+.bp-studio button {
+  border: 1px solid var(--bp-rule); border-radius: 2px; background: #263b34; color: var(--bp-ink); padding: 7px 11px;
+  font: inherit; font-size: 13px; letter-spacing: .035em; line-height: 1.4; min-height: 36px; cursor: pointer;
+}
+.bp-studio button:hover, .bp-studio button:focus-visible, .bp-studio summary:focus-visible, .bp-view:focus-visible {
+  outline: 2px solid #e4c98b; outline-offset: 1px;
+}
+.bp-studio button[aria-pressed="true"] { background: #b9ad85; border-color: #e9d6a3; color: #142b23; }
+.bp-pose-group button { flex: 1 1 auto; }
+.bp-sheet { padding: 2px 0 0; }
+#folio .bp-sheet p {
+  font-size: 14px; color: var(--bp-muted); letter-spacing: .02em; line-height: 1.68; margin: 9px 0 12px; text-wrap: pretty;
+}
+#folio .bp-sheet .bp-observation { color: var(--bp-ink); min-height: 4.7em; }
+.bp-origin { border-block: 1px solid var(--bp-rule); padding: 8px 0; }
+.bp-origin summary { font-family: var(--serif, serif); color: #dfcb9f; cursor: pointer; font-size: 15px; }
+.bp-origin figure { display: flex; margin: 9px 0 2px; gap: 10px; align-items: center; }
+.bp-origin figure img { width: 78px; height: 60px; object-fit: contain; background: #273b35; border: 1px solid var(--bp-rule); }
+.bp-origin figcaption, .bp-origin a { color: #d7c6a2; font-size: 12px; }
+.bp-origin a { text-underline-offset: 3px; }
+@media (max-width: 650px) {
+  .bp-studio { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .bp-view { height: clamp(218px, 34svh, 330px); }
+  .bp-camera { justify-content: space-between; gap: 4px; }
+  .bp-camera button { flex: 1 1 auto; padding: 7px 5px; }
+  #folio .bp-sheet .bp-observation { min-height: 0; }
+  .bp-pose-group button { min-height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { .bp-poster, .bp-canvas-slot { transition: none; } }

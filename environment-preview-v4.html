@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><link rel="icon" href="data:,"><style>html,body{margin:0;background:#203c39;overflow:hidden}</style></head><body><script type="module">
+import * as THREE from '/node_modules/three/build/three.module.js';
+import {RoomEnvironment} from '/node_modules/three/examples/jsm/environments/RoomEnvironment.js';
+import {createForest} from '/src/v2/world.js';
+import {createTraversalWorld} from '/src/v3/traversal-world.js';
+import {createEnvironmentPolish} from '/src/v4/environment-polish.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(1440,900);renderer.setPixelRatio(1);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.97;document.body.append(renderer.domElement);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x78988b);scene.fog=new THREE.Fog(0x78988b,12,58);const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromScene(new RoomEnvironment(),.04).texture;scene.environmentIntensity=.35;
+scene.add(new THREE.HemisphereLight(0xb7d0ce,0x223a2c,.95));const sun=new THREE.DirectionalLight(0xffdfaa,3.9);sun.position.set(-20,36,10);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=sun.shadow.camera.bottom=-28;sun.shadow.camera.right=sun.shadow.camera.top=28;sun.shadow.camera.far=100;sun.shadow.bias=-.00015;scene.add(sun,sun.target);
+const forest=createForest(scene);await forest.ready;const world=createTraversalWorld(scene,forest),camera=new THREE.PerspectiveCamera(54,1440/900,.08,150);const detail=createEnvironmentPolish(scene,forest,world);window.preview={world,forest,renderer,scene,camera,THREE,detail};
+window.shot=(fraction,side=0,height=2.9)=>{const d=forest.length*fraction,p=forest.sample(d),t=forest.path.getTangentAt(fraction),n=new THREE.Vector3(-t.z,0,t.x);camera.position.copy(p).addScaledVector(t,-8).addScaledVector(n,side).add(new THREE.Vector3(0,height,0));camera.lookAt(p.clone().addScaledVector(t,4).add(new THREE.Vector3(0,1.6,0)));sun.position.copy(p).add(new THREE.Vector3(-18,32,12));sun.target.position.copy(p);forest.update(.016,3,p);world.update(.016,3,{position:p,mode:'walk'});detail.update(.016,3,camera.position,camera);renderer.render(scene,camera);return {length:forest.length,render:renderer.info.render,position:camera.position.toArray()}};
+window.look=(position,target)=>{camera.position.fromArray(position);camera.lookAt(new THREE.Vector3().fromArray(target));sun.position.copy(camera.position).add(new THREE.Vector3(-18,32,12));sun.target.position.copy(camera.position);forest.update(.016,3,camera.position);world.update(.016,3,{position:camera.position,mode:position[1]<-.8?'dive':'walk'});detail.update(.016,3,camera.position,camera);renderer.render(scene,camera);return renderer.info.render;};
+window.shot(.105);window.ready=true;
+</script></body></html>
+

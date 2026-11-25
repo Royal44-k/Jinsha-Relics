@@ -1,0 +1,79 @@
+#v7-pottery{position:fixed;inset:0;z-index:65;color:#eee2c7;font-family:inherit;isolation:isolate;background:linear-gradient(90deg,rgba(11,23,22,.82),transparent 37%,transparent 67%,rgba(13,21,20,.76))}
+#v7-pottery[hidden],#v7-pottery [hidden]{display:none!important}
+#v7-pottery .pottery-surface{position:absolute;inset:0;z-index:0;touch-action:none;cursor:ew-resize;outline:none}
+#v7-pottery[data-mode=orbit] .pottery-surface{cursor:grab}
+#v7-pottery.is-touching .pottery-surface{cursor:grabbing}
+#v7-pottery .pottery-header{position:absolute;z-index:2;inset:32px 38px auto;display:flex;justify-content:space-between;align-items:flex-start;pointer-events:none}
+#v7-pottery .pottery-header span{font-size:11px;letter-spacing:.22em;color:#c4b997}
+#v7-pottery h2{font:400 31px/1.4 var(--serif,"Noto Serif SC",serif);letter-spacing:.18em;margin:8px 0 0}
+#v7-pottery button,#v7-pottery select,#v7-pottery input{font:inherit;pointer-events:auto}
+#v7-pottery button{border:1px solid rgba(215,195,146,.24);background:rgba(18,34,31,.64);color:#e4d8b7;min-height:40px;padding:9px 13px;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+#v7-pottery button:hover:not(:disabled),#v7-pottery button[aria-pressed=true]{border-color:#b9a36d;background:rgba(128,111,67,.24);color:#fff0c9}
+#v7-pottery button:disabled{opacity:.38;cursor:default}
+#v7-pottery button:focus-visible,#v7-pottery select:focus-visible,#v7-pottery input:focus-visible,#v7-pottery .pottery-surface:focus-visible{outline:2px solid #d7bd7f;outline-offset:4px}
+#v7-pottery .pottery-surface:focus-visible{outline-offset:-5px;outline-color:rgba(215,189,127,.25)}
+#v7-pottery .pottery-close{border:0;background:transparent;padding:8px;color:#dbd2b6;font-size:12px}
+#v7-pottery kbd{font-size:10px;opacity:.5;margin-left:9px}
+#v7-pottery .pottery-introduction{position:absolute;left:4.6vw;top:30%;max-width:225px;z-index:2;pointer-events:none}
+#v7-pottery .pottery-small-label{font-size:10px;letter-spacing:.26em;color:#bca56f}
+#v7-pottery h3{font:400 28px/1.75 var(--serif,"Noto Serif SC",serif);letter-spacing:.08em;margin:17px 0 20px}
+#v7-pottery .pottery-introduction p{font-size:12px;line-height:2.05;color:#bcbfae;letter-spacing:.06em;margin:0}
+#v7-pottery .pottery-state{font-size:12px;line-height:1.9;color:#d2b97e;border-top:1px solid rgba(202,178,119,.22);padding-top:17px;margin-top:26px;max-width:210px;min-height:62px}
+#v7-pottery .pottery-caption{font-size:12px;line-height:1.9;color:#efe3c8;max-width:225px;margin-top:14px}
+#v7-pottery .pottery-caption strong{display:block;font-size:10px;font-weight:400;letter-spacing:.2em;color:#c7aa6c;margin-bottom:5px}
+#v7-pottery .pottery-tools{position:absolute;z-index:2;right:4vw;top:24%;width:224px;padding:20px;background:rgba(18,32,28,.7);backdrop-filter:blur(16px);border:1px solid rgba(204,183,132,.22)}
+#v7-pottery .pottery-tool-row{display:flex;gap:6px}
+#v7-pottery .pottery-tool-row button{flex:1;font-size:12px;padding:9px 6px;white-space:nowrap}
+#v7-pottery .pottery-mode{margin-bottom:18px}
+#v7-pottery .pottery-collection{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 17px}
+#v7-pottery .pottery-collection small{font-size:10px;color:#b6ad8e;white-space:nowrap}
+#v7-pottery .pottery-work-list{display:flex;gap:5px}
+#v7-pottery .pottery-work-list button{padding:5px 8px;min-height:32px;font-size:10px;font-variant-numeric:tabular-nums}
+#v7-pottery .pottery-return,#v7-pottery .pottery-capture{width:100%;font-size:12px;margin-top:9px}
+#v7-pottery .pottery-capture span{float:right;opacity:.65}
+#v7-pottery.is-fired .pottery-height-label,#v7-pottery.is-fired .pottery-actions,#v7-pottery.is-fired fieldset,#v7-pottery.is-fired .pottery-reference-label{display:none}
+#v7-pottery .pottery-mode button{font-size:13px;letter-spacing:.14em}
+#v7-pottery label,#v7-pottery legend{font-size:11px;color:#b8b69f}
+#v7-pottery .pottery-height-label{display:block;line-height:2}
+#v7-pottery output{float:right;color:#d5bd7d;font-size:10px}
+#v7-pottery input[type=range]{display:block;width:100%;height:22px;accent-color:#bfa66b;margin:2px 0 8px;cursor:ns-resize}
+#v7-pottery fieldset{border:0;padding:0;margin:20px 0}
+#v7-pottery legend{margin-bottom:8px}
+#v7-pottery .pottery-reference-label{display:flex;justify-content:space-between;align-items:center;margin:0 0 19px;gap:9px}
+#v7-pottery select{color:#dfd4b5;background:#1b2e28;border:1px solid #64705a;padding:8px 4px;max-width:130px;font-size:11px}
+#v7-pottery .pottery-fire,#v7-pottery .pottery-remake{width:100%;padding:13px 12px;color:#fff0cc;border-color:#c0a46b;background:linear-gradient(110deg,rgba(155,108,53,.5),rgba(120,88,42,.17));font-size:13px;letter-spacing:.12em}
+#v7-pottery .pottery-fire span{float:right}
+#v7-pottery .pottery-personal-count{font-size:10px;color:#9ca792;line-height:1.7;margin:12px 0 0}
+#v7-pottery .pottery-fire-progress{position:relative;padding:16px 0;color:#dfba81;font-size:11px;overflow:hidden}
+#v7-pottery .pottery-fire-progress i{position:absolute;bottom:0;height:2px;left:0;right:0;background:#eeb45b;transform-origin:left}
+#v7-pottery .pottery-footer{position:absolute;left:4.6vw;right:4vw;bottom:25px;display:flex;justify-content:space-between;font-size:10px;color:#a9b29f;letter-spacing:.05em;gap:20px;pointer-events:none}
+#v7-pottery .pottery-cursor{position:absolute;z-index:1;transform:translateX(-50%);pointer-events:none;border-top:1px solid rgba(235,205,133,.6);opacity:.8}
+#v7-pottery .pottery-cursor:before,#v7-pottery .pottery-cursor:after{content:"";position:absolute;top:-3px;width:5px;height:5px;background:#ebce8b;border-radius:50%}
+#v7-pottery .pottery-cursor:before{left:0}#v7-pottery .pottery-cursor:after{right:0}
+#v7-pottery .pottery-cursor span{position:absolute;right:0;top:7px;font-size:9px;color:#e4c681}
+body.pottery-active #hud,body.pottery-active #topbar,body.pottery-active #travel-feedback,body.pottery-active #subtitle,body.pottery-active #toast{visibility:hidden!important}
+@media(max-width:1000px){#v7-pottery .pottery-introduction{left:3vw;max-width:170px}#v7-pottery h3{font-size:23px}#v7-pottery .pottery-tools{right:3vw;width:195px;padding:15px}#v7-pottery .pottery-header{inset:24px 25px auto}}
+@media(max-width:700px){
+ #v7-pottery{background:linear-gradient(180deg,rgba(11,23,22,.66),transparent 24%,transparent 52%,rgba(11,23,22,.86) 74%)}
+ #v7-pottery .pottery-header{inset:19px 18px auto}#v7-pottery .pottery-header span{font-size:8px;letter-spacing:.08em}#v7-pottery h2{font-size:24px;margin-top:4px}#v7-pottery .pottery-close{font-size:11px;padding:0}#v7-pottery kbd{display:none}
+ #v7-pottery .pottery-introduction{top:94px;left:19px;right:19px;max-width:none}#v7-pottery .pottery-small-label,#v7-pottery h3,#v7-pottery .pottery-introduction p{display:none}#v7-pottery .pottery-state{border:0;padding:0;margin:0;max-width:none;min-height:0;font-size:11px;color:#e6c98d}
+ #v7-pottery .pottery-caption{max-width:none;margin-top:9px;font-size:11px;line-height:1.7;text-shadow:0 1px 5px #15231b}#v7-pottery .pottery-caption strong{display:inline;margin-right:8px;font-size:9px}
+ #v7-pottery .pottery-tools{top:auto;bottom:40px;left:16px;right:16px;width:auto;padding:13px;display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;border-color:rgba(204,183,132,.18);backdrop-filter:blur(9px)}
+ #v7-pottery .pottery-mode{margin:0}#v7-pottery .pottery-tool-row button{min-height:36px;padding:6px 4px;font-size:11px}#v7-pottery .pottery-height-label{font-size:9px;line-height:1.2}#v7-pottery input[type=range]{margin:3px 0 0;height:22px}
+ #v7-pottery .pottery-collection{grid-column:1/-1;margin:0;grid-row:1;font-size:10px}#v7-pottery .pottery-work-list button{min-height:32px;min-width:40px;padding:5px 10px}#v7-pottery .pottery-collection:not([hidden])~.pottery-actions,#v7-pottery .pottery-collection:not([hidden])~fieldset{grid-row:auto}#v7-pottery .pottery-return,#v7-pottery .pottery-capture{grid-column:auto;margin:0;min-height:36px;font-size:11px;padding:6px}#v7-pottery.is-fired .pottery-mode{grid-column:1/-1}#v7-pottery.is-fired .pottery-remake{grid-column:1}
+ #v7-pottery .pottery-actions{grid-column:1}#v7-pottery fieldset{grid-column:2;grid-row:2;margin:0}#v7-pottery legend{display:none}#v7-pottery .pottery-reference-label{margin:0;font-size:9px;gap:5px}#v7-pottery select{max-width:104px;font-size:10px;padding:7px 1px}
+ #v7-pottery .pottery-fire,#v7-pottery .pottery-remake{padding:8px;min-height:36px;font-size:11px;grid-column:2}#v7-pottery .pottery-personal-count{grid-column:1/-1;margin:0;font-size:9px;line-height:1.2}#v7-pottery .pottery-fire-progress{grid-column:2;padding:10px 0;font-size:10px}#v7-pottery .pottery-footer{bottom:16px;left:19px;right:19px;font-size:8px;justify-content:center}#v7-pottery .pottery-keyboard{display:none}
+}
+@media(max-height:650px) and (min-width:701px){#v7-pottery .pottery-header{inset:18px 25px auto}#v7-pottery .pottery-tools{top:17%;padding:12px}#v7-pottery .pottery-mode{margin-bottom:10px}#v7-pottery fieldset{margin:12px 0}#v7-pottery .pottery-introduction{top:28%}#v7-pottery h3{margin:10px 0;font-size:22px}}
+@media(max-height:540px) and (min-width:701px){#v7-pottery .pottery-tools{top:72px;bottom:36px;max-height:calc(100dvh - 108px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:#8d805b #21352d}#v7-pottery .pottery-introduction{top:94px}#v7-pottery .pottery-introduction h3{font-size:17px;line-height:1.6;margin:8px 0}#v7-pottery .pottery-introduction p{font-size:10px;line-height:1.7}#v7-pottery .pottery-state{margin-top:12px;padding-top:9px;font-size:10px;min-height:0}#v7-pottery .pottery-caption{font-size:10px;margin-top:9px}#v7-pottery .pottery-footer{bottom:12px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){#v7-pottery button{transition:none}}
+
+/* Keep the only committing action visible in a short landscape viewport. */
+#v7-pottery .pottery-primary{display:contents}
+@media(max-height:540px) and (min-width:701px){
+ #v7-pottery .pottery-tools{bottom:104px;max-height:calc(100dvh - 176px);backdrop-filter:none}
+ #v7-pottery.is-fired .pottery-tools{bottom:140px;max-height:calc(100dvh - 212px)}
+ #v7-pottery .pottery-primary{display:grid;position:fixed;right:3vw;bottom:36px;width:195px;gap:6px;padding:8px;background:#142721f5;border:1px solid #ccb78438;backdrop-filter:blur(12px)}
+ #v7-pottery .pottery-primary>button{grid-column:auto;margin:0;min-height:36px;padding:8px;font-size:11px}
+ #v7-pottery .pottery-primary .pottery-fire-progress{padding:10px 0}
+}

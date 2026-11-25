@@ -1,0 +1,296 @@
+{
+  "created": "2026-11-18T07:37:34.919Z",
+  "score": {
+    "title": "五境 · 回响",
+    "creator": "Original modal/offline synthesis, stereo arrangements; not historical music reconstruction or field recordings",
+    "sampleRate": 24000
+  },
+  "plan": "HeyGen free account observed 2026-11-18; internal local evaluation, no commercial distribution claim",
+  "scoreFiles": [
+    {
+      "file": "v5-exploration.wav",
+      "duration": 48,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.32,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-reveal.wav",
+      "duration": 48,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.42,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    }
+  ],
+  "effects": [
+    {
+      "file": "v5-pickup.wav",
+      "duration": 1.8,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-place.wav",
+      "duration": 3,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-rotate.wav",
+      "duration": 0.9,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-ring.wav",
+      "duration": 1.6,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-connect.wav",
+      "duration": 2.5,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-stage.wav",
+      "duration": 4,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-echo.wav",
+      "duration": 2.2999583333333335,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-retry.wav",
+      "duration": 1.3,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.26,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-water.wav",
+      "duration": 16,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.16,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-fire.wav",
+      "duration": 16,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.16,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    },
+    {
+      "file": "v5-night.wav",
+      "duration": 16,
+      "sampleRate": 24000,
+      "channels": 2,
+      "peakCeiling": 0.16,
+      "note": "Stereo equal-power placement and cross-channel room reflections"
+    }
+  ],
+  "cues": [
+    {
+      "id": "v5_intro",
+      "speaker": "烁羽",
+      "text": "我听见了四处断掉的回响。先把这点微光，带到树根那里吧。",
+      "file": "v5_intro.wav",
+      "duration": 4.629478458049887,
+      "source": "spirit-original.wav",
+      "sourceStart": 0,
+      "sourceEnd": 4.629478458049887,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_roots_hint",
+      "speaker": "烁羽",
+      "text": "它在跟着我！看，树根上还有空着的光窝。",
+      "file": "v5_roots_hint.wav",
+      "duration": 3.5414965986394558,
+      "source": "spirit-original.wav",
+      "sourceStart": 4.629478458049887,
+      "sourceEnd": 8.170997732426304,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_roots_done",
+      "speaker": "烁羽",
+      "text": "枝叶醒了。原来一点小光，也能让路重新生长。",
+      "file": "v5_roots_done.wav",
+      "duration": 3.920997732426304,
+      "source": "spirit-original.wav",
+      "sourceStart": 8.170997732426304,
+      "sourceEnd": 12.091995464852607,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_jade_hint",
+      "speaker": "烁羽",
+      "text": "圆孔里有一束光。把几只玉轮转到同一个方向，试试看。",
+      "file": "v5_jade_hint.wav",
+      "duration": 4.779002267573696,
+      "source": "spirit-original.wav",
+      "sourceStart": 12.091995464852607,
+      "sourceEnd": 16.870997732426304,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_water_hint",
+      "speaker": "烁羽",
+      "text": "这里的稻子在等水。沿着沟槽，把断开的水路接起来。",
+      "file": "v5_water_hint.wav",
+      "duration": 4.659002267573696,
+      "source": "spirit-original.wav",
+      "sourceStart": 16.870997732426304,
+      "sourceEnd": 21.53,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_water_done",
+      "speaker": "烁羽",
+      "text": "水过来了！你听，连草叶都热闹起来了。",
+      "file": "v5_water_done.wav",
+      "duration": 3.413469387755102,
+      "source": "spirit-original.wav",
+      "sourceStart": 21.53,
+      "sourceEnd": 24.943492063492062,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_flight_hint",
+      "speaker": "烁羽",
+      "text": "风把路画在空中了。跟着那些金环飞，慢一点也没有关系。",
+      "file": "v5_flight_hint.wav",
+      "duration": 4.565487528344671,
+      "source": "spirit-original.wav",
+      "sourceStart": 24.943492063492062,
+      "sourceEnd": 29.508979591836734,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_flight_done",
+      "speaker": "烁羽",
+      "text": "我做到了！刚才害怕的那段路，现在已经在我们身后了。",
+      "file": "v5_flight_done.wav",
+      "duration": 4.349977324263039,
+      "source": "spirit-original.wav",
+      "sourceStart": 29.508979591836734,
+      "sourceEnd": 33.858979591836736,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_final_hint",
+      "speaker": "烁羽",
+      "text": "那些回响都到齐了。站在柱影之间，把目光交给远处的太阳。",
+      "file": "v5_final_hint.wav",
+      "duration": 4.992018140589569,
+      "source": "spirit-original.wav",
+      "sourceStart": 33.858979591836736,
+      "sourceEnd": 38.8509977324263,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_ending",
+      "speaker": "烁羽",
+      "text": "我们没有带走这里的光。我们只是让它，重新照见了来时的路。",
+      "file": "v5_ending.wav",
+      "duration": 5.0619954648526075,
+      "source": "spirit-original.wav",
+      "sourceStart": 38.8509977324263,
+      "sourceEnd": 43.91299319727891,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_feather",
+      "speaker": "烁羽",
+      "text": "这里还藏着一片小小的光。也许，路边还有更多。",
+      "file": "v5_feather.wav",
+      "duration": 4.302448979591837,
+      "source": "spirit-original.wav",
+      "sourceStart": 43.91299319727891,
+      "sourceEnd": 48.21546485260771,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3"
+    },
+    {
+      "id": "v5_narrative_roots",
+      "speaker": "录忆者",
+      "text": "古河道与乌木树根，为金沙的环境留下了线索。眼前会发光的根庭，是我们从这些线索生长出的想象。",
+      "file": "v5_narrative_roots.wav",
+      "duration": 8.426984126984127,
+      "source": "narrator-original.wav",
+      "sourceStart": 0,
+      "sourceEnd": 8.426984126984127,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc"
+    },
+    {
+      "id": "v5_narrative_jade",
+      "speaker": "录忆者",
+      "text": "方与圆，来自器物的构形。转动与穿光，则属于这段探索的玩法。",
+      "file": "v5_narrative_jade.wav",
+      "duration": 6.161995464852608,
+      "source": "narrator-original.wav",
+      "sourceStart": 8.426984126984127,
+      "sourceEnd": 14.588979591836734,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc"
+    },
+    {
+      "id": "v5_narrative_water",
+      "speaker": "录忆者",
+      "text": "金沙居住遗址的植物研究，发现了稻和其他谷物。水路与田畦，让我们想象当年的日常。",
+      "file": "v5_narrative_water.wav",
+      "duration": 7.582494331065759,
+      "source": "narrator-original.wav",
+      "sourceStart": 14.588979591836734,
+      "sourceEnd": 22.171496598639457,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc"
+    },
+    {
+      "id": "v5_narrative_posts",
+      "speaker": "录忆者",
+      "text": "九个柱洞是确实存在的遗迹。它们曾经托起什么，仍有不同解释。此刻，我们借柱影寻找归途。",
+      "file": "v5_narrative_posts.wav",
+      "duration": 8.094467120181406,
+      "source": "narrator-original.wav",
+      "sourceStart": 22.171496598639457,
+      "sourceEnd": 30.265986394557824,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc"
+    },
+    {
+      "id": "v5_narrative_end",
+      "speaker": "录忆者",
+      "text": "今天的足迹停在这里。那些尚未看见的支路，仍会留在你的行旅图上。",
+      "file": "v5_narrative_end.wav",
+      "duration": 5.86498866213152,
+      "source": "narrator-original.wav",
+      "sourceStart": 30.265986394557824,
+      "sourceEnd": 36.1309977324263,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc"
+    }
+  ],
+  "review": "Provider text/timestamps and numeric waveform validation; subjective listening quality is not certified"
+}

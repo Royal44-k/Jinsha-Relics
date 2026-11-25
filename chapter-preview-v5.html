@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><link rel="icon" href="data:,"><style>html,body{margin:0;background:#203c39;overflow:hidden}</style></head><body><script type="module">
+import * as THREE from 'three';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {createForest} from '/src/v2/world.js';
+import {createTraversalWorld} from '/src/v3/traversal-world.js';
+import {createEnvironmentPolish} from '/src/v4/environment-polish.js';
+import {createChapterWorld} from '/src/v5/chapter-world.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(1440,900);renderer.setPixelRatio(1);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;document.body.append(renderer.domElement);
+const scene=new THREE.Scene(),pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromScene(new RoomEnvironment(),.04).texture;
+const hemi=new THREE.HemisphereLight(),sun=new THREE.DirectionalLight();sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=sun.shadow.camera.bottom=-30;sun.shadow.camera.right=sun.shadow.camera.top=30;sun.shadow.camera.far=110;sun.shadow.bias=-.00015;scene.add(hemi,sun,sun.target);
+const forest=createForest(scene);await forest.ready;const world=createTraversalWorld(scene,forest),camera=new THREE.PerspectiveCamera(54,1440/900,.08,160),detail=createEnvironmentPolish(scene,forest,world),chapters=createChapterWorld({scene,forest,traversal:world});await chapters.ready;
+// Main now reveals these only after the associated new mechanism is restored.
+for(const landmark of forest.landmarks)landmark.group.visible=false;
+function frame(p,f=.02,quality='high'){
+ forest.update(.016,9,p);world.update(.016,9,{position:p,mode:'walk'},camera);detail.update(.016,9,p,camera,quality);chapters.update(.016,9,{position:p,camera,quality});
+ const c=chapters.lighting(f);scene.background=new THREE.Color(c.sky);scene.fog=new THREE.Fog(c.fog,c.fogNear,c.fogFar);scene.environmentIntensity=c.environmentIntensity;renderer.toneMappingExposure=c.exposure;sun.color.set(c.sunColor);sun.intensity=c.sunIntensity;sun.position.copy(p).add(new THREE.Vector3(-18,32,12));sun.target.position.copy(p);hemi.color.set(c.hemiSky);hemi.groundColor.set(c.hemiGround);hemi.intensity=c.hemiIntensity;renderer.render(scene,camera);
+ return {render:{...renderer.info.render},chapters:chapters.stats(),position:camera.position.toArray()};
+}
+window.preview={world,forest,renderer,scene,camera,THREE,detail,chapters,frame};
+window.shot=(fraction,side=0,height=2.9)=>{const d=forest.length*fraction,p=forest.sample(d),t=forest.path.getTangentAt(fraction),n=new THREE.Vector3(-t.z,0,t.x);camera.position.copy(p).addScaledVector(t,-7).addScaledVector(n,side).add(new THREE.Vector3(0,height,0));camera.lookAt(p.clone().addScaledVector(t,5).add(new THREE.Vector3(0,1.6,0)));return frame(p,fraction);};
+window.look=(position,target,f=.02)=>{camera.position.fromArray(position);camera.lookAt(new THREE.Vector3().fromArray(target));return frame(camera.position,f);};
+window.shot(.035);window.ready=true;
+</script></body></html>

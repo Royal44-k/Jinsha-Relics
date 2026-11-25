@@ -1,0 +1,37 @@
+#v6-living-clue{position:absolute;right:3.8vw;bottom:154px;display:flex;gap:13px;width:min(286px,27vw);padding:18px 20px 18px 15px;color:#e2dfc7;background:linear-gradient(105deg,#132e2b00,#132e2bb8 20%,#132e2b8c);border-right:1px solid #b2c7ac70;text-shadow:0 1px 9px #061b19;pointer-events:none;transition:opacity .5s,transform .5s}
+#v6-living-clue .v6-clue-sign{font:38px/1 Georgia;color:#a9c8ac;align-self:center;opacity:.8}
+#v6-living-clue small{display:block;font-size:9px;letter-spacing:2px;color:#afc0aa;margin:0 0 8px}
+#v6-living-clue strong{display:block;font:400 19px/1.35 var(--serif,'SimSun',serif);letter-spacing:2px}
+#v6-living-clue p{font-size:11px;line-height:1.85;margin:9px 0 0;color:#c0cbb6}
+.v6-clue-track{height:2px;background:#adcfb329;margin-top:13px;overflow:hidden}.v6-clue-track i{display:block;height:100%;background:#d3dda9;transform-origin:left;transition:transform .12s linear}
+#v6-living-clue.is-listening .v6-clue-sign{color:#ead69a}
+#v6-moment-caption{position:fixed;left:50%;bottom:38px;transform:translateX(-50%);z-index:27;pointer-events:none;display:flex;gap:18px;align-items:center;max-width:90vw;white-space:nowrap;color:#e8dec4;text-shadow:0 2px 8px #071d1d}
+#v6-moment-caption span{font:400 15px var(--serif,'SimSun',serif);letter-spacing:3px}#v6-moment-caption small{font-size:9px;letter-spacing:1px;color:#c3c9b9}
+.moment-camera .v5-objective,.moment-camera .control-hints,.moment-camera #travel-status{opacity:.22;transition:opacity .5s}
+.v6-notebook{margin-top:35px;padding-top:28px;border-top:1px solid #bfa57538}.v6-notebook-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.v6-notebook h3{margin:5px 0 10px;font:400 25px var(--serif,'SimSun',serif);letter-spacing:2px}.v6-notebook-heading>span{font-size:12px;color:#c4ba91}.v6-notebook>p{color:#aeb9aa;font-size:12px;line-height:1.9}.v6-notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.v6-note{display:flex;gap:12px;padding:18px 15px;border:1px solid #c7b77c22;background:linear-gradient(140deg,#7a9e8510,transparent)}.v6-note-glyph{font:28px var(--serif,'SimSun',serif);color:#718d7b}.v6-note.is-complete .v6-note-glyph{color:#cdb978}.v6-note h4{font:400 16px var(--serif,'SimSun',serif);margin:2px 0 12px}.v6-note p{font-size:11px;line-height:1.9;color:#afbcaa;margin:0 0 12px}.v6-note small{font-size:9px;color:#8d9e8f;letter-spacing:1px}.v6-notes-caption{font-size:10px!important;color:#839789!important}
+@media(max-width:700px){#v6-living-clue{right:22px;top:190px;bottom:auto;width:210px;padding:10px 12px;background:linear-gradient(90deg,#102522b0,#102522c9);border-right:1px solid #b2c7ac50}#v6-living-clue .v6-clue-sign{display:none}#v6-living-clue small{font-size:8px;margin-bottom:4px}#v6-living-clue strong{font-size:15px}#v6-living-clue p{font-size:10px;margin-top:5px}.v6-notes-grid{grid-template-columns:1fr}.v6-note{padding:15px}.v6-notebook h3{font-size:22px}#v6-moment-caption{bottom:160px;display:block;text-align:center}#v6-moment-caption small{display:block;margin-top:8px}}
+@media(max-height:480px){#v6-living-clue{bottom:auto;top:93px;right:22px;width:190px}#v6-moment-caption{bottom:30px}.v6-notes-grid{grid-template-columns:repeat(3,1fr)}}
+@media(prefers-reduced-motion:reduce){#v6-living-clue,.v6-clue-track i,.moment-camera .v5-objective{transition:none}}.reduced #v6-living-clue,.reduced .v6-clue-track i{transition:none}
+
+.moment-camera .v5-first-steps{opacity:0;pointer-events:none}
+
+/* Let the living finale remain visible beside its epilogue. */
+body #ending{align-items:flex-start;text-align:left;padding:0 7.3vw;background:linear-gradient(90deg,#071c1be8 0%,#071c1bd4 28%,#071c1b52 50%,#071c1b00 76%);animation:arrival 2.2s}
+body #ending h2{font-size:clamp(28px,3vw,46px);letter-spacing:4px;max-width:10em;line-height:1.6;margin:20px 0}
+body #ending>p:not(.eyebrow){font-size:13px;letter-spacing:2px}
+body #ending>span{letter-spacing:2px;max-width:320px;line-height:1.8}
+body #ending .journey-button{min-width:260px}
+body #ending .quiet-button{margin-top:14px;padding-left:0}
+@media(max-width:700px){body #ending{justify-content:flex-end;align-items:center;text-align:center;padding:0 7vw 6dvh;background:linear-gradient(0deg,#071c1bf7 0%,#071c1bdd 25%,#071c1b32 52%,transparent 72%)}body #ending h2{font-size:27px;letter-spacing:2px;margin:10px 0}body #ending>p:not(.eyebrow){font-size:11px;line-height:2;letter-spacing:1px}body #ending>span{font-size:9px;margin:12px 0 20px}body #ending .quiet-button{margin-top:8px}body #ending .journey-button{padding:14px 20px}}
+@media(max-height:480px) and (min-width:701px){body #ending h2{font-size:26px;margin:6px 0}body #ending>p:not(.eyebrow){font-size:11px;line-height:1.7}body #ending>span{margin:8px 0 14px}body #ending .journey-button{padding:12px 20px}body #ending .quiet-button{margin-top:5px}}
+
+body #ending h2 span{display:block}
+
+@media(max-width:700px){body.living-clue-active #travel-feedback:is([data-kind="dive"],[data-kind="surface"],[data-kind="perch"]){display:none}body.living-clue-active #v5-action{min-width:0;max-width:85vw;padding:9px 14px;gap:12px;min-height:46px}body.living-clue-active #v5-action strong{font-size:12px;letter-spacing:1px}body.living-clue-active #v5-action small{display:none}body.living-clue-active #v5-action .v5-action-key{min-width:28px;width:28px;height:28px;padding:0}}
+
+/* Keep optional ecology above the V8 action strip. */
+@media(min-width:701px) and (max-width:1100px) and (min-height:501px){#v6-living-clue{bottom:215px}}
+
+@media(max-height:500px) and (pointer:coarse){#v6-living-clue{top:151px;right:22px;bottom:auto;width:255px;padding:9px 12px;background:#102522d9}#v6-living-clue .v6-clue-sign{display:none}#v6-living-clue small{font-size:8px;letter-spacing:1px;margin:0 0 3px}#v6-living-clue strong{font-size:14px;line-height:1.25;letter-spacing:1px}#v6-living-clue p{font-size:9px;line-height:1.55;margin:4px 0 0}.v6-clue-track{margin-top:5px}}
+
+@media(max-height:500px) and (pointer:coarse){body.v5-interface #travel-status,body.v5-interface.near-memory #travel-status{left:4%;right:auto;max-width:200px}}

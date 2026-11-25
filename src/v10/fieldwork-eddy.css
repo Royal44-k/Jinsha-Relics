@@ -1,0 +1,14 @@
+.js-field .eddy-entry { color:#d4e7d9;border-color:#a2c1a56e }
+.eddy-on .js-field-tools > button:not(.eddy-action),.eddy-on .js-field-caption { display:none }
+.eddy-hud { position:absolute;left:5%;top:6%;max-width:70%;padding:7px 12px 8px;border-left:2px solid #bbd7c3;background:linear-gradient(90deg,#132a27df,#182a2694);color:#fcf4db;text-shadow:0 1px 3px #13221e;pointer-events:none }
+.eddy-hud strong,.eddy-hud span { display:block }
+.eddy-hud strong { font:500 clamp(18px,2.2vw,28px)/1.2 Jinsha,SimSun,serif;letter-spacing:.09em }
+.eddy-hud span { font:11px/1.6 system-ui,sans-serif;color:#e0dfc3;margin-top:3px;letter-spacing:.04em }
+.eddy-tide { display:block;overflow:hidden;height:3px;margin-top:6px;background:#0d1e1bbd;min-width:100px }
+.eddy-tide i { display:block;width:100%;height:100%;background:#c5d6b5;transform-origin:left }
+[data-eddy-phase="surge"] .eddy-hud { border-color:#ddb77a }
+[data-eddy-phase="opening"] .eddy-hud { border-color:#e7d69b }
+.js-field .eddy-eye { position:absolute;width:44px;height:44px;transform:translate(-50%,-50%);padding:0;pointer-events:auto;border:1px solid #efebc2;border-radius:50%;background:#27433e9c;box-shadow:0 0 0 4px #f1e2bc39;color:#fff5c8;font:18px/1 Jinsha,SimSun,serif;cursor:pointer }
+.js-field .eddy-eye:focus-visible { outline:2px solid #fff5c8;outline-offset:5px }
+.js-field-tools .eddy-action:last-child { color:#d0d8c7 }
+@media(max-width:680px){.eddy-hud{top:12px;left:12px;padding:6px 9px}.eddy-hud span{font-size:10px}.eddy-hud strong{font-size:17px}}

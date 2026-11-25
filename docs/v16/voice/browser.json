@@ -1,0 +1,198 @@
+{
+  "origin": "http://127.0.0.1:5188",
+  "requests": [
+    "intro-s.wav",
+    "travel-2.wav",
+    "site-1.wav",
+    "intro-n.wav",
+    "intro-s.wav",
+    "finale-n.wav",
+    "site-1.wav",
+    "site-2.wav",
+    "site-3.wav",
+    "site-4.wav",
+    "site-5.wav",
+    "site-6.wav",
+    "site-7.wav",
+    "site-8.wav",
+    "site-9.wav",
+    "travel-1.wav",
+    "travel-2.wav",
+    "travel-3.wav",
+    "travel-4.wav",
+    "travel-5.wav",
+    "travel-6.wav",
+    "travel-7.wav",
+    "travel-8.wav",
+    "travel-9.wav"
+  ],
+  "errors": [],
+  "entry": "/assets/expedition-B74qVLXn.js",
+  "firstAndReplayedSample": [
+    {
+      "when": 0.4666666666666667,
+      "state": "running",
+      "duration": 7.6018125
+    },
+    {
+      "when": 0.918,
+      "state": "running",
+      "duration": 7.6018125
+    }
+  ],
+  "initialNavigation": [
+    "intro-s.wav",
+    "travel-2.wav",
+    "site-1.wav"
+  ],
+  "pcm": [
+    {
+      "id": "intro-n",
+      "role": "narrator",
+      "seconds": 8.469,
+      "rms": 0.1211,
+      "peak": 0.5185
+    },
+    {
+      "id": "intro-s",
+      "role": "spirit",
+      "seconds": 6.273,
+      "rms": 0.119,
+      "peak": 0.7853
+    },
+    {
+      "id": "finale-n",
+      "role": "narrator",
+      "seconds": 8.154,
+      "rms": 0.1203,
+      "peak": 0.5373
+    },
+    {
+      "id": "site-1",
+      "role": "narrator",
+      "seconds": 7.602,
+      "rms": 0.1196,
+      "peak": 0.5367
+    },
+    {
+      "id": "site-2",
+      "role": "narrator",
+      "seconds": 7.718,
+      "rms": 0.1199,
+      "peak": 0.5575
+    },
+    {
+      "id": "site-3",
+      "role": "narrator",
+      "seconds": 8.327,
+      "rms": 0.12,
+      "peak": 0.529
+    },
+    {
+      "id": "site-4",
+      "role": "narrator",
+      "seconds": 8.743,
+      "rms": 0.1177,
+      "peak": 0.5564
+    },
+    {
+      "id": "site-5",
+      "role": "narrator",
+      "seconds": 6.833,
+      "rms": 0.123,
+      "peak": 0.5633
+    },
+    {
+      "id": "site-6",
+      "role": "narrator",
+      "seconds": 7.893,
+      "rms": 0.1181,
+      "peak": 0.5116
+    },
+    {
+      "id": "site-7",
+      "role": "narrator",
+      "seconds": 8.932,
+      "rms": 0.1182,
+      "peak": 0.5421
+    },
+    {
+      "id": "site-8",
+      "role": "narrator",
+      "seconds": 8.348,
+      "rms": 0.1191,
+      "peak": 0.4984
+    },
+    {
+      "id": "site-9",
+      "role": "narrator",
+      "seconds": 8.547,
+      "rms": 0.1169,
+      "peak": 0.4701
+    },
+    {
+      "id": "travel-1",
+      "role": "spirit",
+      "seconds": 3.595,
+      "rms": 0.1212,
+      "peak": 0.7429
+    },
+    {
+      "id": "travel-2",
+      "role": "spirit",
+      "seconds": 5.7,
+      "rms": 0.1174,
+      "peak": 0.8131
+    },
+    {
+      "id": "travel-3",
+      "role": "spirit",
+      "seconds": 4.687,
+      "rms": 0.1218,
+      "peak": 0.7023
+    },
+    {
+      "id": "travel-4",
+      "role": "spirit",
+      "seconds": 5.475,
+      "rms": 0.113,
+      "peak": 0.813
+    },
+    {
+      "id": "travel-5",
+      "role": "spirit",
+      "seconds": 4.729,
+      "rms": 0.1197,
+      "peak": 0.7564
+    },
+    {
+      "id": "travel-6",
+      "role": "spirit",
+      "seconds": 5.361,
+      "rms": 0.1196,
+      "peak": 0.7346
+    },
+    {
+      "id": "travel-7",
+      "role": "spirit",
+      "seconds": 5.856,
+      "rms": 0.1092,
+      "peak": 0.8126
+    },
+    {
+      "id": "travel-8",
+      "role": "spirit",
+      "seconds": 5.618,
+      "rms": 0.1246,
+      "peak": 0.8046
+    },
+    {
+      "id": "travel-9",
+      "role": "spirit",
+      "seconds": 6.112,
+      "rms": 0.1091,
+      "peak": 0.8133
+    }
+  ],
+  "ok": true
+}

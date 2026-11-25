@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "path": "docs/v6/source/island_tree_01_leaves_alpha_1k.png",
+      "bytes": 57438,
+      "md5": "5ad9fb9a06e70c069bd3d3ba23577375"
+    },
+    {
+      "path": "docs/v6/source/island_tree_01_leaves_diff_1k.png",
+      "bytes": 1638916,
+      "md5": "f5dcd85f170c154cba9cb8367af5dbdd"
+    },
+    {
+      "path": "docs/v6/source/island_tree_01_leaves_nor_gl_1k.png",
+      "bytes": 2886859,
+      "md5": "13a7610b0459f3175ca049b70eadbfea"
+    }
+  ],
+  "outputs": [
+    {
+      "target": "public/assets/v6/canopy/island-leaf-color.webp",
+      "bytes": 75020,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "quality": 0.91
+    },
+    {
+      "target": "public/assets/v6/canopy/island-leaf-normal.webp",
+      "bytes": 109482,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "quality": 0.94
+    }
+  ]
+}

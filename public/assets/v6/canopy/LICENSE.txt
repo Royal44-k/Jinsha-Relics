@@ -1,0 +1,8 @@
+Island Tree 01 leaf textures — Poly Haven — CC0
+Source: https://polyhaven.com/a/island_tree_01
+License: https://polyhaven.com/license
+Rob Tuytel: scanning, processing. Rico Cilliers: cleanup, processing.
+Only the diffuse, alpha and normal-GL texture atlas is used, not the tree model.
+Modified: diffuse alpha composited, WebP at 1024px (.91 color, .94 normal).
+Eight atlas regions are applied to original geometry. No botanical or archaeological
+species-identification claim is made for the Jinsha-inspired fictional landscape.

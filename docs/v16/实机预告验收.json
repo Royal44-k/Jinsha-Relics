@@ -1,0 +1,109 @@
+{
+  "file": "金沙古蜀秘境_实机预告_竖屏.mp4",
+  "bytes": 50909922,
+  "sha256": "ab8d8eb8d1a1c29f4a8667c882f76e371012efc7ef1c1b2ce681da7838398119",
+  "seconds": 44.4,
+  "video": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709), 1080x1920 [SAR 1:1 DAR 9:16], 8975 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)",
+  "audio": "Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 192 kb/s (default)",
+  "fullDecode": true,
+  "blackRunsLongerThan240ms": 0,
+  "integratedLUFS": -17.1,
+  "truePeakDbTP": -1.3,
+  "phone": {
+    "browser": "Edge",
+    "viewport": [
+      390,
+      844
+    ],
+    "advanced": true,
+    "seeks": 10
+  },
+  "cover": {
+    "file": "视频封面-铜鸟实机.jpg",
+    "width": 1080,
+    "height": 1440
+  },
+  "audioSource": "实际游戏 Web Audio 河岸环境与配乐＋本项目旁白与烁羽语音 WAV。对白按句剪辑。",
+  "shots": [
+    {
+      "title": "铜鸟支护",
+      "start": 0,
+      "sample": 0.56,
+      "source": "bronze",
+      "captureFrames": 62,
+      "captureSeconds": 4.85
+    },
+    {
+      "title": "沿河飞行",
+      "start": 3.96,
+      "sample": 4.52,
+      "source": "flight",
+      "captureFrames": 204,
+      "captureSeconds": 7.87
+    },
+    {
+      "title": "群鸟惊飞",
+      "start": 7,
+      "sample": 7.5600000000000005,
+      "source": "birds",
+      "captureFrames": 230,
+      "captureSeconds": 7.67
+    },
+    {
+      "title": "竹排掌舵",
+      "start": 10.48,
+      "sample": 11.040000000000001,
+      "source": "raft",
+      "captureFrames": 177,
+      "captureSeconds": 5.93
+    },
+    {
+      "title": "金箔透光",
+      "start": 14,
+      "sample": 14.56,
+      "source": "foil",
+      "captureFrames": 106,
+      "captureSeconds": 8.46
+    },
+    {
+      "title": "象牙摄影",
+      "start": 19.72,
+      "sample": 20.279999999999998,
+      "source": "ivory",
+      "captureFrames": 71,
+      "captureSeconds": 6.06
+    },
+    {
+      "title": "观察证物",
+      "start": 25.08,
+      "sample": 25.639999999999997,
+      "source": "investigation",
+      "captureFrames": 51,
+      "captureSeconds": 4.78
+    },
+    {
+      "title": "配证研判",
+      "start": 28.96,
+      "sample": 29.52,
+      "source": "pair",
+      "captureFrames": 42,
+      "captureSeconds": 4.64
+    },
+    {
+      "title": "柱洞测绘",
+      "start": 33.24,
+      "sample": 33.800000000000004,
+      "source": "posts",
+      "captureFrames": 205,
+      "captureSeconds": 6.84
+    },
+    {
+      "title": "冬至候日",
+      "start": 36.92,
+      "sample": 37.480000000000004,
+      "source": "dawn",
+      "captureFrames": 424,
+      "captureSeconds": 14.67
+    }
+  ]
+}

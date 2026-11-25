@@ -1,0 +1,70 @@
+.js-at,.js-at *{box-sizing:border-box}
+.js-at{--at-ink:#e8ddc6;--at-dim:#bcb5a1;--at-rule:#6b655348;--at-accent:#d5bc83;position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) clamp(17.5rem,25vw,24rem);width:100%;height:100%;min-height:0;background:#201f1a;color:var(--at-ink);font-family:"Microsoft YaHei UI","PingFang SC",sans-serif}
+.js-at .at-stage{position:relative;min-width:0;min-height:0;overflow:hidden;background:radial-gradient(ellipse at 40% 35%,#535b4b,#24241e)}
+.js-at-clay-fit .at-stage{background:#322c21 url('/assets/v10/workshop/kiln-room.webp') center/cover}
+.js-at .at-view,.js-at .at-overlay{position:absolute;inset:0}
+.js-at .at-view canvas{display:block;width:100%;height:100%;outline:none;touch-action:none;cursor:grab}
+.js-at .at-view canvas:active{cursor:grabbing}
+.js-at .at-view:focus-within{box-shadow:inset 0 0 0 1px #91836e88}
+.js-at .at-overlay{pointer-events:none}
+.js-at .at-readout{position:absolute;left:50%;bottom:clamp(.7rem,3vh,2rem);transform:translateX(-50%);border:1px solid #e2cc9740;border-radius:2px;background:#141912d9;color:#efdfb6;padding:.4rem .8rem;white-space:nowrap;letter-spacing:.13em;font-size:.78rem;pointer-events:none}
+.js-at .at-panel{position:relative;display:flex;flex-direction:column;min-height:0;overflow:auto;padding:clamp(1rem,3.2vw,3rem) clamp(1.1rem,2.5vw,2.5rem);border-left:1px solid #92826751;background:linear-gradient(152deg,#302e27,#211f1a 63%,#292820);text-align:left}
+.js-at .at-panel header{border-bottom:1px solid var(--at-rule);padding:0 0 1.05rem;margin:0}
+.js-at .at-panel .at-site{margin:0 0 .5rem;color:var(--at-accent);font-size:.75rem;letter-spacing:.28em}
+.js-at .at-panel h2{margin:0;padding:0;font-family:"Songti SC","Noto Serif SC","SimSun",serif;font-size:clamp(1.8rem,3.1vw,3.5rem);font-weight:500;color:#f3e5c7;line-height:1.27;letter-spacing:.08em}
+.js-at .at-objective,.js-at .at-feedback{font-size:clamp(.86rem,.96vw,1rem);line-height:1.73;letter-spacing:.025em;color:#e7dfcd;margin:1.15rem 0 0}
+.js-at .at-instruments{display:grid;gap:.8rem;margin:1.2rem 0 0;padding-bottom:1.1rem;border-bottom:1px solid var(--at-rule)}
+.js-at .at-instrument{display:grid;grid-template-columns:1fr auto;gap:.35rem;color:var(--at-dim);font-size:.78rem}
+.js-at .at-instrument output{font-family:inherit;font-variant-numeric:tabular-nums;color:var(--at-accent)}
+.js-at .at-instrument i{grid-column:1/-1;height:3px;background:#655e4c80;display:block}
+.js-at .at-instrument i b{display:block;height:100%;background:linear-gradient(90deg,#758e76,#cfb47c);transition:width .17s}
+.js-at .at-feedback{min-height:4.2em;color:#d8cba9}
+.js-at .at-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+.js-at .at-controls button{min-height:40px;flex:1 1 29%;padding:.5rem .55rem;border:1px solid #897d5c89;border-radius:3px;background:#38352a;color:#e9ddc2;font-family:inherit;font-size:.86rem;font-weight:500;line-height:1.45;white-space:nowrap;cursor:pointer}
+.js-at .at-controls button:hover:not(:disabled),.js-at .at-controls button:focus-visible,.js-at .at-controls button[aria-pressed=true]{outline:1px solid #baaa7f;outline-offset:1px;background:#484332}
+.js-at .at-controls button.at-primary{color:#231f16;background:#c6b181;border-color:#c6b181;flex-basis:60%}
+.js-at .at-controls button.at-primary:hover:not(:disabled){background:#dec894}
+.js-at .at-controls button:disabled{opacity:.48;cursor:default}
+.js-at .at-shortcuts{margin:1rem 0 0;color:#b1ab95;font-size:.73rem;line-height:1.65}
+.js-at .at-shard-pin,.js-at .at-target-pin{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:21px;height:21px;border:1px solid #e8d598;border-radius:50%;color:#fbefc5;background:#342f208a;font-style:normal;font-size:15px;line-height:1;box-shadow:0 1px 5px #231c16aa}
+.js-at .at-target-pin{border-style:dashed;color:#e1f1df;border-color:#e1f1df;background:#2638269c}
+.js-at [hidden]{display:none!important}
+.js-at .at-print{position:absolute;inset:0;display:grid;place-items:center;padding:4% 3% 8%;background:#272a24d9;pointer-events:auto;animation:at-lift .32s ease-out both}
+.js-at .at-print canvas{display:block;width:min(100%,calc((100cqh - 5.5rem)*1.574));max-height:100%;height:auto;aspect-ratio:960/610;object-fit:contain;box-shadow:0 8px 30px #100e0c80;cursor:crosshair;touch-action:none;outline:none}
+.js-at .at-stage{container-type:size}
+.js-at.at-solved .at-readout{border-color:#dabc75;background:#314033}
+@keyframes at-lift{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:740px) and (min-height:490px){
+  .js-at{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
+  .js-at .at-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(7rem,.7fr);column-gap:1rem;padding:.8rem 1rem max(.85rem,env(safe-area-inset-bottom));max-height:47vh;border-left:0;border-top:1px solid #97856668}
+  .js-at .at-panel header{grid-column:1;padding:0;border:0}
+  .js-at .at-panel .at-site{font-size:.65rem;margin-bottom:.15rem}
+  .js-at .at-panel h2{font-size:1.45rem}
+  .js-at .at-objective{grid-column:1/-1;grid-row:2;margin:.38rem 0 0;font-size:.80rem;line-height:1.5}
+  .js-at .at-instruments{grid-column:2;grid-row:1;align-self:center;gap:.32rem;margin:0;padding:0;border:0}
+  .js-at .at-instrument{gap:.15rem;font-size:.63rem}
+  .js-at .at-feedback{grid-column:1/-1;margin:.45rem 0 0;min-height:2.9em;font-size:.78rem;line-height:1.48}
+  .js-at .at-controls,.js-at .at-shortcuts{grid-column:1/-1;margin-top:.45rem}
+  .js-at .at-controls button{min-height:36px;padding:.3rem .45rem}
+  .js-at .at-shortcuts{font-size:.68rem}
+}
+@media(max-height:540px) and (min-width:550px){
+  .js-at{grid-template-columns:minmax(0,1fr) minmax(14rem,31%)}
+  .js-at .at-panel{padding:.6rem .9rem}
+  .js-at .at-panel header{padding-bottom:.45rem}
+  .js-at .at-panel .at-site{font-size:.61rem;margin-bottom:.1rem}
+  .js-at .at-panel h2{font-size:1.35rem}
+  .js-at .at-objective,.js-at .at-instruments,.js-at .at-feedback,.js-at .at-shortcuts,.js-at .at-controls{margin-top:.38rem}
+  .js-at .at-objective,.js-at .at-feedback{font-size:.74rem;line-height:1.45}
+  .js-at .at-instruments{padding-bottom:.4rem;gap:.3rem}
+  .js-at .at-controls{gap:.3rem}
+  .js-at .at-controls button{min-height:31px;padding:.2rem;font-size:.75rem}
+}
+@media(prefers-reduced-motion:reduce){.js-at *,.js-at *::after{animation:none!important;transition:none!important}}
+.at-turn-handle{position:absolute;transform:translate(-50%,-50%);border:1px solid #f2d79b;border-radius:50%;width:38px;height:38px;background:#203b36db;color:#fff0bd;font:24px/1 sans-serif;touch-action:none;pointer-events:auto;cursor:grab}
+.at-turn-handle:active{cursor:grabbing}
+.at-tail-tag{position:absolute;transform:translate(-50%,-50%);border:1px solid #e3c88a;background:#22372fe8;color:#fff2ca;min-height:35px;padding:5px 10px;pointer-events:auto;white-space:nowrap}
+@media(pointer:coarse){
+  .js-at .at-controls button,.js-at .at-tail-tag{min-height:44px;min-width:44px;touch-action:manipulation}
+  .js-at .at-turn-handle{width:44px;height:44px}
+}

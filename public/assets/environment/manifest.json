@@ -1,0 +1,56 @@
+[
+  {
+    "file": "bark_brown_02_diff_1k.webp",
+    "bytes": 278954,
+    "sha256": "E9FFB7AE86B6AEF1F3C799B3EB4CD47405ACBFD83F670A510BC5EA357B5B00E0",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/bark_brown_02",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_diff_1k.jpg",
+    "webpQuality": 0.82
+  },
+  {
+    "file": "bark_brown_02_nor_gl_1k.webp",
+    "bytes": 470006,
+    "sha256": "5BA774E96A06448329984A8A4E217327653C9A3758B18C8B022CFB857B222223",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/bark_brown_02",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/bark_brown_02/bark_brown_02_nor_gl_1k.jpg",
+    "webpQuality": 0.92
+  },
+  {
+    "file": "forest_floor_diff_1k.webp",
+    "bytes": 434096,
+    "sha256": "A5F26D1B59F2614E39202287AFC5EA022F5B323B38524FB1CFC220DE12AEC74D",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/forest_floor",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_floor/forest_floor_diff_1k.jpg",
+    "webpQuality": 0.82
+  },
+  {
+    "file": "forest_floor_nor_gl_1k.webp",
+    "bytes": 596646,
+    "sha256": "E1508F0AC8696D4A122341B42A2E177CCA2EDA20052E178076E73C3EB0446BBB",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/forest_floor",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/forest_floor/forest_floor_nor_gl_1k.jpg",
+    "webpQuality": 0.92
+  },
+  {
+    "file": "rock_boulder_dry_diff_1k.webp",
+    "bytes": 215634,
+    "sha256": "1514C9A4C405CC752A11940D5A4B695E80A01FF0EDAD9697F6683DB795C865B8",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/rock_boulder_dry",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_dry/rock_boulder_dry_diff_1k.jpg",
+    "webpQuality": 0.82
+  },
+  {
+    "file": "rock_boulder_dry_nor_gl_1k.webp",
+    "bytes": 260358,
+    "sha256": "D77705391E41090FED766EBAD3996616E66BB4DDE86E94F24A05C78080EDCB2B",
+    "license": "CC0-1.0",
+    "assetPage": "https://polyhaven.com/a/rock_boulder_dry",
+    "sourceUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_boulder_dry/rock_boulder_dry_nor_gl_1k.jpg",
+    "webpQuality": 0.92
+  }
+]

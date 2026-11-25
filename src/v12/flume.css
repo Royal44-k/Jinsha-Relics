@@ -1,0 +1,27 @@
+.fl-lab{--brass:#bfa46f;--paper:#ece3c9;--rule:#8e9d8670;color:var(--paper);font-family:JinshaSerif,"Microsoft YaHei",serif;background:#172824;container-type:inline-size}
+.fl-stations,.fl-buttons,.fl-lab footer{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.fl-stations{padding:5px 0 14px;border-bottom:1px solid var(--rule)}
+.fl-lab button{font:inherit;font-size:13px;line-height:1.4;color:#e6ddc1;border:1px solid var(--rule);padding:8px 12px;min-height:40px;background:#293a33;cursor:pointer}
+.fl-lab button:hover,.fl-lab button:focus-visible{border-color:#d1b579}
+.fl-lab button:disabled{opacity:.5;cursor:default}.fl-lab [hidden]{display:none!important}
+.fl-lab .fl-target[aria-pressed=true],.fl-lab [data-act=pour]{background:#cfb984;color:#1c2b23;border-color:#cfb984}
+.fl-layout{display:grid;grid-template-columns:minmax(0,1.68fr) minmax(210px,1fr);align-items:start;gap:clamp(12px,2vw,24px);padding:16px 0}
+.fl-stage{position:relative;isolation:isolate;height:clamp(235px,32vw,365px);overflow:hidden;border:1px solid #9c956569;background:linear-gradient(0deg,#13231eea,#192d26b8 42%,#182c2477 78%,#1e2e2666),url('/assets/v10/cutbank.webp') center 54%/cover,#253a32}
+.fl-stage::before{content:"";position:absolute;left:12%;right:12%;bottom:18%;height:10%;background:#15251b8c;border-radius:50%;filter:blur(10px)}
+.fl-stage canvas{display:block;position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}.fl-stage canvas:active{cursor:grabbing}
+.fl-stage .fl-grip,.fl-window{position:absolute;z-index:1;transform:translate(-50%,-100%);white-space:nowrap}
+.fl-stage .fl-grip{min-height:34px;font-size:12px;padding:6px 9px;border-color:#e0c996b3;background:#243e34ed;touch-action:none}
+.fl-grip::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:11px;background:#ebd8ac}.fl-window{font:11px/1.6 system-ui,sans-serif;color:#f4dfae;pointer-events:none;background:#172923dd;border-left:2px solid #d1ad61;padding:2px 6px;transform:translate(-50%,20%)}
+.fl-controls{padding:14px 0 0}.fl-controls label{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;color:#decaa3;font-size:14px}.fl-controls output,.fl-order,.fl-saved{font:11px/1.6 system-ui,sans-serif;color:#beccba}
+.fl-controls input{width:100%;height:28px;accent-color:#cfb784}.fl-instruction{display:block;margin-top:7px;color:#cad0be;font:12px/1.7 system-ui,sans-serif}
+.fl-log{padding-left:14px;border-left:1px solid var(--rule)}
+.fl-lab .fl-log h3{margin:0;font:normal 26px/1.28 JinshaSerif,serif;color:#eadcb9}
+.fl-lab .fl-story,.fl-lab .fl-status,.fl-lab details p{margin:8px 0;font:13px/1.65 JinshaSerif,serif;letter-spacing:0;color:#d5dccb}
+.fl-cores{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.fl-cores h4{margin:0 0 4px;font:12px/1.5 system-ui,sans-serif;color:#d1c5a7;letter-spacing:.08em}
+.fl-cores ol{display:flex;flex-direction:column-reverse;list-style:none;margin:0;padding:0;border-bottom:3px solid #a69978}
+.fl-cores li{display:flex;align-items:center;gap:7px;margin:0 0 2px;padding:4px 8px;border-left:4px solid var(--grain);background:#2a3c35;color:#ece1c6;font:12px/1.5 system-ui,sans-serif}
+.fl-cores li small{color:#c4bea9;font:10px monospace}.fl-order{display:block;margin-top:5px}
+.fl-lab .fl-status{border-top:1px solid var(--rule);padding-top:10px;color:#eeddb9}.fl-counts{display:flex;gap:10px;flex-wrap:wrap;font:11px/1.6 system-ui,sans-serif;margin:8px 0 12px}
+.fl-counts span::before{content:"";display:inline-block;background:var(--grain);width:7px;height:7px;margin-right:4px;border-radius:50%}.fl-log details{font:12px/1.7 system-ui,sans-serif;margin-top:14px;color:#c6cdb5}.fl-log summary{cursor:pointer}.fl-log details a{display:block;color:#d8c390}
+.fl-lab footer{justify-content:space-between;border-top:1px solid var(--rule);padding:10px 0 0}
+@container (max-width:670px){.fl-layout{grid-template-columns:1fr;gap:14px}.fl-log{border-left:0;border-top:1px solid var(--rule);padding:12px 0 0}.fl-stage{height:clamp(180px,56cqw,300px)}.fl-stations{gap:4px}.fl-lab .fl-target{padding:6px;font-size:12px}.fl-lab button{min-height:40px}.fl-stage .fl-grip{padding:6px;font-size:11px}.fl-cores{gap:8px}}

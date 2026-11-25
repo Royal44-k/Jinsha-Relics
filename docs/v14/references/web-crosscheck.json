@@ -1,0 +1,140 @@
+{
+  "method": "对直接 HTTP 非 200 的 27 个原始引文地址，使用网页阅读端重新请求。本表的 readable 仅指网页响应中读到正文或 PDF。",
+  "items": [
+    {
+      "href": "https://academy.allaboutbirds.org/feathers-article/",
+      "readable": true,
+      "title": "Everything You Need To Know About Feathers | Bird Academy • The Cornell Lab"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-bell/jAEx2apytSzZIA?hl=zh-cn",
+      "readable": true,
+      "title": "铜铃 — Google 艺术与文化"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-bird/7QH-c8Zpgsixjg?hl=zh-cn",
+      "readable": true,
+      "title": "铜鸟 — Google 艺术与文化"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/bronze-standing-figure/HAGgFD7-L5VZAA?hl=zh-cn",
+      "readable": true,
+      "title": "铜立人 — Google 艺术与文化"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/stone-tiger/ygHjq8_EHD6vcA?hl=zh-cn",
+      "readable": true,
+      "title": "石虎 — Google 艺术与文化"
+    },
+    {
+      "href": "https://artsandculture.google.com/asset/sun-and-immortal-bird-gold-foil/DgGM_XRre4GIRQ?hl=zh-cn",
+      "readable": true,
+      "title": "“太阳神鸟”金饰 — Google 艺术与文化"
+    },
+    {
+      "href": "https://artsandculture.google.com/story/lAURhxUUEBAA8A?hl=zh-cn",
+      "readable": false,
+      "result": "URL https://artsandculture.google.com/story/lAURhxUUEBAA8A?hl=zh-cn is not accessible via this tool."
+    },
+    {
+      "href": "https://asia.si.edu/whats-on/exhibitions/body-of-devotion-the-cosmic-buddha-in-3d/",
+      "readable": false,
+      "result": "Failed to fetch https://asia.si.edu/whats-on/exhibitions/body-of-devotion-the-cosmic-buddha-in-3d/: (520) Unknown Status Code"
+    },
+    {
+      "href": "https://chromium.googlesource.com/chromium/src/+/refs/heads/main/gpu/command_buffer/service/gr_shader_cache.cc",
+      "readable": false,
+      "result": "Failed to fetch https://chromium.googlesource.com/chromium/src/%2B/refs/heads/main/gpu/command_buffer/service/gr_shader_cache.cc: (400) Timeout f"
+    },
+    {
+      "href": "https://gdc.sonniss.com/gdc-game-audio-bundle/",
+      "readable": true,
+      "title": "GDC GAME AUDIO BUNDLE 2026 - SONNISS"
+    },
+    {
+      "href": "https://historicengland.org.uk/content/docs/research/historic-england-archaeological-recording-manual-2018/",
+      "readable": true,
+      "title": "Historic England Archaeology Recording Manual 2018"
+    },
+    {
+      "href": "https://huggingface.co/hexgrad/Kokoro-82M-v1.1-zh",
+      "readable": true,
+      "title": "hexgrad/Kokoro-82M-v1.1-zh · Hugging Face"
+    },
+    {
+      "href": "https://onlinelibrary.wiley.com/doi/10.1111/arcm.70103",
+      "readable": true,
+      "title": "Foxtail Millet as the Prevailing Auxiliary Crop: Strategic Utilization in Rice‐Based Agriculture at the “Huangzhong Xiaoxue” Section, Jinsha Site (c. 3200–2800 <sc>BP</sc>), Chengdu Plain - Fei - 2026 - Archaeometry - Wiley Online Library"
+    },
+    {
+      "href": "https://sonniss.com/gdc-bundle-license/",
+      "readable": true,
+      "title": "GDC Game Audio Bundle License | Terms of Use | Sonniss"
+    },
+    {
+      "href": "https://store.steampowered.com/app/553420/TUNIC/",
+      "readable": true,
+      "title": "TUNIC on Steam"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/: (403) Forbidden"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2019/01/17/interactive-particles-with-three-js/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2019/01/17/interactive-particles-with-three-js/: (403) Forbidden"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2025/04/08/3d-world-in-the-browser-with-blender-and-three-js/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2025/04/08/3d-world-in-the-browser-with-blender-and-three-js/: (403) Forbidden"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2025/12/04/crafting-nature-beyond-technology-a-project-from-roots-to-leaves/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2025/12/04/crafting-nature-beyond-technology-a-project-from-roots-to-leaves/: (403) Forbidden"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2026/07/10/the-sleepers-creating-an-atmospheric-webgl-experience-with-lightweight-techniques/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2026/07/10/the-sleepers-creating-an-atmospheric-webgl-experience-with-lightweight-techniques/: (403)"
+    },
+    {
+      "href": "https://tympanus.net/codrops/2026/07/17/zero-the-engineering-behind-a-defiant-interactive-narrative/",
+      "readable": false,
+      "result": "Failed to fetch https://tympanus.net/codrops/2026/07/17/zero-the-engineering-behind-a-defiant-interactive-narrative/: (403) Forbidden"
+    },
+    {
+      "href": "https://www.allaboutbirds.org/guide/American_Dipper/lifehistory",
+      "readable": false,
+      "result": "Failed to fetch https://www.allaboutbirds.org/guide/American_Dipper/lifehistory: (403) Forbidden"
+    },
+    {
+      "href": "https://www.heygen.com/terms",
+      "readable": true,
+      "title": "Terms and Conditions & Privacy Policy | HeyGen"
+    },
+    {
+      "href": "https://www.heygen.com/voice-terms",
+      "readable": true,
+      "title": "HeyGen Voice Supplemental Terms | HeyGen"
+    },
+    {
+      "href": "https://www.mobiusdigitalgames.com/news/category/all/11",
+      "readable": true,
+      "title": "All Categories - Mobius Digital"
+    },
+    {
+      "href": "https://www.mobiusdigitalgames.com/outer-wilds.html",
+      "readable": true,
+      "title": "Outer Wilds - Mobius Digital"
+    },
+    {
+      "href": "https://yoshiscraftedworld.nintendo.com/story/",
+      "readable": false,
+      "result": "Failed to fetch https://yoshiscraftedworld.nintendo.com/story/: (502) Bad Gateway"
+    }
+  ]
+}

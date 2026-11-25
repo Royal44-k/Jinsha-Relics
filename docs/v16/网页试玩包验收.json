@@ -1,0 +1,32 @@
+{
+  "entry": "金沙：古蜀秘境",
+  "fullscreenEnterExit": true,
+  "newJourney": true,
+  "realMovement": true,
+  "voices": [
+    {
+      "id": "intro-n",
+      "bytes": 747050,
+      "fromGameAudio": true
+    },
+    {
+      "id": "intro-s",
+      "bytes": 553320,
+      "fromGameAudio": true
+    }
+  ],
+  "photoExport": [
+    1080,
+    1920
+  ],
+  "evidenceCases": 4,
+  "externalRequests": [],
+  "failedResponses": [],
+  "pageErrors": [],
+  "archive": "金沙古蜀秘境-网页试玩包.zip",
+  "bytes": 39849751,
+  "crc": "all entries passed",
+  "files": 240,
+  "localHtmlAndJsReferences": 110,
+  "sha256": "adbe9718fe74374a4403da1c8dc1e6875eb00c7155ec3008090431e136c83f5a"
+}

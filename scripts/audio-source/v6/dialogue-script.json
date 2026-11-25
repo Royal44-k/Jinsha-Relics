@@ -1,0 +1,29 @@
+{
+  "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+  "voice": "Haoran - Bright & Articulate",
+  "language": "zh",
+  "model": "server default (not explicitly selected)",
+  "speed": 1,
+  "cues": [
+    [
+      "v6_intro",
+      "雾后面，好像还有路。我有一点怕黑，可我们带着光呢。"
+    ],
+    [
+      "v6_bough",
+      "别急着走。你看，它们敢停在我的羽尖上了。"
+    ],
+    [
+      "v6_water",
+      "原来，安静一点，就能听见河流的心跳。"
+    ],
+    [
+      "v6_birds",
+      "它们愿意和我们一起飞。来吧，去下一阵风里！"
+    ],
+    [
+      "v6_ending",
+      "刚才我还怕前面没有路。现在，我想把这束光留给后来的人。"
+    ]
+  ]
+}

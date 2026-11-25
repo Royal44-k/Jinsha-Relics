@@ -1,0 +1,173 @@
+{
+  "created": "2026-11-18",
+  "score": {
+    "title": "林下金石",
+    "producer": "Codex / original algorithmic composition and offline modal synthesis",
+    "historicalClaim": false,
+    "license": "Original project score; no third-party sample material"
+  },
+  "music": [
+    {
+      "file": "exploration.wav",
+      "duration": 48,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peakCeiling": 0.32,
+      "note": "Mono distribution mix; editable stereo render remains in composition source"
+    },
+    {
+      "file": "reveal.wav",
+      "duration": 48,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peakCeiling": 0.42,
+      "note": "Mono distribution mix; editable stereo render remains in composition source"
+    },
+    {
+      "file": "forest.wav",
+      "duration": 48,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peakCeiling": 0.14,
+      "note": "Mono distribution mix; editable stereo render remains in composition source"
+    },
+    {
+      "file": "cue_touch.wav",
+      "duration": 2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peakCeiling": 0.3,
+      "note": "Mono distribution mix; editable stereo render remains in composition source"
+    },
+    {
+      "file": "cue_reveal.wav",
+      "duration": 5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peakCeiling": 0.3,
+      "note": "Mono distribution mix; editable stereo render remains in composition source"
+    }
+  ],
+  "cues": [
+    {
+      "id": "intro",
+      "speaker": "烁羽",
+      "text": "我叫烁羽。雾后面还有路吗？我们一起去看看。",
+      "file": "intro.wav",
+      "source": "spirit-original.wav",
+      "sourceStart": 0,
+      "sourceEnd": 3.3489795918367347,
+      "duration": 3.3489795918367347,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "listen",
+      "speaker": "烁羽",
+      "text": "先停一停。水声，好像藏在树根后面。",
+      "file": "listen.wav",
+      "source": "spirit-original.wav",
+      "sourceStart": 3.3489795918367347,
+      "sourceEnd": 6.847981859410431,
+      "duration": 3.499002267573696,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "mask",
+      "speaker": "烁羽",
+      "text": "这片金色很薄。把侧光移过来，边缘就亮了。",
+      "file": "mask.wav",
+      "source": "spirit-original.wav",
+      "sourceStart": 6.847981859410431,
+      "sourceEnd": 10.581496598639456,
+      "duration": 3.733514739229025,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "ending",
+      "speaker": "烁羽",
+      "text": "光回来了。我也记住了，和你走过的路。",
+      "file": "ending.wav",
+      "source": "spirit-original.wav",
+      "sourceStart": 10.581496598639456,
+      "sourceEnd": 13.640498866213152,
+      "duration": 3.059002267573696,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "spirit_preview",
+      "speaker": "烁羽",
+      "text": "我叫烁羽。我能照亮这一小段，剩下的，我们一起去找。",
+      "file": "spirit_preview.wav",
+      "source": "spirit-original.wav",
+      "sourceStart": 13.640498866213152,
+      "sourceEnd": 17.974399092970522,
+      "duration": 4.333877551020408,
+      "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "bird",
+      "speaker": "录忆者",
+      "text": "这只铜鸟昂首、收翼，尾羽折而下垂。请转动光线，看看它的轮廓。",
+      "file": "bird.wav",
+      "source": "narrator-original.wav",
+      "sourceStart": 0,
+      "sourceEnd": 6.1439909297052155,
+      "duration": 6.1439909297052155,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "jade",
+      "speaker": "录忆者",
+      "text": "外方内圆，是这件玉琮醒目的构形。眼前的机关，是我们为探索创作的谜题。",
+      "file": "jade.wav",
+      "source": "narrator-original.wav",
+      "sourceStart": 6.1439909297052155,
+      "sourceEnd": 12.668979591836734,
+      "duration": 6.524988662131519,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "tiger",
+      "speaker": "录忆者",
+      "text": "石虎身上的深浅纹带，来自石材自身。顺着纹带观察，让碎片重新相接。",
+      "file": "tiger.wav",
+      "source": "narrator-original.wav",
+      "sourceStart": 12.668979591836734,
+      "sourceEnd": 19.004489795918367,
+      "duration": 6.335510204081633,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "sun",
+      "speaker": "录忆者",
+      "text": "四只鸟围绕十二道光芒。古人的想象留下了线索，也留下了尚未回答的问题。",
+      "file": "sun.wav",
+      "source": "narrator-original.wav",
+      "sourceStart": 19.004489795918367,
+      "sourceEnd": 25.613990929705217,
+      "duration": 6.609478458049886,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    },
+    {
+      "id": "narrator_preview",
+      "speaker": "录忆者",
+      "text": "我是录忆者。器物留下的线索，需要我们慢慢观察。",
+      "file": "narrator_preview.wav",
+      "source": "narrator-original.wav",
+      "sourceStart": 25.613990929705217,
+      "sourceEnd": 30.239637188208615,
+      "duration": 4.62562358276644,
+      "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+      "timing": "Provider character alignment; phrase cuts at midpoint of inter-line gaps; no word highlighting"
+    }
+  ]
+}

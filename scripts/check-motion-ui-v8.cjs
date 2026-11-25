@@ -1,0 +1,25 @@
+const legacyEntry=require('./legacy-entry-v9.cjs');
+const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
+const OUT='docs/v8/controls';fs.mkdirSync(OUT,{recursive:true});
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const report={at:new Date().toISOString(),method:'Actual touch/button and keyboard inputs, responsive hit tests; branch checkpoint placements are not an end-to-end journey.',checks:[],layouts:[],errors:[]};let page;
+ try{
+  const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true});page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));
+  await page.route('**/@vite/client',async r=>{const s=await r.fetch();await r.fulfill({response:s,body:(await s.text()).replace('case "update":','case "test-update-disabled":').replace('case "full-reload":','case "test-reload-disabled":')});});
+  await page.goto(legacyEntry());await page.waitForFunction(()=>window.__JINSHA_V2__,null,{timeout:120000});await page.locator('#start-btn').tap();await page.waitForFunction(()=>__JINSHA_V2__.snapshot().mode==='playing');
+  const snap=()=>page.evaluate(()=>__JINSHA_V2__.snapshot()),check=(name,value)=>{assert.ok(value,name);report.checks.push(name);};
+  await page.locator('#touch-cruise').tap();await page.waitForFunction(()=>__JINSHA_V2__.snapshot().motion.cruise);check('touch cruise returns keyboard focus to canvas',await page.evaluate(()=>document.activeElement===document.querySelector('#scene canvas')));
+  await page.waitForTimeout(1500);const y=(await snap()).position[1];await page.keyboard.down('Space');await page.waitForTimeout(500);await page.keyboard.up('Space');check('Space after tapping cruise raises height without toggling it off',(await snap()).motion.cruise&&(await snap()).position[1]>y+.2);
+  await page.locator('#touch-dash').tap();await page.waitForTimeout(70);check('touch dash shares active state and cooldown',(await snap()).motion.dashCooldown>.7);
+  await page.locator('#touch-quick').tap();await page.waitForFunction(()=>document.getElementById('touch-quick').getAttribute('aria-pressed')==='true');check('touch quick walk displays its toggle',await page.locator('#touch-quick').getAttribute('aria-pressed')==='true');await page.keyboard.press('Escape');check('pause cancels cruise and quick toggle',!(await snap()).motion.cruise);await page.locator('#resume').tap();await page.waitForTimeout(120);check('resuming does not restore quick toggle',await page.locator('#touch-quick').getAttribute('aria-pressed')==='false');
+  for(const size of [{width:390,height:844},{width:844,height:390},{width:1024,height:500},{width:1440,height:900}]){
+   await page.setViewportSize(size);await page.waitForTimeout(160);
+   const layout=await page.evaluate(()=>({width:innerWidth,height:innerHeight,scroll:document.documentElement.scrollWidth,buttons:[...document.querySelectorAll('.touch-actions button')].map(el=>{const r=el.getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return {id:el.id,x:r.x,y:r.y,width:r.width,height:r.height,disabled:el.disabled,hit:hit===el||el.contains(hit)};})}));
+   report.layouts.push(layout);check('eight 44px touch targets fit and remain hittable at '+size.width+'×'+size.height,layout.buttons.length===8&&new Set(layout.buttons.map(b=>Math.round(b.y))).size===2&&layout.buttons.every(b=>b.width>=43.9&&b.height>=43.9&&b.x>=0&&b.y>=0&&b.x+b.width<=size.width&&b.y+b.height<=size.height&&(b.disabled||b.hit))&&layout.scroll<=size.width);await page.screenshot({path:OUT+'/'+size.width+'x'+size.height+'.png'});
+  }
+  const bud=await page.evaluate(()=>__JINSHA_V2__.adventureDebug().buds[0]);await page.evaluate(p=>__JINSHA_V2__.goPoint(p),bud);await page.waitForFunction(()=>__JINSHA_V2__.snapshot().adventure.interaction?.id==='root-bud-0');await page.locator('#v5-action').tap();check('pointer main action returns focus to canvas',await page.evaluate(()=>document.activeElement===document.querySelector('#scene canvas')));await page.keyboard.press('Space');await page.waitForTimeout(150);check('Space immediately after pointer pickup controls the character',(await snap()).motion.mode==='rising');
+  report.gl=await page.evaluate(()=>document.querySelector('#scene canvas').getContext('webgl2').getError());check('no WebGL or page errors',report.gl===0&&!report.errors.length);
+ }catch(e){report.failure=e.stack;if(page)await page.screenshot({path:OUT+'/failure.png'}).catch(()=>{});throw e;}
+ finally{await browser.close();fs.writeFileSync(OUT+'/results.json',JSON.stringify(report,null,2));console.log(JSON.stringify({checks:report.checks,errors:report.errors,failure:report.failure}));}
+})().catch(e=>{console.error(e);process.exitCode=1;});

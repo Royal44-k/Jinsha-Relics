@@ -1,0 +1,54 @@
+.fw-sieve,.fw-optics,.fw-canopy-matte{position:absolute;inset:0;overflow:hidden}
+.fw-sieve{display:grid;place-items:center;background:radial-gradient(ellipse at 44% 31%,#66726350,transparent 70%),linear-gradient(155deg,#48584c,#1d302b 56%,#132522)}
+.fw-sieve::before,.fw-optics::before{position:absolute;inset:0;content:"";pointer-events:none;opacity:.18;background:repeating-linear-gradient(3deg,transparent 0 11px,#131c1680 12px,transparent 13px 39px)}
+.fw-sieve-tray{position:relative;width:86%;max-width:1060px;aspect-ratio:800/460;max-height:76%;border:clamp(7px,1.2vw,18px) ridge #8b7657;box-shadow:0 0 0 1px #342a1d,0 18px 45px #071814b3,inset 0 0 18px #0c211c;transform:perspective(1000px) rotateX(7deg) rotate(var(--tilt,0deg));border-radius:7% 6% 5% 5% / 9% 8% 8% 7%;background:#354e40;overflow:hidden}
+.fw-sieve-tray canvas{width:100%;height:100%;cursor:grab}
+.fw-sieve-tray canvas:active,.fw-optics canvas:active{cursor:grabbing}
+.fw-specimen-pin,.fw-root-tag,.fw-transit-pin{position:absolute;pointer-events:auto;z-index:1;cursor:pointer;color:#f3e7bd;border:1px solid #dbc494bd;background:#172d25e8;box-shadow:0 2px 8px #0a1a176f;transform:translate(-50%,-50%);border-radius:3px;padding:7px 10px;min-width:42px;min-height:42px;font:14px/1.2 JinshaSerif,"SimSun",serif}
+.fw-specimen-pin::before,.fw-root-tag::after{content:"";position:absolute;left:50%;top:-14px;width:1px;height:14px;background:#d3ba84;pointer-events:none}
+.fw-specimen-pin.examined{color:#d1be93;border-style:dashed}
+.fw-specimen-tag,.fw-optics-note,.fw-canopy-matte span{position:absolute;bottom:5.5%;left:5.5%;max-width:90%;font:12px/1.6 system-ui,sans-serif;letter-spacing:.11em;color:#ede7ca;text-shadow:0 2px 4px #11231e}
+.fw-sieve-examined{background:#1f3631 url('/assets/v10/fieldwork-rimsherd.webp') center / contain no-repeat}
+.fw-sieve.fw-sieve-examined{background:#233c35;container-type:size}
+.fw-shard-plate{position:relative;width:min(100cqw,150cqh);aspect-ratio:1.5}
+.fw-shard-plate img{display:block;width:100%;height:100%;object-fit:contain}
+.fw-shard-pin{position:absolute;transform:translate(-50%,-50%);color:#fff6d9;background:#1f302ae3;border:1px solid #d6c18f;min-width:46px;min-height:40px;font:13px/1.3 JinshaSerif,serif;border-radius:2px;padding:5px 8px;cursor:pointer}
+.fw-shard-pin[aria-pressed=true]{background:#dcc789;color:#223428}
+.js-field-panel header h2{text-wrap:balance}
+.fw-specimen-tag,.fw-canopy-matte span{padding:5px 10px;border-left:2px solid #d5ba76;background:linear-gradient(90deg,#172c25de,#172c257a)}
+.fw-root-tag{letter-spacing:.06em;white-space:nowrap;transform:translate(-50%,-100%)}
+.fw-root-tag::after{top:100%;height:13px}
+.fw-transit-pin{border-radius:50%;width:42px;border-color:#e5c78f}
+.fw-transit-pin.in-sight{background:#e4c681;color:#1e332a;box-shadow:0 0 15px #eccf8990}
+.fw-optics{display:grid;place-items:center;background:radial-gradient(at 47% 38%,#4f5c52,#24382f 47%,#17251f 77%,#17211c)}
+.fw-lenses{width:89%;display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center;justify-content:center}
+.fw-lens-cell{display:grid;justify-items:center;gap:15px;min-width:0;font:14px/1.3 JinshaSerif,serif;letter-spacing:.12em;color:#ede5c6}
+.fw-lens{width:min(100%,48vh);aspect-ratio:1;border-radius:50%;padding:2.8%;background:linear-gradient(135deg,#958c6b,#3b4539 24%,#171d19 49%,#483f31 70%,#b8aa80 90%,#4c5241);box-shadow:0 0 0 1px #a59d78,0 0 0 5px #233328,0 8px 16px #101c11a8}
+.fw-lens canvas{border-radius:50%;background:#ab8556;box-shadow:inset 0 0 16px #342b1f;touch-action:none}
+.fw-lens-cell:last-child canvas{cursor:grab}
+.fw-optics-note{font-size:10px;color:#ccc8b4}
+.fw-canopy-matte{background:#334632 url('/assets/v10/fieldwork-autumnwood.webp') 40% center / cover;animation:fw-forest-appear 1.35s ease-out both}
+.fw-crown-film{position:absolute;inset:0;isolation:isolate;overflow:hidden;background:#354332 center/cover}
+.fw-crown-film img,.fw-crown-film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-aspect-ratio:4/5){.fw-crown-film{background-blend-mode:multiply}.fw-crown-film::before{position:absolute;inset:0;content:"";backdrop-filter:blur(10px)}.fw-crown-film img,.fw-crown-film video{object-fit:contain}}
+@keyframes fw-forest-appear{from{opacity:0}to{opacity:1}}
+@media(max-width:650px) and (min-height:540px){.fw-lenses{width:82%;grid-template-columns:1fr;justify-items:center;gap:13px}.fw-lens-cell{width:100%;gap:6px;font-size:12px}.fw-lens{width:min(90%,22dvh);padding:4px}.fw-specimen-tag{font-size:10px}.fw-sieve-tray{width:93%}.fw-specimen-pin{font-size:12px;min-width:38px;min-height:38px}.fw-optics-note{left:3%;bottom:2%;font-size:9px}.fw-root-tag{font-size:12px}.fw-sieve-examined{background-size:cover}.fw-specimen-tag,.fw-canopy-matte span{bottom:4%}}
+@media(prefers-reduced-motion:reduce){.fw-canopy-matte{animation:none}.fw-sieve-tray{transform:none}}
+.fw-object-table{position:absolute;inset:0;background:radial-gradient(ellipse at 45% 38%,#667166 0%,#364a41 42%,#172d28 80%);isolation:isolate}
+.fw-object-table::before{content:"";position:absolute;left:24%;right:24%;bottom:13%;height:6%;border-radius:50%;background:#071b16;filter:blur(15px);opacity:.6}
+.fw-object-table canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
+.fw-object-table canvas:active{cursor:grabbing}
+.fw-object-table.fw-object-static{background:#273b34 url('/assets/v10/fieldwork-rimsherd.webp') center/contain no-repeat}
+.fw-object-table.fw-object-static.magnified{background-size:150%}
+.fw-object-label{position:absolute;left:5%;bottom:5%;padding:5px 9px;color:#f2e4bc;font:12px/1.6 system-ui,sans-serif;letter-spacing:.09em;background:#182c27c9;border-left:2px solid #c9a566;pointer-events:none}
+.fw-sieve [hidden],.fw-optics[hidden]{display:none!important}
+.fw-sieve canvas,.fw-transit-pin{touch-action:none}
+.fw-survey-tie{position:absolute;z-index:2;transform:translate(-50%,-50%);border:1px solid #e7ce8e;background:#273b32e6;color:#fff1b9;font:13px/1.25 system-ui,sans-serif;border-radius:20px;padding:10px;white-space:nowrap;pointer-events:none}
+button.fw-survey-tie{touch-action:none;cursor:grab;pointer-events:auto;min-height:44px}.fw-survey-tie[hidden]{display:none}.fw-survey-tie.tie-1{border-style:dashed;background:#28372dc4}
+.fw-core-path{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fw-core-path polyline{fill:none;stroke:#ffe9a0;stroke-width:4;stroke-dasharray:5 5;filter:drop-shadow(0 1px 2px #261d12)}
+.fw-core-grip,.fw-core-end{position:absolute;transform:translate(-50%,-50%);font:13px/1.25 system-ui,sans-serif;padding:8px;white-space:nowrap;border-radius:50%;color:#ffedbd;border:1px solid #ceb982;background:#3e392ce6}
+.fw-core-end{pointer-events:none;border-style:dashed}.fw-core-grip{pointer-events:auto;touch-action:none!important;min-width:48px;min-height:44px;cursor:grab}
+@media(max-width:750px) and (min-height:540px){.js-field{grid-template-rows:minmax(0,1fr) clamp(210px,31dvh,276px)}.js-field-panel{height:100%;max-height:100%;align-content:start}.fw-object-label{font-size:10px}}
+.fw-clay-tag{position:absolute;transform:translate(-50%,-50%);color:#ffeab6;background:#302a21df;border:1px solid #ddc68a;border-radius:18px;min-width:46px;min-height:38px;padding:5px 10px;cursor:pointer;font:13px/1.25 system-ui,sans-serif}
+.fw-specimen-pin.fw-clue{outline:2px solid #ffe0a0;outline-offset:4px;background:#e6c986;color:#252b23}

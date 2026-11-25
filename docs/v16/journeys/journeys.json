@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-25T11:39:09.810Z",
+  "browser": "158.0.4370.33",
+  "source": "http://127.0.0.1:5188",
+  "url": "http://127.0.0.1:5188",
+  "fixtures": "Saved-game scenarios begin with four archived stations and one quiz. The separate named journey is prepared at one archived station for storage isolation and three for the delayed fourth-station handoff. Both jade investigations use the regular player controls.",
+  "runs": [
+    {
+      "name": "fresh",
+      "viewport": {
+        "width": 1366,
+        "height": 820
+      },
+      "input": "keyboard and mouse",
+      "checks": [
+        {
+          "label": "初访首页直接进入序章"
+        }
+      ],
+      "screens": [
+        "fresh-home.jpg"
+      ],
+      "errors": [],
+      "entry": "/assets/expedition-BsSDEHZu.js"
+    },
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1366,
+        "height": 820
+      },
+      "input": "keyboard and mouse",
+      "checks": [
+        {
+          "label": "关闭档案返回原入口，浏览目录不会建档"
+        },
+        {
+          "label": "另启旅程获得独立序章，可查看西台烟火图版",
+          "detail": "j-3e6b90f1d28f86c3df023e452afd919f"
+        },
+        {
+          "label": "从首站回到档案，选择原卷直达第五站并保留四站及鉴定阅历",
+          "detail": "clay-fit"
+        },
+        {
+          "label": "双标签与回顾工作台分别保存阅历、静音和水闸开度"
+        },
+        {
+          "label": "历史玉作提交后立即离开，延迟的写盘仍由原旅程完成一次"
+        },
+        {
+          "label": "主线玉作已提交时返回河岸，落盘后仍追踪第五站"
+        }
+      ],
+      "screens": [
+        "desktop-home.jpg",
+        "desktop-new-prologue.jpg",
+        "desktop-two-journeys.jpg"
+      ],
+      "errors": [],
+      "entry": "/assets/expedition-BsSDEHZu.js"
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "touchscreen emulation",
+      "checks": [
+        {
+          "label": "关闭档案返回原入口，浏览目录不会建档"
+        },
+        {
+          "label": "另启旅程获得独立序章，可查看西台烟火图版",
+          "detail": "j-1d91e7fc1c513be92e3f2dcc5a3d9185"
+        },
+        {
+          "label": "从首站回到档案，选择原卷直达第五站并保留四站及鉴定阅历",
+          "detail": "clay-fit"
+        }
+      ],
+      "screens": [
+        "mobile-home.jpg",
+        "mobile-new-prologue.jpg",
+        "mobile-two-journeys.jpg"
+      ],
+      "errors": [],
+      "entry": "/assets/expedition-BsSDEHZu.js"
+    }
+  ],
+  "ok": true
+}

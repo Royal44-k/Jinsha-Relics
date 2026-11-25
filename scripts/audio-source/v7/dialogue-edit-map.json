@@ -1,0 +1,33 @@
+{
+  "source": "shuoyu-original.wav",
+  "voice": "Haoran - Bright & Articulate",
+  "voiceId": "4f8c25eb83f4488d82c2a2e38dc0a9d3",
+  "speed": 1,
+  "pitch": 1,
+  "model": "omitted; plan selected",
+  "sourceDuration": 12.151179138321995,
+  "edgeFadeSeconds": 0.004,
+  "clips": [
+    {
+      "id": "v7_pottery_intro",
+      "from": 0,
+      "to": 4.39,
+      "text": "这里还有一抔湿泥。要不要捏一件，只有你能做出的器物？",
+      "duration": 4.39
+    },
+    {
+      "id": "v7_pottery_fired",
+      "from": 4.4,
+      "to": 7.61,
+      "text": "你看，指尖走过的地方，已经留在火里了。",
+      "duration": 3.21
+    },
+    {
+      "id": "v7_pottery_return",
+      "from": 7.65,
+      "to": 12.151179138321995,
+      "text": "它还在这里。原来，一件小东西，也能记得我们来过。",
+      "duration": 4.501179138321995
+    }
+  ]
+}

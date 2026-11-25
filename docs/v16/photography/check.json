@@ -1,0 +1,2790 @@
+{
+  "origin": "http://127.0.0.1:5188",
+  "entry": "/assets/expedition-C9veOaSg.js",
+  "roles": [
+    "P",
+    "图鉴"
+  ],
+  "exported": [
+    "1440×1920",
+    "1080×1920",
+    "1920×1080"
+  ],
+  "touch": [
+    {
+      "width": 390,
+      "height": 844,
+      "drag": true,
+      "download": true,
+      "prints": 10,
+      "returnToTravel": true,
+      "inputTrace": {
+        "trace": [
+          {
+            "type": "pointerdown",
+            "at": 66832,
+            "x": 195,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "touchstart",
+            "at": 66833,
+            "x": 195,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 66856,
+            "x": 223.5,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "pointerup",
+            "at": 68020,
+            "x": 252,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 68020,
+            "x": 252,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "touchend",
+            "at": 68020,
+            "x": 252,
+            "y": 372.09375,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 68269,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "touchstart",
+            "at": 68269,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 68269,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "pointerup",
+            "at": 68270,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "click",
+            "at": 68270,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 68557,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "touchend",
+            "at": 68559,
+            "x": 275,
+            "y": 671.1199951171875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 68636,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 73172,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "touchstart",
+            "at": 73172,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 73232,
+            "x": 166.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "pointerup",
+            "at": 73358,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 73358,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "touchend",
+            "at": 73358,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 73466,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "touchstart",
+            "at": 73466,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 73466,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "pointerup",
+            "at": 73466,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "click",
+            "at": 73466,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 73525,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "touchend",
+            "at": 73527,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 73590,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 74156,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "touchstart",
+            "at": 74156,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 74184,
+            "x": 223.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "pointerup",
+            "at": 74268,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 74269,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "touchend",
+            "at": 74269,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 74317,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "touchstart",
+            "at": 74317,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 74317,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "pointerup",
+            "at": 74317,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "click",
+            "at": 74317,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 74363,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "touchend",
+            "at": 74364,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 74428,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 75060,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "touchstart",
+            "at": 75060,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 75083,
+            "x": 166.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "pointerup",
+            "at": 75146,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 75146,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "touchend",
+            "at": 75146,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 75218,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "touchstart",
+            "at": 75218,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 75218,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "pointerup",
+            "at": 75218,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "click",
+            "at": 75218,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 75290,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "touchend",
+            "at": 75291,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 75379,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 76004,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "touchstart",
+            "at": 76004,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 76034,
+            "x": 223.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "pointerup",
+            "at": 76106,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 76106,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "touchend",
+            "at": 76107,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 76187,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "touchstart",
+            "at": 76187,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 76187,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "pointerup",
+            "at": 76187,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "click",
+            "at": 76188,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 76264,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "touchend",
+            "at": 76265,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 76338,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 76971,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "touchstart",
+            "at": 76971,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 77002,
+            "x": 166.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "pointerup",
+            "at": 77081,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 77081,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "touchend",
+            "at": 77081,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 77171,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "touchstart",
+            "at": 77171,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 77171,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "pointerup",
+            "at": 77172,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "click",
+            "at": 77172,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 77249,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "touchend",
+            "at": 77250,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 77329,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 77849,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "touchstart",
+            "at": 77849,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 77870,
+            "x": 223.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "pointerup",
+            "at": 77941,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 77941,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "touchend",
+            "at": 77941,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 78023,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "touchstart",
+            "at": 78023,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 78023,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "pointerup",
+            "at": 78024,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "click",
+            "at": 78024,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 78103,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "touchend",
+            "at": 78104,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 78179,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 78756,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "touchstart",
+            "at": 78757,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 78791,
+            "x": 166.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "pointerup",
+            "at": 78968,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 78968,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "touchend",
+            "at": 78969,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 79074,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "touchstart",
+            "at": 79074,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 79078,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "pointerup",
+            "at": 79078,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "click",
+            "at": 79078,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 79155,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "touchend",
+            "at": 79156,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 79228,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 79791,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "touchstart",
+            "at": 79792,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 79823,
+            "x": 223.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "pointerup",
+            "at": 79900,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 79900,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "touchend",
+            "at": 79900,
+            "x": 252,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 79975,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "touchstart",
+            "at": 79975,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 79975,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "pointerup",
+            "at": 79975,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "click",
+            "at": 79975,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 80042,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "touchend",
+            "at": 80043,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 80116,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 80740,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "touchstart",
+            "at": 80740,
+            "x": 195,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 80757,
+            "x": 166.5,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "pointerup",
+            "at": 80825,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 80826,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "touchend",
+            "at": 80826,
+            "x": 138,
+            "y": 361.703125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 80895,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "touchstart",
+            "at": 80895,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 80895,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "pointerup",
+            "at": 80895,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "click",
+            "at": 80895,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 81196,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "touchend",
+            "at": 81196,
+            "x": 275,
+            "y": 660.72998046875,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 81433,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          }
+        ],
+        "saveRect": {
+          "x": 200,
+          "y": 638.734375,
+          "width": 150,
+          "height": 44,
+          "top": 638.734375,
+          "right": 350,
+          "bottom": 682.734375,
+          "left": 200
+        },
+        "hit": "photo-save",
+        "status": "照片已生成。下载照片原图",
+        "disabled": false,
+        "scroll": 0,
+        "visualScale": 1
+      }
+    },
+    {
+      "width": 667,
+      "height": 375,
+      "drag": true,
+      "download": true,
+      "prints": 10,
+      "returnToTravel": true,
+      "inputTrace": {
+        "trace": [
+          {
+            "type": "pointerdown",
+            "at": 5403,
+            "x": 222,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "touchstart",
+            "at": 5404,
+            "x": 222,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 5435,
+            "x": 242.9250030517578,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "pointerup",
+            "at": 5509,
+            "x": 263.8500061035156,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 5511,
+            "x": 263.8500061035156,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 6
+          },
+          {
+            "type": "touchend",
+            "at": 5511,
+            "x": 263.8500061035156,
+            "y": 203.453125,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 5553,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "touchstart",
+            "at": 5553,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 5553,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "pointerup",
+            "at": 5553,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "click",
+            "at": 5553,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 5641,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 7
+          },
+          {
+            "type": "touchend",
+            "at": 5643,
+            "x": 532.5,
+            "y": 307.7900085449219,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 5725,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 6476,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "touchstart",
+            "at": 6476,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 6503,
+            "x": 201.0749969482422,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "pointerup",
+            "at": 6558,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 6558,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 8
+          },
+          {
+            "type": "touchend",
+            "at": 6559,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 6605,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "touchstart",
+            "at": 6605,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 6606,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "pointerup",
+            "at": 6606,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "click",
+            "at": 6606,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 6675,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 9
+          },
+          {
+            "type": "touchend",
+            "at": 6677,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 6782,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 7282,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "touchstart",
+            "at": 7283,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 7305,
+            "x": 242.9250030517578,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "pointerup",
+            "at": 7369,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 7369,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 10
+          },
+          {
+            "type": "touchend",
+            "at": 7369,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 7443,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "touchstart",
+            "at": 7443,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 7443,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "pointerup",
+            "at": 7443,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "click",
+            "at": 7443,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 7537,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 11
+          },
+          {
+            "type": "touchend",
+            "at": 7538,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 7596,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 8141,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "touchstart",
+            "at": 8141,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 8172,
+            "x": 201.0749969482422,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "pointerup",
+            "at": 8236,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 8236,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 12
+          },
+          {
+            "type": "touchend",
+            "at": 8236,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 8275,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "touchstart",
+            "at": 8276,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 8276,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "pointerup",
+            "at": 8276,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "click",
+            "at": 8276,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 8330,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 13
+          },
+          {
+            "type": "touchend",
+            "at": 8331,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 8412,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 9216,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "touchstart",
+            "at": 9216,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 9241,
+            "x": 242.9250030517578,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "pointerup",
+            "at": 9326,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 9326,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 14
+          },
+          {
+            "type": "touchend",
+            "at": 9326,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 9377,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "touchstart",
+            "at": 9377,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 9377,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "pointerup",
+            "at": 9378,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "click",
+            "at": 9378,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 9426,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 15
+          },
+          {
+            "type": "touchend",
+            "at": 9427,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 9488,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 10068,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "touchstart",
+            "at": 10068,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 10092,
+            "x": 201.0749969482422,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "pointerup",
+            "at": 10162,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 10162,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 16
+          },
+          {
+            "type": "touchend",
+            "at": 10162,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 10209,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "touchstart",
+            "at": 10210,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 10210,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "pointerup",
+            "at": 10210,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "click",
+            "at": 10210,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 10299,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 17
+          },
+          {
+            "type": "touchend",
+            "at": 10300,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 10348,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 10736,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "touchstart",
+            "at": 10736,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 10759,
+            "x": 242.9250030517578,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "pointerup",
+            "at": 10814,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 10814,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 18
+          },
+          {
+            "type": "touchend",
+            "at": 10814,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 10860,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "touchstart",
+            "at": 10860,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 10860,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "pointerup",
+            "at": 10861,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "click",
+            "at": 10861,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 10920,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 19
+          },
+          {
+            "type": "touchend",
+            "at": 10920,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 10967,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 11380,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "touchstart",
+            "at": 11381,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 11410,
+            "x": 201.0749969482422,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "pointerup",
+            "at": 11468,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 11468,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 20
+          },
+          {
+            "type": "touchend",
+            "at": 11469,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 11511,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "touchstart",
+            "at": 11511,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 11511,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "pointerup",
+            "at": 11511,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "click",
+            "at": 11511,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 11572,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 21
+          },
+          {
+            "type": "touchend",
+            "at": 11572,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 11623,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 12022,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "touchstart",
+            "at": 12022,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 12044,
+            "x": 242.9250030517578,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "pointerup",
+            "at": 12103,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 12103,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 22
+          },
+          {
+            "type": "touchend",
+            "at": 12103,
+            "x": 263.8500061035156,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 12146,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "touchstart",
+            "at": 12146,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 12148,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "pointerup",
+            "at": 12148,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "click",
+            "at": 12148,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 12201,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 23
+          },
+          {
+            "type": "touchend",
+            "at": 12201,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 12276,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "pointerdown",
+            "at": 12672,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "touchstart",
+            "at": 12672,
+            "x": 222,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 12695,
+            "x": 201.0749969482422,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "pointerup",
+            "at": 12764,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 12765,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true,
+            "id": 24
+          },
+          {
+            "type": "touchend",
+            "at": 12765,
+            "x": 180.14999389648438,
+            "y": 193.046875,
+            "target": "CANVAS",
+            "hit": "CANVAS",
+            "trusted": true
+          },
+          {
+            "type": "pointerdown",
+            "at": 12813,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "touchstart",
+            "at": 12813,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "gotpointercapture",
+            "at": 12813,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "pointerup",
+            "at": 12813,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "click",
+            "at": 12813,
+            "x": 0,
+            "y": 0,
+            "target": "photo-save",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          },
+          {
+            "type": "lostpointercapture",
+            "at": 12888,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true,
+            "id": 25
+          },
+          {
+            "type": "touchend",
+            "at": 12889,
+            "x": 532.5,
+            "y": 297.3900146484375,
+            "target": "photo-save",
+            "hit": "photo-save",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "at": 12938,
+            "x": 0,
+            "y": 0,
+            "target": "A",
+            "hit": "field-photo",
+            "trusted": false,
+            "id": -1
+          }
+        ],
+        "saveRect": {
+          "x": 430,
+          "y": 275.390625,
+          "width": 205,
+          "height": 44,
+          "top": 275.390625,
+          "right": 635,
+          "bottom": 319.390625,
+          "left": 430
+        },
+        "hit": "photo-save",
+        "status": "照片已生成。下载照片原图",
+        "disabled": false,
+        "scroll": 0,
+        "visualScale": 1
+      }
+    }
+  ],
+  "errors": []
+}

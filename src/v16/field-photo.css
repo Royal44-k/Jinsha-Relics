@@ -1,0 +1,17 @@
+.field-photo{width:min(920px,96vw);max-height:94dvh;padding:16px 20px;background:#142521;color:#f3ead6;overflow:auto}
+.field-photo header,.field-camera-controls label{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.field-photo h2{font:500 clamp(24px,3vw,36px) var(--serif);margin:0}
+.field-photo header button{font-size:26px;min-width:44px;min-height:44px}
+.field-photo-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,205px);gap:18px;margin-top:10px}
+.field-view{background:#101914;display:grid;grid-template:minmax(0,1fr)/minmax(0,1fr);place-items:center;min-width:0;height:min(62dvh,580px);overflow:hidden}
+.field-view canvas{display:block;max-width:100%;max-height:100%;width:auto;height:auto;touch-action:none;cursor:grab}
+.field-view canvas:active{cursor:grabbing}
+.field-camera-controls{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.field-camera-controls label{flex-wrap:wrap;font-size:14px;color:#dfd6bc}
+.field-camera-controls select,.field-camera-controls button{background:#263c31;color:#f3e3be;border:1px solid #938465;padding:8px;min-height:44px}
+.field-camera-controls input{min-width:60px;width:50%;accent-color:#c9a768}
+.field-camera-controls small,.field-camera-controls p{font-size:13px;line-height:1.6;margin:0;color:#d5cebc}
+.field-camera-controls .photo-save{background:#dfc798;color:#1a322a}
+.field-camera-controls a{color:#f2dab0}
+@media(max-width:640px) and (orientation:portrait){.field-photo-layout{grid-template-columns:1fr;gap:10px}.field-view{height:42dvh}.field-camera-controls{display:grid;grid-template-columns:1fr 1fr}.field-camera-controls p,.field-camera-controls small{grid-column:1/-1}}
+@media(max-height:470px){.field-photo{padding:6px 12px}.field-view{height:62dvh}.field-camera-controls{gap:5px}.field-photo-layout{margin-top:3px}}

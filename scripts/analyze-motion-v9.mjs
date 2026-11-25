@@ -1,0 +1,7 @@
+import fs from 'node:fs';
+const directory=process.argv[2]||'docs/v9/motion/runtime';
+const report=JSON.parse(fs.readFileSync(directory+'/result.json','utf8'));
+const summary=[];
+function analyze(name,rows){if(!Array.isArray(rows)||rows.length<3||!rows[0].at)return;const frame=[],turn=[],targetHeight=[];for(let i=1;i<rows.length;i++){const a=rows[i-1],b=rows[i];frame.push(b.at-a.at);const dot=a.cameraQuaternion.reduce((n,v,j)=>n+v*b.cameraQuaternion[j],0);turn.push(2*Math.acos(Math.min(1,Math.abs(dot))));targetHeight.push(Math.abs((b.target[1]-b.visual[1])-(a.target[1]-a.visual[1])));}const sorted=[...frame].sort((a,b)=>a-b),q=p=>sorted[Math.floor((sorted.length-1)*p)],elapsed=rows.at(-1).at-rows[0].at;summary.push({name,frames:rows.length,elapsedMs:elapsed,averageFps:frame.length*1000/elapsed,frameMs:{median:q(.5),p95:q(.95),max:Math.max(...frame)},maxCameraAngularStepDegrees:Math.max(...turn)*180/Math.PI,maxTargetHeightStep:Math.max(...targetHeight),modes:rows.map(r=>r.motion.mode).filter((m,i,a)=>!i||m!==a[i-1])});}
+for(const c of report.cases){for(const key of ['trace','down','up'])analyze(c.name+'-'+key,c[key]);if(c.rows)for(const p of c.rows)analyze(c.name+'-'+p.id,p.trace);}
+fs.writeFileSync(directory+'/analysis.json',JSON.stringify({at:new Date().toISOString(),note:'Instrumentation snapshots at RAF after main update, 1440x900 viewport. Diagnostic fixture teleports precede traces. This is a short integration run and not a long-session performance certification.',summary},null,2));console.log(JSON.stringify(summary,null,2));

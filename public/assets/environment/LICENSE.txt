@@ -1,0 +1,11 @@
+Environment texture assets: CC0 1.0 Universal.
+Provider: Poly Haven https://polyhaven.com/license
+Forest Floor: eye-candy.xyz https://polyhaven.com/a/forest_floor
+Bark Brown 02: Rob Tuytel https://polyhaven.com/a/bark_brown_02
+Rock Boulder Dry: Dimitrios Savva (Photography), Rico Cilliers (Processing)
+https://polyhaven.com/a/rock_boulder_dry
+
+Downloaded 2026-11-18. Original 1K diffuse and OpenGL normal JPG files
+converted to WebP at quality 0.82 (color) and 0.92 (normal), unchanged resolution.
+See manifest.json for original URLs, local file hashes, and exact sizes.
+No Poly Haven website preview renders or logos are included.

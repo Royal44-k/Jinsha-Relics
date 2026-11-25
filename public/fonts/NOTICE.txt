@@ -1,0 +1,6 @@
+Jinsha Serif is a subset of Noto Serif SC for this game.
+Original copyright: © 2017-2023 Adobe (http://www.adobe.com/).
+Noto is a trademark of Google Inc.
+License: SIL Open Font License 1.1, included in OFL.txt.
+Source: https://github.com/notofonts/noto-cjk/tree/main/Serif
+Subset built from the locally installed NotoSerifSC-VF.ttf. Only game text glyphs are included; other glyphs fall back to system fonts.

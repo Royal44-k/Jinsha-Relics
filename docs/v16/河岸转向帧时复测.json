@@ -1,0 +1,1191 @@
+{
+  "source": "帧时抽样.json",
+  "original": {
+    "label": "原地转向与跟随镜头",
+    "frames": 180,
+    "median": 16.7,
+    "p95": 17.1,
+    "max": 233.7,
+    "above50": 2
+  },
+  "origin": "http://127.0.0.1:5188",
+  "viewport": [
+    1366,
+    820
+  ],
+  "method": "连续三次独立启动 Edge，各用全新浏览器上下文从首页入场。等首帧后停步 180 个 rAF，再用真实 D 键第一次原地持续转向 180 帧，松手 900ms 后重新按 D 再转 180 帧。每次约转一整圈，结束朝向随真实帧时而变。均无录屏或截图，使用原始游戏画质与音效设置。",
+  "timing": "指标是同一浏览器标签页的相邻 rAF 时间戳差，非 GPU 独立计时。这里使用本机 Edge 无头窗口的 WebGL 图形管线，不能直接替代真实手机、其他显卡或全部章节的观测。",
+  "trials": [
+    {
+      "time": "2026-11-25T12:02:25.429Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-COZijMFg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 33.3,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 233.7,
+          "above50": 2,
+          "over50": [
+            {
+              "frame": 132,
+              "ms": 166.9,
+              "offsetMs": 2186.2,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 182
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 194,
+                  "scripts": [
+                    {
+                      "ms": 181.9,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            },
+            {
+              "frame": 133,
+              "ms": 233.7,
+              "offsetMs": 2353.1,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 182
+                },
+                {
+                  "type": "longtask",
+                  "ms": 232
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 194,
+                  "scripts": [
+                    {
+                      "ms": 181.9,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 232.3,
+                  "scripts": [
+                    {
+                      "ms": 231.7,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            }
+          ],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -7.340773677414626,
+            "ratio": 1,
+            "drawCalls": 151,
+            "triangles": 351936,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 17.7,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -7.376678677414628,
+            "ratio": 1,
+            "drawCalls": 146,
+            "triangles": 347636,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -13.835923677414623,
+            "ratio": 1,
+            "drawCalls": 153,
+            "triangles": 353012,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "time": "2026-11-25T12:02:47.342Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-COZijMFg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 31.2,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 217,
+          "above50": 2,
+          "over50": [
+            {
+              "frame": 132,
+              "ms": 150.2,
+              "offsetMs": 2186.2,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 160
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 173.6,
+                  "scripts": [
+                    {
+                      "ms": 160.4,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            },
+            {
+              "frame": 133,
+              "ms": 217,
+              "offsetMs": 2336.4,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 160
+                },
+                {
+                  "type": "longtask",
+                  "ms": 211
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 173.6,
+                  "scripts": [
+                    {
+                      "ms": 160.4,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 211,
+                  "scripts": [
+                    {
+                      "ms": 209.8,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            }
+          ],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -7.304868677414623,
+            "ratio": 1,
+            "drawCalls": 151,
+            "triangles": 349932,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17,
+          "max": 17.4,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -7.340773677414624,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344864,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -13.799803677414623,
+            "ratio": 1,
+            "drawCalls": 154,
+            "triangles": 359320,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "time": "2026-11-25T12:03:08.503Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-COZijMFg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 33.2,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 233.4,
+          "above50": 2,
+          "over50": [
+            {
+              "frame": 132,
+              "ms": 150.4,
+              "offsetMs": 2186.3,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 162
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 176.1,
+                  "scripts": [
+                    {
+                      "ms": 162.4,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            },
+            {
+              "frame": 133,
+              "ms": 233.4,
+              "offsetMs": 2336.7,
+              "overlap": [
+                {
+                  "type": "longtask",
+                  "ms": 162
+                },
+                {
+                  "type": "longtask",
+                  "ms": 223
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 176.1,
+                  "scripts": [
+                    {
+                      "ms": 162.4,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                },
+                {
+                  "type": "long-animation-frame",
+                  "ms": 222.9,
+                  "scripts": [
+                    {
+                      "ms": 221.7,
+                      "fn": "$",
+                      "invoker": "FrameRequestCallback",
+                      "asset": "traverse-C4FV_hxc.js"
+                    }
+                  ]
+                }
+              ],
+              "resources": []
+            }
+          ],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -7.30637367741462,
+            "ratio": 1,
+            "drawCalls": 150,
+            "triangles": 349682,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 17.7,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -7.30637367741462,
+            "ratio": 1,
+            "drawCalls": 146,
+            "triangles": 343884,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -13.765833677414621,
+            "ratio": 1,
+            "drawCalls": 153,
+            "triangles": 355120,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "summary": {
+    "firstRunsWithOver50": 3,
+    "secondRunsWithOver50": 0,
+    "firstMax": 233.7,
+    "secondMax": 17.7
+  },
+  "findings": {
+    "originalBuild": "/assets/expedition-COZijMFg.js",
+    "observed": "三个独立进程均在首次按 D 转向的第 132 和 133 个 rAF 间隔产生超过 50 毫秒的连续长帧；第二次同方向各 180 帧均没有。浏览器长动画帧条目记录了 traverse-C4FV_hxc.js 的 FrameRequestCallback，同时无资源请求完成、无失焦、观察时渲染倍率未变。",
+    "discriminator": "把同样的第一次转动推迟 2 秒仍复现；反向 A 也复现，但在不同帧位。对照与预画均串行运行，双方临时拦截同一个生产脚本，使用相同浏览器与其真实 WebGL 图形管线。",
+    "inference": "在相机朝向改变前先实际绘制新可见范围，能消除本机观察到的首次两次长停顿。渲染器已建立的 program 数增加，与初次使用某些可见材质或绘制资源相符；计时不能在编译、驱动工作、上传或其他渲染步骤之间进一步分摊。",
+    "control": "实验不推进游戏帧，画质设置和当前相机保持原值。临时预画 262.2–275.0 毫秒；总入场时间还含场景加载、动画和浏览器开销，少量样本不足以独立估算整体加载增量。"
+  },
+  "experiment": {
+    "method": "相同发布入口、相同全新 Edge 进程，实验浏览器从本地读取同一份发布 JS 并临时拦截其响应。对照仅添加时间戳，实验用同一渲染器与场景，在加载层下依次朝左右、后方各画一次，再由原相机渲染并等待原有 GPU 栅栏。无截图录屏。",
+    "conditions": [
+      {
+        "case": "加载层三角度预画",
+        "delayBeforeFirstTurnMs": 0,
+        "key": "KeyD",
+        "entry": "/assets/expedition-COZijMFg.js",
+        "enterToTravelMs": 8758,
+        "primeMs": 6833.8,
+        "prepaintMs": 262.2,
+        "programCount": [
+          46,
+          48
+        ],
+        "before": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "after": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "stateFields": [
+          "x",
+          "y",
+          "z",
+          "yaw",
+          "completedCount",
+          "target",
+          "simulationTime"
+        ],
+        "completed": [],
+        "metrics": [
+          {
+            "label": "初到河岸停步",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 16.9,
+            "max": 33.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第一次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 16.9,
+            "max": 17.6,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第二次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17,
+            "max": 17.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          }
+        ]
+      },
+      {
+        "case": "原样对照",
+        "delayBeforeFirstTurnMs": 2000,
+        "key": "KeyD",
+        "entry": "/assets/expedition-COZijMFg.js",
+        "enterToTravelMs": 8966.6,
+        "primeMs": 6404.6,
+        "prepaintMs": 0,
+        "programCount": [
+          46,
+          46
+        ],
+        "before": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "after": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "stateFields": [
+          "x",
+          "y",
+          "z",
+          "yaw",
+          "completedCount",
+          "target",
+          "simulationTime"
+        ],
+        "completed": [],
+        "metrics": [
+          {
+            "label": "初到河岸停步",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 16.9,
+            "max": 32.7,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第一次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 233.6,
+            "above50": 2,
+            "longFrameNumbers": [
+              132,
+              133
+            ]
+          },
+          {
+            "label": "原地第二次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 16.9,
+            "max": 17,
+            "above50": 0,
+            "longFrameNumbers": []
+          }
+        ]
+      },
+      {
+        "case": "原样对照",
+        "delayBeforeFirstTurnMs": 0,
+        "key": "KeyA",
+        "entry": "/assets/expedition-COZijMFg.js",
+        "enterToTravelMs": 8925.4,
+        "primeMs": 6487.4,
+        "prepaintMs": 0,
+        "programCount": [
+          46,
+          46
+        ],
+        "before": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "after": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "stateFields": [
+          "x",
+          "y",
+          "z",
+          "yaw",
+          "completedCount",
+          "target",
+          "simulationTime"
+        ],
+        "completed": [],
+        "metrics": [
+          {
+            "label": "初到河岸停步",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 33.5,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第一次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17,
+            "max": 217.1,
+            "above50": 2,
+            "longFrameNumbers": [
+              23,
+              24
+            ]
+          },
+          {
+            "label": "原地第二次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17,
+            "max": 17.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          }
+        ]
+      },
+      {
+        "case": "加载层三角度预画",
+        "delayBeforeFirstTurnMs": 0,
+        "key": "KeyD",
+        "entry": "/assets/expedition-COZijMFg.js",
+        "enterToTravelMs": 9215.4,
+        "primeMs": 6706.1,
+        "prepaintMs": 275,
+        "programCount": [
+          46,
+          48
+        ],
+        "before": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "after": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "stateFields": [
+          "x",
+          "y",
+          "z",
+          "yaw",
+          "completedCount",
+          "target",
+          "simulationTime"
+        ],
+        "completed": [],
+        "metrics": [
+          {
+            "label": "初到河岸停步",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 33.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第一次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 19.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第二次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17,
+            "max": 17.5,
+            "above50": 0,
+            "longFrameNumbers": []
+          }
+        ]
+      },
+      {
+        "case": "原样对照",
+        "delayBeforeFirstTurnMs": 0,
+        "key": "KeyD",
+        "entry": "/assets/expedition-COZijMFg.js",
+        "enterToTravelMs": 9138.9,
+        "primeMs": 6577.2,
+        "prepaintMs": 0,
+        "programCount": [
+          46,
+          46
+        ],
+        "before": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "after": [
+          -11,
+          1.3446119932027967,
+          40,
+          -0.16514867741462683,
+          0,
+          0,
+          0.016666666666666666
+        ],
+        "stateFields": [
+          "x",
+          "y",
+          "z",
+          "yaw",
+          "completedCount",
+          "target",
+          "simulationTime"
+        ],
+        "completed": [],
+        "metrics": [
+          {
+            "label": "初到河岸停步",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 33.4,
+            "above50": 0,
+            "longFrameNumbers": []
+          },
+          {
+            "label": "原地第一次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17,
+            "max": 233.2,
+            "above50": 2,
+            "longFrameNumbers": [
+              132,
+              133
+            ]
+          },
+          {
+            "label": "原地第二次完整转向",
+            "frames": 180,
+            "median": 16.7,
+            "p95": 17.1,
+            "max": 18.3,
+            "above50": 0,
+            "longFrameNumbers": []
+          }
+        ]
+      }
+    ]
+  },
+  "production": [
+    {
+      "key": "KeyD",
+      "time": "2026-11-25T12:09:23.556Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-C9veOaSg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17,
+          "max": 33.3,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 17.4,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -6.624178677414626,
+            "ratio": 1,
+            "drawCalls": 102,
+            "triangles": 364240,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 19.6,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -6.660083677414624,
+            "ratio": 1,
+            "drawCalls": 150,
+            "triangles": 344580,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -13.118468677414619,
+            "ratio": 1,
+            "drawCalls": 137,
+            "triangles": 345518,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "KeyD",
+      "time": "2026-11-25T12:09:45.620Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-C9veOaSg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 33.5,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 17.7,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -6.624823677414623,
+            "ratio": 1,
+            "drawCalls": 102,
+            "triangles": 364240,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 17.3,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -6.624823677414623,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 343600,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -13.083853677414622,
+            "ratio": 1,
+            "drawCalls": 127,
+            "triangles": 344266,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    },
+    {
+      "key": "KeyA",
+      "time": "2026-11-25T12:10:07.633Z",
+      "browser": "158.0.4370.33",
+      "entry": "/assets/expedition-C9veOaSg.js",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supported": [
+        "long-animation-frame",
+        "longtask"
+      ],
+      "metrics": [
+        {
+          "label": "初到河岸停步",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.1,
+          "max": 33.4,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 145,
+            "triangles": 343724,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第一次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 17.5,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": -0.16514867741462683,
+            "ratio": 1,
+            "drawCalls": 147,
+            "triangles": 344252,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": 6.293451322585373,
+            "ratio": 1,
+            "drawCalls": 151,
+            "triangles": 353238,
+            "mode": "grounded"
+          }
+        },
+        {
+          "label": "原地第二次完整转向",
+          "frames": 180,
+          "median": 16.7,
+          "p95": 17.2,
+          "max": 17.6,
+          "above50": 0,
+          "over50": [],
+          "focus": true,
+          "visibility": "visible",
+          "visibilityEvents": [],
+          "resourcesCompleted": 0,
+          "before": {
+            "yaw": 6.293451322585373,
+            "ratio": 1,
+            "drawCalls": 144,
+            "triangles": 346046,
+            "mode": "grounded"
+          },
+          "after": {
+            "yaw": 12.752481322585366,
+            "ratio": 1,
+            "drawCalls": 150,
+            "triangles": 349122,
+            "mode": "grounded"
+          }
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "productionSummary": {
+    "entry": "/assets/expedition-C9veOaSg.js",
+    "setting": "本机 AMD Radeon D3D11、Edge 158、1366×820、DPR 1。按键及相机经正常游戏入口驱动。最终发行脚本直接由 5188 服务提供；没有对请求做临时拦截，也没有同时运行其他验收或录屏。",
+    "firstRuns": [
+      {
+        "key": "KeyD",
+        "frames": 180,
+        "max": 17.4,
+        "p95": 17.1,
+        "above50": 0
+      },
+      {
+        "key": "KeyD",
+        "frames": 180,
+        "max": 17.7,
+        "p95": 17.2,
+        "above50": 0
+      },
+      {
+        "key": "KeyA",
+        "frames": 180,
+        "max": 17.5,
+        "p95": 17.2,
+        "above50": 0
+      }
+    ],
+    "allMeasuredFrames": 1620,
+    "allFramesAbove50": 0,
+    "scope": "这说明本机复现的首章首次转向长停顿已消失。其他设备、长时段和其他场景的最坏帧时仍须单独测量。"
+  }
+}

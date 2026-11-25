@@ -1,0 +1,42 @@
+const { chromium } = require('playwright');
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+const base = process.env.JINSHA_URL || 'http://127.0.0.1:5186';
+(async () => {
+  const browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
+  const context = await browser.newContext();
+  const page = await context.newPage(), checks = [], errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  await page.route('**/__audio_harness', r => r.fulfill({ contentType: 'text/html', body: '<button id="unlock">Unlock</button><script type="module">import {ForestAudio,DIALOGUE} from "/src/v2/audio.js";window.ForestAudio=ForestAudio;window.DIALOGUE=DIALOGUE;window.lines=[];window.audio=new ForestAudio({onSubtitle:s=>lines.push({...s,at:performance.now()})});document.querySelector("button").onclick=()=>audio.unlock();</script>' }));
+  try {
+    await page.goto(base + '/__audio_harness'); await page.waitForFunction(() => window.audio);
+    const before = await page.evaluate(() => { audio.speak('intro'); const r = { context: !!audio.context, subtitle: lines[0]?.text }; audio.dispose(); audio = new ForestAudio({onSubtitle:s=>lines.push({...s,at:performance.now()})}); lines=[]; return r; });
+    assert.equal(before.context, false); assert.match(before.subtitle, /烁羽/); checks.push('No AudioContext before gesture; caption-only fallback works');
+    await page.locator('#unlock').click(); await page.waitForFunction(() => audio.context?.state === 'running' && audio.layers.reveal?.source && audio.layers.forest?.source);
+    const loaded = await page.evaluate(async () => { const decoded = []; for (const id of Object.keys(DIALOGUE)) { const b = await audio._buffer(id); decoded.push({id,duration:b?.duration,channels:b?.numberOfChannels}); } return decoded; });
+    assert.ok(loaded.every(b => b.duration > 2 && b.duration < 9 && b.channels === 1)); checks.push('User gesture unlocks; all 10 local voice WAVs and 3 music layers decode');
+    const accepted = await page.evaluate(() => [audio.speak('intro'), audio.speak('intro'), audio.speak('bird')]);
+    assert.deepEqual(accepted, [true,false,true]); await page.waitForFunction(() => audio.active?.state === 'playing');
+    await page.waitForTimeout(200); await page.evaluate(() => audio.setPaused(true)); await page.waitForFunction(() => audio.context.state === 'suspended');
+    const t = await page.evaluate(() => audio.context.currentTime); await page.waitForTimeout(700); assert.equal(await page.evaluate(() => audio.context.currentTime), t);
+    await page.evaluate(() => audio.setPaused(false)); await page.waitForFunction(() => audio.active?.id === 'bird', null, {timeout:6500});
+    assert.equal(await page.evaluate(() => lines.filter(x=>x.speaker==='录忆者').length),1); checks.push('Queue does not overlap, duplicate cue rejected, pause freezes audio clock and resumes');
+    await page.evaluate(() => { audio.setVolume('music', 0); audio.setVolume('voice', .7); audio.setRegion(5); });
+    await page.waitForTimeout(700); assert.ok(await page.evaluate(() => audio.buses.music.gain.value < .02)); checks.push('Music slider mute and voice bus work independently');
+    await page.evaluate(() => { audio.dispose(); lines=[]; audio=new ForestAudio({onSubtitle:s=>lines.push(s)}); });
+    await page.route('**/assets/audio/ending.wav', async r => { await new Promise(resolve=>setTimeout(resolve,1000)); await r.continue(); });
+    await page.locator('#unlock').click(); await page.evaluate(() => { audio.speak('ending'); audio.setPaused(true); audio.setPaused(false); });
+    assert.deepEqual(await page.evaluate(() => ({state:audio.active.state,timer:audio.active.timer})),{state:'loading',timer:null});
+    await page.waitForFunction(() => audio.active?.state === 'playing'); assert.equal(await page.evaluate(()=>audio.active.timer),null); checks.push('Pause/resume during pending decode creates no competing fallback timer');
+    await page.unroute('**/assets/audio/ending.wav');
+    await page.evaluate(async () => { await audio._buffer('sun'); });
+    await context.setOffline(true); await page.evaluate(() => audio.speak('sun')); await page.waitForFunction(() => audio.active?.id==='sun' && audio.active.state==='playing', null, {timeout:6000}); checks.push('Cached local sound continues with browser networking disabled');
+    await context.setOffline(false); await page.evaluate(() => { audio.dispose(); lines=[]; audio=new ForestAudio({onSubtitle:s=>lines.push(s)}); });
+    await page.route('**/assets/audio/**', r=>r.fulfill({status:404,body:'Missing audio'}));
+    await page.locator('#unlock').click(); await page.evaluate(()=>audio.speak('jade')); await page.waitForFunction(()=>audio.active?.state==='fallback');
+    assert.match(await page.evaluate(()=>lines[0].text),/外方内圆/); checks.push('Missing WAV falls back to complete caption without OS speech or exception');
+    await page.evaluate(()=>audio.dispose()); assert.deepEqual(errors,[]);
+    const result={date:'2026-11-18',browser:'Headless Microsoft Edge',checks,loaded,errors,auditoryReview:'Not performed. Decode, signal and timing checks are not subjective listening.'};
+    fs.mkdirSync('docs/v2/runtime',{recursive:true});fs.writeFileSync('docs/v2/runtime/audio-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+  } finally { await browser.close(); }
+})().catch(e=>{console.error(e);process.exitCode=1;});

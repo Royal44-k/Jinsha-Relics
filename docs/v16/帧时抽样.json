@@ -1,0 +1,42 @@
+{
+  "entry": "/assets/expedition-COZijMFg.js",
+  "viewport": [
+    1366,
+    820
+  ],
+  "notes": "Edge，独立浏览器窗口；每段记录 180 个连续动画帧。实机录屏和截图在采样期间关闭。",
+  "metrics": [
+    {
+      "label": "初到河岸停步观察",
+      "frames": 180,
+      "median": 16.7,
+      "p95": 17,
+      "max": 32.4,
+      "above50": 0
+    },
+    {
+      "label": "原地转向与跟随镜头",
+      "frames": 180,
+      "median": 16.7,
+      "p95": 17.1,
+      "max": 233.7,
+      "above50": 2
+    },
+    {
+      "label": "首次进入滨河探方",
+      "frames": 180,
+      "median": 16.7,
+      "p95": 17,
+      "max": 17.3,
+      "above50": 0
+    },
+    {
+      "label": "探方就绪后观察",
+      "frames": 180,
+      "median": 16.7,
+      "p95": 16.9,
+      "max": 17.1,
+      "above50": 0
+    }
+  ]
+}

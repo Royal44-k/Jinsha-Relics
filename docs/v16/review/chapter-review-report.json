@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-25T12:10:24.635Z",
+  "browser": "158.0.4370.33",
+  "source": "http://127.0.0.1:5188",
+  "setup": "Prepared old saves are set before opening the title. Every subsequent action uses the visible game controls.",
+  "scenarios": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1366,
+        "height": 820
+      },
+      "input": "keyboard and mouse",
+      "checks": [
+        {
+          "label": "首页通过开始探索或继续探索进入现场",
+          "evidence": "继续探索 ↗"
+        },
+        {
+          "label": "旅行中 L 打开目录，Esc 回到原坐标和目的地",
+          "evidence": {
+            "site": "clay-fit",
+            "position": [
+              24,
+              1.3963214872123944,
+              1
+            ]
+          }
+        },
+        {
+          "label": "延迟章节载入时可取消并回到原位"
+        },
+        {
+          "label": "循迹领航中可暂停选章，收起后继续抵达原目的地",
+          "evidence": {
+            "site": "clay-fit"
+          }
+        },
+        {
+          "label": "从回顾内查阅目录，合上后仍是同一条已蘸砂的湿绳"
+        },
+        {
+          "label": "中途退出回顾保留陶作定径、选片和角度，也保留主线位置",
+          "evidence": "器腹 · 转角 -30°"
+        },
+        {
+          "label": "写盘等待时打开目录，完成写盘后仍保留目录与焦点，合上才显示回执"
+        },
+        {
+          "label": "玉作回执返回未完成的陶作，独立记一次回顾且经验相同",
+          "evidence": {
+            "reading": "器腹 · 转角 -30°",
+            "totalXP": 120,
+            "revisits": {
+              "jade-cut": 1
+            }
+          }
+        },
+        {
+          "label": "恢复后可接着调整同一陶片"
+        }
+      ],
+      "images": [
+        "desktop-travel-library.jpg",
+        "desktop-jade-inspection.jpg",
+        "desktop-review-receipt.jpg",
+        "desktop-restored-pottery.jpg"
+      ],
+      "errors": [],
+      "entryModule": "/assets/expedition-C9veOaSg.js",
+      "passed": true
+    },
+    {
+      "name": "touch-new",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "touchscreen emulation",
+      "checks": [
+        {
+          "label": "首页通过开始探索或继续探索进入现场",
+          "evidence": "开始探索 ↗"
+        },
+        {
+          "label": "单独打开回顾地址仍从正常新档标题进入"
+        },
+        {
+          "label": "新档触屏回顾目录提示尚无归档，按钮可直接回到河岸"
+        }
+      ],
+      "images": [
+        "touch-new-empty-library.jpg"
+      ],
+      "errors": [],
+      "entryModule": "/assets/expedition-C9veOaSg.js",
+      "passed": true
+    },
+    {
+      "name": "touch-complete",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "touchscreen emulation",
+      "checks": [
+        {
+          "label": "首页通过开始探索或继续探索进入现场",
+          "evidence": "继续探索 ↗"
+        },
+        {
+          "label": "触屏选择第九章后返回，保留站位、结局和经验",
+          "evidence": {
+            "site": "nine-posts",
+            "xp": 270
+          }
+        }
+      ],
+      "images": [
+        "touch-complete-chapter-list.jpg",
+        "touch-complete-ninth-station.jpg"
+      ],
+      "errors": [],
+      "entryModule": "/assets/expedition-C9veOaSg.js",
+      "passed": true
+    }
+  ]
+}

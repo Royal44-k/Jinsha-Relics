@@ -1,0 +1,18 @@
+import { sanitizePottery } from '../v7/pottery-state.js';
+import { sanitizeLiving } from '../v6/living-state.js';
+import { sanitizeAdventure } from '../v5/adventure-state.js';
+export const STORE = 'jinsha-forest-v2';
+export const memories = [
+ {id:'bird',name:'铜鸟',chapter:'听见林间',material:'铜 · 商周',title:'昂首，向着光',description:'昂起的头、突出的圆眼、收束上翘的双翼，与向下折垂的尾羽，构成金沙铜鸟鲜明的轮廓。',fact:'烁羽的轮廓从这些形态得到启发；羽灵、记忆与林间机关均为本作原创。',question:'转动侧光，看清鸟的姿态。哪一种剪影与你观察到的相同？',choices:['舒展双翼，尾羽平伸','昂首收翼，尾羽折垂','低头俯冲，长尾笔直'],answer:1,clue:'停下来。先听水的方向，再靠近那一点铜色。',source:'https://artsandculture.google.com/asset/bronze-bird/7QH-c8Zpgsixjg?hl=zh-cn'},
+ {id:'jade',name:'十节玉琮',chapter:'方圆之间',material:'玉 · 良渚文化风格',title:'方中藏圆',description:'方形器身围绕着圆形穿孔，十节纹饰层层相接。这件金沙出土的玉琮，带有鲜明的良渚文化风格。',fact:'制作年代与出土时代不同。这件器物见证不同地域文明的交流，而非本游戏虚构的“能量柱”。',question:'绕到上方观察。哪一种关系能让光穿过玉琮？',choices:['方形外壁，圆形中孔','圆形外壁，封闭中心','方形外壁，三角中孔'],answer:0,clue:'水声变轻了。前面的石径，藏着方与圆的关系。',source:'https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00159740'},
+ {id:'mask',name:'大金面具',chapter:'金面无言',material:'金 · 商周',title:'留在金里的目光',description:'宽脸、高鼻、外展的耳部与镂空的眼、口，使薄金片具有了立体而凝练的表情。',fact:'金沙大金面具与三星堆纵目青铜面具不同。记忆中浮现的面容与故事属于艺术演绎。',question:'缓慢移动侧光，观察亮面和暗处。哪些位置真正镂空？',choices:['仅两侧耳部','额头与鼻梁','眼睛与嘴部'],answer:2,clue:'试着从侧面看。光照到的，不一定是全部。',source:'https://www.jinshasitemuseum.com/node/197'},
+ {id:'tiger',name:'石虎',chapter:'长夜守望',material:'石 · 商周',title:'石头也有呼吸',description:'伏卧而昂首的石虎，将动物的力量凝在静止的姿态中。灰黑石材里的天然浅色纹带，也参与了形象的塑造。',fact:'“守望者”是原创叙事意象。天然石纹与雕刻共同形成形象，不等于所有纹带都是刻出来的。',question:'观察虎身上的浅色纹带。它们来自什么？',choices:['后人绘制的金线','石材的天然纹带','羽毛贴成的条纹'],answer:1,clue:'石径尽头，有一位很安静的守望者。',source:'https://artsandculture.google.com/asset/stone-tiger/ygHjq8_EHD6vcA?hl=zh-cn'},
+ {id:'sun',name:'太阳神鸟金饰',chapter:'日轮复苏',material:'金 · 商周',title:'把光留给后来者',description:'四只飞鸟环绕十二道齿状光芒，外圈飞鸟与内圈光芒的旋向相反。薄薄金箔，将太阳与生命的想象凝成图案。',fact:'外径12.5厘米。不同图案含义仍有不同解读；本作观日聚光的空间机关为原创。',question:'回看金饰。外圈飞鸟与内圈光芒各有多少？',choices:['四鸟 · 十二道光芒','三鸟 · 九道光芒','五鸟 · 十道光芒'],answer:0,clue:'把听见的、看见的，与走过的路连起来。',source:'https://www.jinshasitemuseum.com/seardetail/714'}
+];
+export function readSave(storage){
+ try {storage??=globalThis.localStorage;const data=JSON.parse(storage.getItem(STORE)||'null'); if(!data||data.version!==2)return null; return {version:2,collected:[...new Set(Array.isArray(data.collected)?data.collected.filter(x=>memories.some(m=>m.id===x)):[])],distance:Number.isFinite(data.distance)?Math.max(0,data.distance):0,completed:data.completed===true,lights:Array.isArray(data.lights)?[...new Set(data.lights.filter(x=>Number.isInteger(x)&&x>=0&&x<4))]:[],travel:validTravel(data.travel),living:sanitizeLiving(data.living),pottery:sanitizePottery(data.pottery),adventure:sanitizeAdventure(data.adventure,data.collected),settings:typeof data.settings==='object'&&data.settings?data.settings:{}};}catch{return null;}
+}
+export function writeSave(state,storage){try{storage??=globalThis.localStorage;storage.setItem(STORE,JSON.stringify({version:2,collected:[...state.collected],distance:state.distance,completed:state.completed,lights:state.lights||[],travel:validTravel(state.travel),living:sanitizeLiving(state.living),pottery:sanitizePottery(state.pottery),adventure:sanitizeAdventure(state.adventure,[...state.collected]),settings:state.settings}));return true;}catch{return false;}}
+export function activeMemory(collected){return memories.find(m=>!collected.has(m.id))||memories.at(-1);}
+
+function validTravel(value){if(!value||!Array.isArray(value.safePosition)||value.safePosition.length!==3||!value.safePosition.every(n=>Number.isFinite(n)&&Math.abs(n)<10000))return null;return {safePosition:value.safePosition.slice(),safePerchId:typeof value.safePerchId==='string'?value.safePerchId:null};}

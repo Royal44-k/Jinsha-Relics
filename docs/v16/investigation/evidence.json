@@ -1,0 +1,43 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "runs": [
+    {
+      "touch": false,
+      "width": 1280,
+      "height": 800,
+      "n": 9,
+      "errors": [],
+      "solved": [
+        "section-01",
+        "section-02",
+        "section-12",
+        "bank-01",
+        "bank-02",
+        "bank-12",
+        "craft-01",
+        "craft-02",
+        "craft-12",
+        "horizon-01",
+        "horizon-02",
+        "horizon-12"
+      ],
+      "asset": "/assets/expedition-C9veOaSg.js",
+      "ok": true
+    },
+    {
+      "touch": true,
+      "width": 390,
+      "height": 844,
+      "n": 0,
+      "errors": [],
+      "solved": [
+        "section-01"
+      ],
+      "asset": "/assets/expedition-C9veOaSg.js",
+      "independentJourney": true,
+      "ok": true
+    }
+  ],
+  "entry": "/assets/expedition-C9veOaSg.js",
+  "ok": true
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "asset": "rock_face_01",
+    "source": "textures/rock_face_01_nor_gl_1k.jpg",
+    "target": "textures/rock_face_01_nor_gl_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.93,
+    "sourceBytes": 1023400,
+    "bytes": 431840,
+    "sourceMD5": "46e01f5c3b8ac4463aeef2b4c61d1cd4"
+  },
+  {
+    "asset": "rock_face_01",
+    "source": "textures/rock_face_01_diff_1k.jpg",
+    "target": "textures/rock_face_01_diff_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 853749,
+    "bytes": 245616,
+    "sourceMD5": "98ee9f024a6383d7e6cab44ed41e1f15"
+  },
+  {
+    "asset": "rock_face_01",
+    "source": "textures/rock_face_01_arm_1k.jpg",
+    "target": "textures/rock_face_01_arm_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 693610,
+    "bytes": 129544,
+    "sourceMD5": "5799e7f5546350576b87bf67c34fb49f"
+  },
+  {
+    "asset": "tree_stump_01",
+    "source": "textures/tree_stump_01_nor_gl_1k.jpg",
+    "target": "textures/tree_stump_01_nor_gl_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.93,
+    "sourceBytes": 1238404,
+    "bytes": 542022,
+    "sourceMD5": "cc2a3c6e4682a521b15cccc61a416bbf"
+  },
+  {
+    "asset": "tree_stump_01",
+    "source": "textures/tree_stump_01_diff_1k.jpg",
+    "target": "textures/tree_stump_01_diff_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 907451,
+    "bytes": 288212,
+    "sourceMD5": "c71fe60400276a37b8847048cbec3720"
+  },
+  {
+    "asset": "tree_stump_01",
+    "source": "textures/tree_stump_01_arm_1k.jpg",
+    "target": "textures/tree_stump_01_arm_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 825646,
+    "bytes": 168974,
+    "sourceMD5": "09b7aa228dccb93f5cf4188ba5530578"
+  },
+  {
+    "asset": "fern_02",
+    "source": "textures/fern_02_nor_gl_1k.jpg",
+    "target": "textures/fern_02_nor_gl_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.93,
+    "sourceBytes": 367222,
+    "bytes": 115124,
+    "sourceMD5": "43aed63dff79554f6064627515afd9d7"
+  },
+  {
+    "asset": "fern_02",
+    "source": "textures/fern_02_diff_1k.jpg",
+    "target": "textures/fern_02_diff_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 315705,
+    "bytes": 47720,
+    "sourceMD5": "82c18a6cfd5ae91c37c0e078f591181c"
+  },
+  {
+    "asset": "fern_02",
+    "source": "textures/fern_02_arm_1k.jpg",
+    "target": "textures/fern_02_arm_1k.webp",
+    "original": [
+      1024,
+      1024
+    ],
+    "width": 1024,
+    "height": 1024,
+    "quality": 0.86,
+    "sourceBytes": 280359,
+    "bytes": 55582,
+    "sourceMD5": "1bbb2b22951f450720d28e17d93a2987"
+  },
+  {
+    "asset": "aerial_grass_rock",
+    "source": "docs/v5/source/original-textures/aerial_grass_rock/aerial_grass_rock_diff_1k.jpg",
+    "target": "public/assets/v5/ground/aerial_grass_rock_diff_1k.webp",
+    "quality": 0.86,
+    "bytes": 272470,
+    "sourceMD5": "e920ce36afd0abff000b8366d3d768d3"
+  },
+  {
+    "asset": "aerial_grass_rock",
+    "source": "docs/v5/source/original-textures/aerial_grass_rock/aerial_grass_rock_nor_gl_1k.jpg",
+    "target": "public/assets/v5/ground/aerial_grass_rock_nor_gl_1k.webp",
+    "quality": 0.93,
+    "bytes": 446648,
+    "sourceMD5": "c8aa4c4f09b113cc7edef89ddeaccad9"
+  }
+]

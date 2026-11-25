@@ -1,0 +1,71 @@
+const {chromium}=require('playwright');
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const ZONE_MS=Number(process.env.SOAK_ZONE_SECONDS||240)*1000,OUT=process.env.SOAK_OUTPUT||'docs/v8/render/soak';
+assert.ok(Number.isFinite(ZONE_MS)&&ZONE_MS>=12000);fs.mkdirSync(OUT,{recursive:true});
+const report={at:new Date().toISOString(),zoneSeconds:ZONE_MS/1000,method:'One current runtime Edge page, 1920x1080 CSS / device DPR1.5; authored high quality plus selected render clarity. Five 4min zones (default), one explicitly logged developer checkpoint between zones. Within each zone: 80s ground/swim, 80s sustained-flight with natural fatigue/recovery, 60s mixed walk/quick/dash/jump, 10s keyboard pause, 10s resume. Only actual keyboard controls and a yaw-only test aim helper; no position/resource writes within zones. Light state sampled 5Hz, raw RAF intervals drained every10s, CDP metrics every10s. No per-frame snapshot, GPU timer or forced GC.',sourceHashes:{},errors:[],consoleErrors:[],requestFailures:[],events:[],zones:[],metrics:[],frames:[],trace:[]};
+report.assetHashes={};for(const file of ['public/assets/shuoyu.glb','public/assets/shuoyu.lod1.glb']){const data=fs.readFileSync(file);report.assetHashes[file]={bytes:data.length,sha256:crypto.createHash('sha256').update(data).digest('hex')};}
+report.flightTarget='min(max(groundHeight, waterLevel when present) + 3.2m, ceiling - 1.2m), controlled only with actual Space/C input';
+function instrument(source){
+ const anchor='frame=requestAnimationFrame(tick);const raw=';assert.equal(source.split(anchor).length-1,1);
+ source=source.replace(anchor,'window.__V8_SOAK__?.frame(now,(now-last)/1000);'+anchor);
+ return source+`\nconst __soak={frames:[],phase:-1,start:0};
+ window.__V8_SOAK__={
+  frame(now,raw){if(__soak.phase>=0)__soak.frames.push([now-__soak.start,raw*1000,__soak.phase,state.mode==='playing'?0:state.mode==='modal'?1:2]);},
+  phase(id){if(!__soak.start)__soak.start=performance.now();__soak.phase=id;},
+  drain(){const rows=__soak.frames;__soak.frames=[];return rows;},
+  aim(direction){const d=forest.project(position).distance,p=forest.sample(Math.max(0,Math.min(forest.length,d+direction*8)));yaw=Math.atan2(-(p.x-position.x),-(p.z-position.z));},
+  read(){const surface=traversal.sample(position),m=motion.state;return {t:performance.now()-__soak.start,app:state.mode,position:position.toArray(),distance:forest.project(position).distance,mode:m.mode,speed:m.speed,stamina:m.stamina,oxygen:m.oxygen,cruise:m.cruise,dashing:m.dashing,groundHeight:surface.groundHeight,waterLevel:surface.waterLevel,ceil:surface.ceil,boundaryDistance:surface.boundary?.distance??null,audio:audio.active?.id||null,audioPaused:audio.paused,calls:renderer.info.render.calls,triangles:renderer.info.render.triangles};},
+  metrics(){return {memory:{...renderer.info.memory},programs:renderer.info.programs?.length,heap:performance.memory?{used:performance.memory.usedJSHeapSize,total:performance.memory.totalJSHeapSize,limit:performance.memory.jsHeapSizeLimit}:null,quality:settings.quality,resolution:settings.resolution,ratio:renderer.getPixelRatio(),canvas:[renderer.domElement.width,renderer.domElement.height],gl:renderer.getContext().getError(),audioState:audio.context?.state||null,audioQueue:audio.queue.length,audioPools:{foleySources:audio.foleySources?.size,cueSources:audio.cueSources?.size,foleyBuffers:audio.foleyBuffers?.size}};}
+ };`;
+}
+function quantiles(values){const a=values.filter(Number.isFinite).sort((a,b)=>a-b),q=p=>a[Math.floor((a.length-1)*p)];return {count:a.length,mean:a.reduce((n,x)=>n+x,0)/(a.length||1),median:q(.5),p95:q(.95),p99:q(.99),max:a.at(-1),over33:a.filter(x=>x>33.5).length,over50:a.filter(x=>x>50).length,over100:a.filter(x=>x>100).length};}
+function save(){fs.writeFileSync(OUT+'/results.json',JSON.stringify(report,null,2));}
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true}),context=await browser.newContext({viewport:{width:1920,height:1080},deviceScaleFactor:1.5}),page=await context.newPage(),cdp=await context.newCDPSession(page),held=new Set();
+ let lastMetrics=0,lastConsole=0,lastState=null,zone=null,phaseId=-1;
+ page.on('pageerror',e=>report.errors.push({at:Date.now(),message:e.message}));page.on('console',m=>{if(m.type()==='error')report.consoleErrors.push({at:Date.now(),message:m.text()});});page.on('requestfailed',r=>report.requestFailures.push({url:r.url(),error:r.failure()?.errorText}));
+ async function setHeld(next){const wanted=new Set(next);for(const key of [...held])if(!wanted.has(key)){await page.keyboard.up(key);held.delete(key);}for(const key of wanted)if(!held.has(key)){await page.keyboard.down(key);held.add(key);}}
+ async function metrics(force=false){if(!force&&Date.now()-lastMetrics<10000)return;lastMetrics=Date.now();const [frames,view,performanceMetrics]=await Promise.all([page.evaluate(()=>__V8_SOAK__.drain()),page.evaluate(()=>__V8_SOAK__.metrics()),cdp.send('Performance.getMetrics')]);report.frames.push(...frames);report.metrics.push({at:Date.now(),zone:zone?.name,phaseId,view,cdp:performanceMetrics.metrics});if(view.gl!==0)report.errors.push({at:Date.now(),message:'WebGL error '+view.gl});save();}
+ async function read(){const s=await page.evaluate(()=>__V8_SOAK__.read());report.trace.push({zone:zone.name,phaseId,...s});if(lastState){const delta=s.position.map((v,i)=>v-lastState.position[i]);zone.sampledTravel+=Math.hypot(...delta);zone.sampledHorizontalTravel+=Math.hypot(delta[0],delta[2]);}lastState=s;zone.modes[s.mode]=(zone.modes[s.mode]||0)+1;zone.minDistance=Math.min(zone.minDistance,s.distance);zone.maxDistance=Math.max(zone.maxDistance,s.distance);zone.minStamina=Math.min(zone.minStamina,s.stamina);zone.maxAltitude=Math.max(zone.maxAltitude,s.position[1]-s.groundHeight);if(!s.position.every(Number.isFinite)||!Number.isFinite(s.groundHeight))throw Error('Non-finite world state');if(s.stamina<-.001||s.stamina>1.001||s.oxygen<-.001||s.oxygen>1.001)throw Error('Resource outside normalized bounds');if(s.position[1]>s.ceil+.5||s.position[1]<s.groundHeight-.2)zone.boundaryIssues.push({t:s.t,position:s.position,ground:s.groundHeight,ceil:s.ceil,mode:s.mode});await metrics();if(Date.now()-lastConsole>60000){lastConsole=Date.now();console.log(JSON.stringify({zone:zone.name,phaseId,elapsed:Math.round((Date.now()-report.startedAt)/1000),mode:s.mode,travel:Math.round(zone.sampledTravel),errors:report.errors.length}));}return s;}
+ try{
+  await page.route('**/@vite/client',async r=>{const response=await r.fetch();await r.fulfill({response,body:(await response.text()).replace('case "update":','case "disabled-update":').replace('case "full-reload":','case "disabled-reload":')});});
+  await page.route('**/*.js*',async r=>{const p=new URL(r.request().url()).pathname;if(!p.startsWith('/src/'))return r.continue();const response=await r.fetch(),source=await response.text();report.sourceHashes[p]=crypto.createHash('sha256').update(source).digest('hex');await r.fulfill({response,body:p==='/src/v2/main.js'?instrument(source):source});});
+  await page.goto('http://127.0.0.1:5186');await page.waitForFunction(()=>window.__JINSHA_V2__&&window.__V8_SOAK__,null,{timeout:120000});await page.locator('#start-btn').click();await cdp.send('Performance.enable');report.startedAt=Date.now();report.device=await page.evaluate(()=>{const gl=document.querySelector('#scene canvas').getContext('webgl2'),ext=gl.getExtension('WEBGL_debug_renderer_info');return {renderer:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER),userAgent:navigator.userAgent,devicePixelRatio};});
+  for(const [index,[name,center]]of [['root',30],['marsh',110],['scarp',180],['hamlet',270],['bay',360]].entries()){
+   await setHeld([]);await page.evaluate(distance=>__JINSHA_V2__.go(distance),center);zone={name,center,startedAt:Date.now(),sampledTravel:0,sampledHorizontalTravel:0,minDistance:Infinity,maxDistance:-Infinity,minStamina:1,maxAltitude:0,modes:{},boundaryIssues:[],phases:[]};report.zones.push(zone);lastState=null;report.events.push({type:'explicit-zone-checkpoint',name,distance:center,at:Date.now()});let direction=1;
+   for(const [phaseIndex,[name,portion]]of [['ground-swim',80],['sustained-flight',80],['mixed',60],['pause',10],['resume',10]].entries()){
+    await setHeld([]);phaseId=index*5+phaseIndex;await page.evaluate(id=>__V8_SOAK__.phase(id),phaseId);const phase={id:phaseId,name,startedAt:Date.now(),durationMs:ZONE_MS*portion/240};zone.phases.push(phase);let s=await read(),stuckStart=Date.now(),stuckPosition=s.position.slice(),recoveryUntil=0,resting=false,fatigueObserved=false,lastCruise=-Infinity,lastDash=-1,lastJump=-1;
+    if(name==='pause'){await page.keyboard.press('Escape');await page.waitForFunction(()=>__V8_SOAK__.read().app==='modal');const paused=await read();phase.pausedPosition=paused.position;phase.pausedStamina=paused.stamina;phase.pausedOxygen=paused.oxygen;}
+    else if(name==='resume'){await page.keyboard.press('Escape');await page.waitForFunction(()=>__V8_SOAK__.read().app==='playing');}
+    else if(s.cruise&&name!=='sustained-flight')await page.keyboard.press('KeyV');
+    const start=Date.now();while(Date.now()-start<phase.durationMs){s=await read();const elapsed=Date.now()-start;
+     if(zone.lastObservedMode!==s.mode){report.events.push({type:'mode-change',zone:zone.name,phaseId,t:s.t,from:zone.lastObservedMode||null,to:s.mode});zone.lastObservedMode=s.mode;}
+     if(name==='pause'){if(Math.hypot(...s.position.map((v,i)=>v-phase.pausedPosition[i]))>1e-5)throw Error('Position changed during keyboard pause');if(!s.audioPaused||s.stamina!==phase.pausedStamina||s.oxygen!==phase.pausedOxygen)throw Error('Audio/resource pause contract changed');}
+     else{
+      if(s.app!=='playing')throw Error('Unexpected app mode during active traversal: '+s.app);if(name==='resume'&&s.audioPaused)throw Error('Audio remained paused after keyboard resume');
+      if(Date.now()>=recoveryUntil){if(s.distance>center+12)direction=-1;else if(s.distance<center-12)direction=1;}await page.evaluate(d=>__V8_SOAK__.aim(d),direction);const keys=['KeyW'];
+      if(name==='sustained-flight'){
+       // Allow the first flight to reach the actual fatigue threshold. Later
+       // flights rest early, just as a player can after learning that limit.
+       if(!fatigueObserved&&s.stamina<=.015&&!s.cruise){fatigueObserved=true;resting=true;phase.depletedCruiseObserved=true;report.events.push({type:'depleted-cruise-ended',zone:zone.name,phaseId,t:s.t,stamina:s.stamina,mode:s.mode});}
+       if(fatigueObserved&&s.stamina<.13)resting=true;if(s.stamina>.55)resting=false;
+       if(resting){if(s.cruise&&Date.now()-lastCruise>2000){await page.keyboard.press('KeyV');lastCruise=Date.now();}if(!['grounded','swimming','diving'].includes(s.mode))keys.push('KeyC');}
+       else if(['swimming','diving'].includes(s.mode))keys.push('Space');
+       else{if(!s.cruise&&Date.now()-lastCruise>2000){await page.keyboard.press('KeyV');lastCruise=Date.now();}const surface=Math.max(s.groundHeight,s.waterLevel??s.groundHeight),target=Math.min(surface+3.2,s.ceil-1.2);if(s.position[1]<target-.5)keys.push('Space');else if(s.position[1]>target+.5)keys.push('KeyC');}
+      }else if(name==='mixed'){
+       if(Math.floor(elapsed/6000)%2)keys.push('ShiftLeft');const dash=Math.floor(elapsed/7000);if(dash!==lastDash){lastDash=dash;await page.keyboard.press('KeyX');}const jump=Math.floor(elapsed/10000);if(jump!==lastJump){lastJump=jump;if(s.mode==='grounded'&&!held.has('Space'))await page.keyboard.press('Space');}
+       if(elapsed<6000&&!['grounded','swimming','diving'].includes(s.mode))keys.push('KeyC');
+      }
+      if(Date.now()-stuckStart>5000){const moved=Math.hypot(...s.position.map((v,i)=>v-stuckPosition[i]));if(moved<.4){direction*=-1;recoveryUntil=Date.now()+1200;report.events.push({type:'stuck-recovery',zone:zone.name,phaseId,t:s.t,position:s.position,mode:s.mode,moved,action:'reverse yaw direction + 1.2s Space; no teleport'});}stuckStart=Date.now();stuckPosition=s.position.slice();}
+      if(Date.now()<recoveryUntil)keys.push('Space');await setHeld(keys);
+     }await page.waitForTimeout(200);
+    }
+    await setHeld([]);phase.endedAt=Date.now();phase.end=await read();await metrics(true);console.log(JSON.stringify({zone:zone.name,phase:name,seconds:Math.round((phase.endedAt-start)/1000),travel:Math.round(zone.sampledTravel),modes:zone.modes}));
+   }
+   zone.endedAt=Date.now();zone.final=await read();await metrics(true);
+  }
+  report.endedAt=Date.now();report.completed=true;report.frameSummary=report.zones.flatMap(z=>z.phases.map(p=>({zone:z.name,phase:p.name,id:p.id,frames:quantiles(report.frames.filter(r=>r[2]===p.id).map(r=>r[1]))})));assert.deepEqual(report.errors,[]);assert.deepEqual(report.consoleErrors,[]);assert.equal(report.zones.reduce((n,z)=>n+z.boundaryIssues.length,0),0,'World bounds violations; inspect recorded samples');assert.ok(report.zones.every(z=>z.sampledHorizontalTravel>ZONE_MS/1000*.15),'Traversal did not cover enough distance');report.passed=true;
+ }catch(error){report.failure=error.stack;try{await metrics(true);}catch{}try{await page.screenshot({path:OUT+'/failure.png'});}catch{}throw error;}
+ finally{await setHeld([]).catch(()=>{});await browser.close();save();}
+ console.log(JSON.stringify({completed:report.completed,passed:report.passed,elapsedSeconds:(report.endedAt-report.startedAt)/1000,zones:report.zones.length,frameSamples:report.frames.length,errors:report.errors.length,output:OUT}));
+})().catch(error=>{console.error(error);process.exitCode=1;});

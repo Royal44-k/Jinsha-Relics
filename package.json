@@ -1,0 +1,53 @@
+{
+  "name": "jinsha-echoes-of-the-sun",
+  "version": "16.0.0",
+  "description": "金沙：古蜀秘境，烁羽与九处古蜀遗存的浏览器三维探索游戏",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5186 --strictPort",
+    "build": "vite build && node scripts/precompress.cjs",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "node --test scripts/journey.test.js scripts/locomotion.test.js scripts/traversal-solids.test.js scripts/relics-v4.test.js scripts/adventure-v5.test.js scripts/adventure-world-v5.test.js scripts/adventure-collision-v5.test.js scripts/director-v6.test.js scripts/score-v6.test.js scripts/living-world-v6.test.js scripts/audio-moment-v6.test.js scripts/water-visibility-v6.test.js scripts/audio-retry-v6.test.js scripts/local-lights-v6.test.js scripts/travel-response-v7.test.js scripts/foley-v7.test.js scripts/pottery-v7.test.js scripts/review-v7-integration.test.js scripts/microclimate-v7.test.js scripts/bamboo-v7.test.js scripts/reflection-clock-v7.test.js scripts/camera-clearance-v7.test.js scripts/resonance-burst-v7.test.js scripts/action-intent-v8.test.js scripts/locomotion-v8.test.js scripts/air-foley-v8.test.js scripts/cylinder-index-v8.test.js scripts/path-index-v8.test.js scripts/frame-time-v8.test.js scripts/camera-query-v8.test.js scripts/reflection-transforms-v8.test.js scripts/branch-geometry-v8.test.js scripts/render-scale-v8.test.js scripts/forest-branch-v8.test.js scripts/perch-leaf-v8.test.js scripts/profiled-tubes-v8.test.js scripts/preferences-v8.test.js scripts/progress-time-v8.test.js scripts/adventure-world-v9.test.js scripts/camera-follow-v9.test.js scripts/encounter-world-v9.test.js scripts/expedition-v9.test.js scripts/life-audio-lifecycle-v9.test.js scripts/life-audio-v9.test.js scripts/living-tree-v9.test.js scripts/locomotion-v9.test.js scripts/shadow-anchor-v9.test.js scripts/tree-director-v9.test.js scripts/water-motion-v9.test.js scripts/water-surface-v9.test.js scripts/expedition-motion-v9.test.js scripts/rebirth-view-v9.test.js scripts/river-bank-v9.test.js scripts/postprocess-warmup-v9.test.js scripts/celebration-warmup-v9.test.js scripts/life-effects-v9.test.js scripts/survey-state-v10.test.js scripts/collection-v11.test.js scripts/survey-collision-v12.test.js scripts/journeys-v14.test.js",
+    "test:unit": "node --test scripts/journey.test.js scripts/locomotion.test.js scripts/traversal-solids.test.js scripts/relics-v4.test.js scripts/adventure-v5.test.js scripts/adventure-world-v5.test.js scripts/adventure-collision-v5.test.js scripts/director-v6.test.js scripts/score-v6.test.js scripts/living-world-v6.test.js scripts/audio-moment-v6.test.js scripts/water-visibility-v6.test.js scripts/audio-retry-v6.test.js scripts/local-lights-v6.test.js scripts/travel-response-v7.test.js scripts/foley-v7.test.js scripts/pottery-v7.test.js scripts/review-v7-integration.test.js scripts/microclimate-v7.test.js scripts/bamboo-v7.test.js scripts/reflection-clock-v7.test.js scripts/camera-clearance-v7.test.js scripts/resonance-burst-v7.test.js scripts/action-intent-v8.test.js scripts/locomotion-v8.test.js scripts/air-foley-v8.test.js scripts/cylinder-index-v8.test.js scripts/path-index-v8.test.js scripts/frame-time-v8.test.js scripts/camera-query-v8.test.js scripts/reflection-transforms-v8.test.js scripts/branch-geometry-v8.test.js scripts/render-scale-v8.test.js scripts/forest-branch-v8.test.js scripts/perch-leaf-v8.test.js scripts/profiled-tubes-v8.test.js scripts/preferences-v8.test.js scripts/progress-time-v8.test.js scripts/adventure-world-v9.test.js scripts/camera-follow-v9.test.js scripts/encounter-world-v9.test.js scripts/expedition-v9.test.js scripts/life-audio-lifecycle-v9.test.js scripts/life-audio-v9.test.js scripts/living-tree-v9.test.js scripts/locomotion-v9.test.js scripts/shadow-anchor-v9.test.js scripts/tree-director-v9.test.js scripts/water-motion-v9.test.js scripts/water-surface-v9.test.js scripts/expedition-motion-v9.test.js scripts/rebirth-view-v9.test.js scripts/river-bank-v9.test.js scripts/postprocess-warmup-v9.test.js scripts/celebration-warmup-v9.test.js scripts/life-effects-v9.test.js scripts/survey-state-v10.test.js scripts/collection-v11.test.js scripts/survey-collision-v12.test.js scripts/journeys-v14.test.js",
+    "test:v2": "node scripts/smoke-v2.cjs",
+    "serve": "node scripts/serve.cjs",
+    "test:v3": "node scripts/smoke-v3.cjs",
+    "test:v4": "node scripts/preview-polish-v4.cjs",
+    "test:v5": "node scripts/playthrough-v5.cjs",
+    "test:v6": "node scripts/playthrough-living-v6.cjs",
+    "test:audio": "node scripts/verify-audio-v6.cjs",
+    "test:v7": "node scripts/review-pottery-v7.cjs",
+    "test:audio:v7": "node scripts/verify-audio-v7.cjs",
+    "test:traversal:v7": "node scripts/smoke-traversal-v7.cjs",
+    "test:layout:v7": "node scripts/verify-hamlet-layout-v7.mjs",
+    "test:v8": "node scripts/play-movement-v8.cjs",
+    "test:controls:v8": "node scripts/check-motion-ui-v8.cjs",
+    "test:audio:v8": "node scripts/verify-audio-v8.cjs",
+    "test:production:v8": "node scripts/check-production-v8.cjs",
+    "test:v9": "node scripts/playthrough-v9.cjs",
+    "test:ui:v9": "node scripts/verify-ui-v9.cjs",
+    "test:motion:v9": "node scripts/verify-motion-v9.cjs",
+    "test:production:v9": "node scripts/check-production-v9.cjs",
+    "test:soak:v9": "node scripts/soak-motion-v9.cjs",
+    "test:controls:v9": "node scripts/check-motion-ui-v9.cjs",
+    "test:legacy:v9": "node scripts/check-legacy-v9.cjs",
+    "test:v10": "node scripts/check-expedition-v10.cjs",
+    "test:v11": "node scripts/check-expedition-v11.cjs",
+    "test:v12": "node scripts/check-expedition-v11.cjs && node scripts/check-replay-v12.mjs",
+    "test:v13": "node scripts/check-review-v13.mjs",
+    "test:v14": "node scripts/check-journeys-v14.mjs && node scripts/check-smoke-yard-v14.mjs && node scripts/check-triptych-v14.mjs && node scripts/check-court-audio-v14.mjs && node scripts/check-atlas-v14.mjs",
+    "test:v16": "node scripts/check-field-photo-v16.mjs && node scripts/check-investigation-v16.mjs && node scripts/check-river-passage-v16.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "dependencies": {
+    "three": "^0.185.0",
+    "three-mesh-bvh": "0.9.18",
+    "vite": "^8.3.8"
+  },
+  "devDependencies": {
+    "fonteditor-core": "^2.6.3",
+    "playwright": "^1.65.1"
+  }
+}

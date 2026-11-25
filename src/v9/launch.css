@@ -1,0 +1,106 @@
+/* The opening is a concept painting. The title behind it is the live 3D world. */
+@font-face{font-family:JinshaSerif;src:url('/fonts/jinsha-serif.woff2') format('woff2');font-display:swap}
+#loading{display:block;background:#102e30;text-align:left;overflow:hidden;isolation:isolate;color:#eee4ce}
+#loading .load-art,#loading .load-vignette{position:absolute;inset:0;pointer-events:none;z-index:-1}
+#loading .load-art{overflow:hidden;background:#102e30}
+#loading .load-art>img{width:100%;height:100%;display:block;object-fit:cover;object-position:64% 48%;animation:load-landscape 36s ease-in-out alternate infinite;transform-origin:70% 45%}
+#loading .load-vignette{background:linear-gradient(90deg,#071e23e8 0%,#0b252bc9 23%,#0c262a71 39%,transparent 67%),linear-gradient(0deg,#061d25b8,transparent 28%,transparent 80%,#071e2338)}
+#loading .load-mist{position:absolute;left:-20%;right:-20%;height:32%;bottom:12%;background:radial-gradient(ellipse at 65% 70%,#b4d9c421,transparent 56%),radial-gradient(ellipse at 15% 40%,#c6d7bb1a,transparent 37%);animation:load-mist 24s ease-in-out alternate infinite}
+#loading .load-motes{position:absolute;inset:0;overflow:hidden}
+#loading .load-motes i{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);border-radius:50%;background:#e8da9a;opacity:0;animation:load-mote 12s var(--d) ease-in-out infinite;box-shadow:0 0 9px #f5d99080}
+#loading .load-corner{position:absolute;top:4.8%;left:5%;display:flex;align-items:center;gap:14px}
+#loading .load-corner>span{font:21px JinshaSerif,'SimSun',serif;letter-spacing:5px}
+#loading .load-corner small{display:block;font:6px 'Microsoft YaHei',sans-serif;letter-spacing:2px;color:#d9b779;margin-top:5px}
+#loading .load-corner i{width:1px;height:24px;background:#d9b77950;margin:0 4px}
+#loading .load-corner em{font:11px JinshaSerif,'SimSun',serif;font-style:normal;letter-spacing:3px;color:#c6cbb7}
+#loading .load-inner{position:absolute;left:9%;top:20%;width:min(430px,36vw);max-height:74%;text-align:left}
+#loading .load-overline{font:9px 'Microsoft YaHei',sans-serif;letter-spacing:3.3px;color:#b4c2b1;margin:0 0 19px}
+#loading .load-mark{position:absolute;width:105px;height:105px;right:0;top:28px;stroke:none;opacity:.78}
+#loading .seal-birds{transform-origin:80px 80px;animation:orbit 48s linear infinite}
+#loading .load-title{font:400 clamp(32px,3.2vw,54px)/1.6 JinshaSerif,'SimSun',serif;letter-spacing:.15em;margin:0;color:#eee4ce}
+#loading .load-title>span{color:#d9c497}
+#loading .load-story{font:12px/2.1 JinshaSerif,'SimSun',serif;letter-spacing:1.8px;color:#bdcbbd;margin:20px 0 0}
+#loading .load-state{margin-top:52px;width:100%;max-width:340px}
+#loading .load-status{font:11px/1.8 'Microsoft YaHei',sans-serif;letter-spacing:1px;color:#d0dacb;min-height:24px;margin:0 0 16px}
+#loading .load-steps{width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:0;padding:0;list-style:none}
+#loading .load-steps li{position:relative;font-size:10px;letter-spacing:2px;padding:12px 0 0;border-top:1px solid #b5c2ad36;color:#7e998e;transition:color .5s,border-color .5s}
+#loading .load-steps b{font:8px 'Microsoft YaHei',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:1px;margin-bottom:9px;opacity:.8}
+#loading .load-steps li[data-state=current]{color:#e9d7a8;border-color:#e7c88b}
+#loading .load-steps li[data-state=current]:before{content:'';position:absolute;left:0;top:-2px;width:4px;height:4px;background:#f0d99a;box-shadow:0 0 14px #e4cd9e}
+#loading .load-steps li[data-state=complete]{color:#b7c9a6;border-color:#9fbd8b}
+#loading .load-track{width:100%;margin:24px 0 0;height:1px;background:#afc3ad24}
+#loading .load-track i{height:1px;background:linear-gradient(90deg,transparent,#e5cb91,transparent);animation:pass 3.4s ease-in-out infinite}
+#loading .load-caption{position:absolute;left:9%;right:auto;bottom:5%;font:10px/1.8 JinshaSerif,'SimSun',serif;letter-spacing:2px;color:#acbcb4;margin:0}
+#loading .load-art-credit{position:absolute;right:4.5%;bottom:5%;font:9px/1.8 'Microsoft YaHei',sans-serif;letter-spacing:1px;color:#b7c7bc;margin:0;opacity:.8}
+#loading .load-art-credit span{margin:0 8px;color:#d8bf85}
+#loading #load-retry{min-height:40px;padding:9px 23px;margin-top:17px;border-color:#e4c78b70;color:#ecdcba;background:#19332be0;font-size:11px}
+#loading #load-help{font-size:11px;line-height:1.8;color:#d2d9c8;letter-spacing:.5px;margin:10px 0 0}
+#loading.load-failed .load-track i{animation:none;width:100%;background:#c58d64}
+#loading.load-failed .load-state{margin-top:24px}
+#loading[hidden] *{animation:none!important}
+html[data-reduced-motion=true] #loading *{animation:none!important}
+body #topbar .brand-symbol{display:flex;align-items:center}
+body #topbar .brand-symbol img{display:block}
+body #title-screen{background:linear-gradient(90deg,#071e22df 0%,#0a2228a3 25%,#102b2b30 46%,transparent 64%),linear-gradient(0deg,#051c22b8,transparent 30%)}
+body #title-screen .hero-copy{top:29%;left:7.5%;width:min(580px,49vw)}
+body #title-screen .hero-copy>.eyebrow{font-size:10px;letter-spacing:4px;margin:0 0 25px;color:#cfbf91}
+body #title-screen .hero-title-lockup{display:block}
+body #title-screen h1{font-size:clamp(56px,5.3vw,86px);line-height:1.23;letter-spacing:.11em;color:#eee4ce;white-space:nowrap}
+body #title-screen h1>span{display:inline;padding:0}
+body #title-screen .hero-side-note{display:none}
+body #title-screen .english-title{font-size:8px;letter-spacing:5.5px;margin:21px 0;color:#b8b795}
+body #title-screen .hero-description{font-size:13px;line-height:2.2;letter-spacing:2px;margin:22px 0 28px;color:#c7d4c5}
+body #title-screen .hero-entry .journey-button{min-width:267px;min-height:60px;background:linear-gradient(110deg,#a48a4542,#20453d55);border-color:#cfb87880}
+body #title-screen .button-sun{display:grid;place-items:center}
+body #title-screen .hero-note{color:#b5c7b3;margin-top:13px;font-size:9px;letter-spacing:1px}
+body #title-screen .character-callout{right:7%;bottom:24%;top:auto;gap:12px;padding:14px 16px;background:linear-gradient(90deg,#0e2b2900,#0b252b8c);border-right:1px solid #c4b98560}
+body #title-screen .character-callout .callout-line{width:29px}
+body #title-screen .character-callout strong{font-size:24px;letter-spacing:6px;margin:9px 0;color:#e8ddbe}
+body #title-screen .character-callout small{font-size:9px;letter-spacing:1px;color:#bccab6}
+body #title-screen .character-callout em{font-size:9px;letter-spacing:1px;color:#c5cfb4}
+body #title-screen .title-journey{bottom:105px;gap:27px;left:7.5%;right:7.5%;max-width:1000px}
+body #title-screen .title-journey-label{font-size:10px;letter-spacing:2px;color:#b2c5b2}
+body #title-screen .title-journey li{font-size:10px}
+body #title-screen .title-journey svg{background:#142e2ba8;color:#c5ba8e}
+body #title-screen .title-bottom{left:5%;right:5%;border-color:#b5c5a52c}
+@keyframes load-landscape{from{transform:scale(1)}to{transform:scale(1.045)}}
+@keyframes load-mist{from{transform:translate(-2%,2%);opacity:.5}to{transform:translate(3%,-4%);opacity:1}}
+@keyframes load-mote{0%,100%{opacity:0;transform:translate(0,14px)}22%{opacity:.42}75%{opacity:.18}90%{opacity:0;transform:translate(30px,-42px)}}
+@media(max-width:1100px){#loading .load-inner{left:7%;width:40vw;top:23%}#loading .load-mark{right:-10px;width:80px;height:80px;top:33px}#loading .load-state{margin-top:30px}body #title-screen .hero-copy{left:7%;top:27%;width:56vw}body #title-screen .title-journey ol{gap:27px}}
+@media(max-width:700px){
+  #loading .load-art>img{object-position:63% 50%;opacity:.85}
+  #loading .load-vignette{background:linear-gradient(0deg,#071f25f5 0%,#0b252bcc 37%,#0c262a26 75%),linear-gradient(90deg,#071f2566,transparent 80%)}
+  #loading .load-corner{left:7.5%;top:4%;gap:10px}#loading .load-corner>img{width:31px;height:31px}#loading .load-corner>span{font-size:18px}
+  #loading .load-inner{left:8%;right:8%;width:auto;top:auto;bottom:11%;max-height:78%}
+  #loading .load-overline{font-size:8px;letter-spacing:2.2px;margin-bottom:15px}
+  #loading .load-mark{top:24px;right:5%;width:87px;height:87px}
+  #loading .load-title{font-size:34px;line-height:1.55;letter-spacing:.12em}
+  #loading .load-story{font-size:11px;letter-spacing:1px;margin-top:14px}
+  #loading .load-state{margin-top:30px;max-width:none}
+  #loading .load-caption{display:none}#loading .load-art-credit{right:8%;bottom:4%;font-size:8px}
+  body #title-screen{background:linear-gradient(0deg,#071e25ed 0%,#09232ca8 28%,#102b2b12 74%),linear-gradient(90deg,#071e2270,transparent 85%)}
+  body #title-screen .hero-copy{left:8%;top:auto;bottom:30%;width:84%}
+  body #title-screen .hero-copy>.eyebrow{font-size:9px;letter-spacing:3px;margin-bottom:17px}
+  body #title-screen h1{font-size:clamp(42px,11.9vw,72px);letter-spacing:.1em}
+  body #title-screen .english-title{font-size:7px;letter-spacing:4px;margin:15px 0}
+  body #title-screen .hero-description{font-size:12px;margin:16px 0 22px;line-height:2;letter-spacing:1.6px}
+  body #title-screen .hero-entry .journey-button{min-width:245px;min-height:55px;font-size:13px;padding:12px 20px}
+  body #title-screen .hero-note{display:none}
+  body #title-screen .character-callout{right:8%;bottom:19%;padding:8px 11px;gap:0;background:#0c292b70}
+  body #title-screen .character-callout .callout-line,body #title-screen .character-callout small{display:none}
+  body #title-screen .character-callout strong{font-size:18px;display:inline;margin:0 12px 0 0;letter-spacing:3px}
+  body #title-screen .character-callout em{font-size:8px;letter-spacing:0}
+  body #title-screen .title-journey{left:8%;right:8%;bottom:12%;display:block}
+  body #title-screen .title-journey-label{display:none}
+  body #title-screen .title-journey ol{justify-content:space-between;gap:10px}
+  body #title-screen .title-journey li{font-size:9px;gap:4px;letter-spacing:1px}
+  body #title-screen .title-journey svg{width:24px;height:24px}
+  body #title-screen .title-bottom{left:8%;right:8%;bottom:3%;padding-top:13px}
+  body #title-screen .title-bottom>span:first-child{font-size:8px;max-width:150px}
+}
+@media(max-height:740px) and (max-width:700px){#loading .load-inner{bottom:9%}#loading .load-story{margin-top:10px}#loading .load-state{margin-top:22px}body #title-screen .hero-copy{bottom:30%}body #title-screen .hero-copy>.eyebrow{margin-bottom:12px}body #title-screen .hero-description{font-size:11px;margin:12px 0 16px}body #title-screen .english-title{margin:12px 0}body #title-screen .hero-entry .journey-button{min-height:50px}body #title-screen .hero-entry .quiet-button{min-height:32px;font-size:9px}}
+@media(max-height:560px) and (min-width:701px){
+  #loading .load-corner{top:6%;left:5%}#loading .load-inner{left:8%;top:25%;width:43vw;max-height:72%}#loading .load-title{font-size:30px;line-height:1.5}#loading .load-mark{width:77px;height:77px;top:20px;right:0}#loading .load-overline{font-size:7px;margin-bottom:10px;letter-spacing:2px}#loading .load-story{font-size:10px;line-height:1.8;margin:10px 0}#loading .load-state{margin-top:18px}#loading .load-status{font-size:10px;margin-bottom:10px;min-height:18px}#loading .load-steps li{padding-top:7px;font-size:9px}#loading .load-steps b{margin-bottom:4px}#loading .load-track{margin-top:12px}#loading .load-caption{display:none}#loading .load-art-credit{bottom:5%;font-size:8px}#loading.load-failed .load-title{font-size:25px}#loading.load-failed .load-story{display:none}#loading.load-failed .load-state{margin-top:15px}#loading.load-failed .load-steps{display:none}
+  body #title-screen .hero-copy{top:29%;left:7%;width:56vw}body #title-screen .hero-copy>.eyebrow{font-size:8px;margin-bottom:14px}body #title-screen h1{font-size:43px}body #title-screen .english-title{margin:12px 0;font-size:7px;letter-spacing:3px}body #title-screen .hero-description{margin:10px 0 15px;font-size:11px;line-height:1.8}body #title-screen .hero-entry{display:flex;flex-direction:row;gap:17px;align-items:center}body #title-screen .hero-entry .journey-button{min-width:218px;min-height:46px;padding:8px 16px;font-size:12px}body #title-screen .hero-entry .quiet-button{max-width:115px;font-size:9px;line-height:1.8}body #title-screen .hero-note,body #title-screen .title-journey{display:none}body #title-screen .character-callout{right:5%;bottom:24%;padding:8px 10px}body #title-screen .character-callout strong{font-size:21px}body #title-screen .character-callout small{font-size:8px}body #title-screen .character-callout em{font-size:8px}body #title-screen .title-bottom{bottom:4%;padding-top:10px}
+}
+@media(prefers-reduced-motion:reduce){#loading *,body #title-screen .hero-copy,body #title-screen .character-callout{animation:none!important}#loading .load-motes i{opacity:.15}#loading .load-track i{width:40%;transform:none}}

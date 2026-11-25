@@ -1,0 +1,1512 @@
+{
+  "role": "narrator",
+  "voiceId": "6c364011f30747c9a0a89eec3787cadc",
+  "lines": [
+    [
+      "bird",
+      "这只铜鸟昂首、收翼，尾羽折而下垂。请转动光线，看看它的轮廓。"
+    ],
+    [
+      "jade",
+      "外方内圆，是这件玉琮醒目的构形。眼前的机关，是我们为探索创作的谜题。"
+    ],
+    [
+      "tiger",
+      "石虎身上的深浅纹带，来自石材自身。顺着纹带观察，让碎片重新相接。"
+    ],
+    [
+      "sun",
+      "四只鸟围绕十二道光芒。古人的想象留下了线索，也留下了尚未回答的问题。"
+    ],
+    [
+      "narrator_preview",
+      "我是录忆者。器物留下的线索，需要我们慢慢观察。"
+    ]
+  ],
+  "requestedModel": "server default",
+  "speed": 1,
+  "language": "zh",
+  "date": "2026-11-18",
+  "response": {
+    "duration": 30.239637188208615,
+    "original_characters": [
+      {
+        "text": "这",
+        "start_time": 0.299,
+        "end_time": 0.469
+      },
+      {
+        "text": "只",
+        "start_time": 0.469,
+        "end_time": 0.555
+      },
+      {
+        "text": "铜",
+        "start_time": 0.555,
+        "end_time": 0.768
+      },
+      {
+        "text": "鸟",
+        "start_time": 0.768,
+        "end_time": 0.939
+      },
+      {
+        "text": "昂",
+        "start_time": 0.939,
+        "end_time": 1.237
+      },
+      {
+        "text": "首",
+        "start_time": 1.237,
+        "end_time": 1.493
+      },
+      {
+        "text": "、",
+        "start_time": 1.493,
+        "end_time": 1.707
+      },
+      {
+        "text": "收",
+        "start_time": 1.707,
+        "end_time": 1.963
+      },
+      {
+        "text": "翼",
+        "start_time": 1.963,
+        "end_time": 2.176
+      },
+      {
+        "text": "，",
+        "start_time": 2.176,
+        "end_time": 2.389
+      },
+      {
+        "text": "尾",
+        "start_time": 2.389,
+        "end_time": 2.731
+      },
+      {
+        "text": "羽",
+        "start_time": 2.731,
+        "end_time": 2.901
+      },
+      {
+        "text": "折",
+        "start_time": 2.901,
+        "end_time": 3.072
+      },
+      {
+        "text": "而",
+        "start_time": 3.072,
+        "end_time": 3.157
+      },
+      {
+        "text": "下",
+        "start_time": 3.157,
+        "end_time": 3.371
+      },
+      {
+        "text": "垂",
+        "start_time": 3.371,
+        "end_time": 3.584
+      },
+      {
+        "text": "。",
+        "start_time": 3.584,
+        "end_time": 4.011
+      },
+      {
+        "text": "请",
+        "start_time": 4.011,
+        "end_time": 4.181
+      },
+      {
+        "text": "转",
+        "start_time": 4.181,
+        "end_time": 4.352
+      },
+      {
+        "text": "动",
+        "start_time": 4.352,
+        "end_time": 4.48
+      },
+      {
+        "text": "光",
+        "start_time": 4.48,
+        "end_time": 4.693
+      },
+      {
+        "text": "线",
+        "start_time": 4.693,
+        "end_time": 4.907
+      },
+      {
+        "text": "，",
+        "start_time": 4.907,
+        "end_time": 5.077
+      },
+      {
+        "text": "看",
+        "start_time": 5.077,
+        "end_time": 5.248
+      },
+      {
+        "text": "看",
+        "start_time": 5.248,
+        "end_time": 5.376
+      },
+      {
+        "text": "它",
+        "start_time": 5.376,
+        "end_time": 5.504
+      },
+      {
+        "text": "的",
+        "start_time": 5.504,
+        "end_time": 5.589
+      },
+      {
+        "text": "轮",
+        "start_time": 5.589,
+        "end_time": 5.76
+      },
+      {
+        "text": "廓",
+        "start_time": 5.76,
+        "end_time": 6.016
+      },
+      {
+        "text": "。",
+        "start_time": 6.016,
+        "end_time": 6.229
+      },
+      {
+        "text": "\n",
+        "start_time": 6.229,
+        "end_time": 6.251
+      },
+      {
+        "text": "\n",
+        "start_time": 6.251,
+        "end_time": 6.272
+      },
+      {
+        "text": "外",
+        "start_time": 6.272,
+        "end_time": 6.827
+      },
+      {
+        "text": "方",
+        "start_time": 6.827,
+        "end_time": 7.04
+      },
+      {
+        "text": "内",
+        "start_time": 7.04,
+        "end_time": 7.168
+      },
+      {
+        "text": "圆",
+        "start_time": 7.168,
+        "end_time": 7.381
+      },
+      {
+        "text": "，",
+        "start_time": 7.381,
+        "end_time": 7.765
+      },
+      {
+        "text": "是",
+        "start_time": 7.765,
+        "end_time": 7.893
+      },
+      {
+        "text": "这",
+        "start_time": 7.893,
+        "end_time": 8.021
+      },
+      {
+        "text": "件",
+        "start_time": 8.021,
+        "end_time": 8.192
+      },
+      {
+        "text": "玉",
+        "start_time": 8.192,
+        "end_time": 8.32
+      },
+      {
+        "text": "琮",
+        "start_time": 8.32,
+        "end_time": 8.533
+      },
+      {
+        "text": "醒",
+        "start_time": 8.533,
+        "end_time": 8.747
+      },
+      {
+        "text": "目",
+        "start_time": 8.747,
+        "end_time": 8.917
+      },
+      {
+        "text": "的",
+        "start_time": 8.917,
+        "end_time": 9.045
+      },
+      {
+        "text": "构",
+        "start_time": 9.045,
+        "end_time": 9.216
+      },
+      {
+        "text": "形",
+        "start_time": 9.216,
+        "end_time": 9.429
+      },
+      {
+        "text": "。",
+        "start_time": 9.429,
+        "end_time": 9.643
+      },
+      {
+        "text": "眼",
+        "start_time": 9.643,
+        "end_time": 9.81
+      },
+      {
+        "text": "前",
+        "start_time": 9.81,
+        "end_time": 10.023
+      },
+      {
+        "text": "的",
+        "start_time": 10.023,
+        "end_time": 10.109
+      },
+      {
+        "text": "机",
+        "start_time": 10.109,
+        "end_time": 10.237
+      },
+      {
+        "text": "关",
+        "start_time": 10.237,
+        "end_time": 10.45
+      },
+      {
+        "text": "，",
+        "start_time": 10.45,
+        "end_time": 10.663
+      },
+      {
+        "text": "是",
+        "start_time": 10.663,
+        "end_time": 10.834
+      },
+      {
+        "text": "我",
+        "start_time": 10.834,
+        "end_time": 10.962
+      },
+      {
+        "text": "们",
+        "start_time": 10.962,
+        "end_time": 11.047
+      },
+      {
+        "text": "为",
+        "start_time": 11.047,
+        "end_time": 11.175
+      },
+      {
+        "text": "探",
+        "start_time": 11.175,
+        "end_time": 11.389
+      },
+      {
+        "text": "索",
+        "start_time": 11.389,
+        "end_time": 11.559
+      },
+      {
+        "text": "创",
+        "start_time": 11.559,
+        "end_time": 11.773
+      },
+      {
+        "text": "作",
+        "start_time": 11.773,
+        "end_time": 11.901
+      },
+      {
+        "text": "的",
+        "start_time": 11.901,
+        "end_time": 11.986
+      },
+      {
+        "text": "谜",
+        "start_time": 11.986,
+        "end_time": 12.157
+      },
+      {
+        "text": "题",
+        "start_time": 12.157,
+        "end_time": 12.413
+      },
+      {
+        "text": "。",
+        "start_time": 12.413,
+        "end_time": 12.882
+      },
+      {
+        "text": "\n",
+        "start_time": 12.882,
+        "end_time": 12.903
+      },
+      {
+        "text": "\n",
+        "start_time": 12.903,
+        "end_time": 12.925
+      },
+      {
+        "text": "石",
+        "start_time": 12.925,
+        "end_time": 13.138
+      },
+      {
+        "text": "虎",
+        "start_time": 13.138,
+        "end_time": 13.309
+      },
+      {
+        "text": "身",
+        "start_time": 13.309,
+        "end_time": 13.437
+      },
+      {
+        "text": "上",
+        "start_time": 13.437,
+        "end_time": 13.607
+      },
+      {
+        "text": "的",
+        "start_time": 13.607,
+        "end_time": 13.693
+      },
+      {
+        "text": "深",
+        "start_time": 13.693,
+        "end_time": 13.863
+      },
+      {
+        "text": "浅",
+        "start_time": 13.863,
+        "end_time": 14.034
+      },
+      {
+        "text": "纹",
+        "start_time": 14.034,
+        "end_time": 14.162
+      },
+      {
+        "text": "带",
+        "start_time": 14.162,
+        "end_time": 14.418
+      },
+      {
+        "text": "，",
+        "start_time": 14.418,
+        "end_time": 14.631
+      },
+      {
+        "text": "来",
+        "start_time": 14.631,
+        "end_time": 14.802
+      },
+      {
+        "text": "自",
+        "start_time": 14.802,
+        "end_time": 14.93
+      },
+      {
+        "text": "石",
+        "start_time": 14.93,
+        "end_time": 15.101
+      },
+      {
+        "text": "材",
+        "start_time": 15.101,
+        "end_time": 15.271
+      },
+      {
+        "text": "自",
+        "start_time": 15.271,
+        "end_time": 15.442
+      },
+      {
+        "text": "身",
+        "start_time": 15.442,
+        "end_time": 15.613
+      },
+      {
+        "text": "。",
+        "start_time": 15.613,
+        "end_time": 15.997
+      },
+      {
+        "text": "顺",
+        "start_time": 15.997,
+        "end_time": 16.338
+      },
+      {
+        "text": "着",
+        "start_time": 16.338,
+        "end_time": 16.466
+      },
+      {
+        "text": "纹",
+        "start_time": 16.466,
+        "end_time": 16.594
+      },
+      {
+        "text": "带",
+        "start_time": 16.594,
+        "end_time": 16.722
+      },
+      {
+        "text": "观",
+        "start_time": 16.722,
+        "end_time": 16.893
+      },
+      {
+        "text": "察",
+        "start_time": 16.893,
+        "end_time": 17.191
+      },
+      {
+        "text": "，",
+        "start_time": 17.191,
+        "end_time": 17.447
+      },
+      {
+        "text": "让",
+        "start_time": 17.447,
+        "end_time": 17.575
+      },
+      {
+        "text": "碎",
+        "start_time": 17.575,
+        "end_time": 17.789
+      },
+      {
+        "text": "片",
+        "start_time": 17.789,
+        "end_time": 17.917
+      },
+      {
+        "text": "重",
+        "start_time": 17.917,
+        "end_time": 18.13
+      },
+      {
+        "text": "新",
+        "start_time": 18.13,
+        "end_time": 18.301
+      },
+      {
+        "text": "相",
+        "start_time": 18.301,
+        "end_time": 18.514
+      },
+      {
+        "text": "接",
+        "start_time": 18.514,
+        "end_time": 18.77
+      },
+      {
+        "text": "。",
+        "start_time": 18.77,
+        "end_time": 19.197
+      },
+      {
+        "text": "\n",
+        "start_time": 19.197,
+        "end_time": 19.218
+      },
+      {
+        "text": "\n",
+        "start_time": 19.218,
+        "end_time": 19.239
+      },
+      {
+        "text": "四",
+        "start_time": 19.239,
+        "end_time": 19.453
+      },
+      {
+        "text": "只",
+        "start_time": 19.453,
+        "end_time": 19.581
+      },
+      {
+        "text": "鸟",
+        "start_time": 19.581,
+        "end_time": 19.837
+      },
+      {
+        "text": "围",
+        "start_time": 19.837,
+        "end_time": 20.007
+      },
+      {
+        "text": "绕",
+        "start_time": 20.007,
+        "end_time": 20.178
+      },
+      {
+        "text": "十",
+        "start_time": 20.178,
+        "end_time": 20.391
+      },
+      {
+        "text": "二",
+        "start_time": 20.391,
+        "end_time": 20.519
+      },
+      {
+        "text": "道",
+        "start_time": 20.519,
+        "end_time": 20.647
+      },
+      {
+        "text": "光",
+        "start_time": 20.647,
+        "end_time": 20.818
+      },
+      {
+        "text": "芒",
+        "start_time": 20.818,
+        "end_time": 21.031
+      },
+      {
+        "text": "。",
+        "start_time": 21.031,
+        "end_time": 21.287
+      },
+      {
+        "text": "古",
+        "start_time": 21.475,
+        "end_time": 21.688
+      },
+      {
+        "text": "人",
+        "start_time": 21.688,
+        "end_time": 21.816
+      },
+      {
+        "text": "的",
+        "start_time": 21.816,
+        "end_time": 21.902
+      },
+      {
+        "text": "想",
+        "start_time": 21.902,
+        "end_time": 22.072
+      },
+      {
+        "text": "象",
+        "start_time": 22.072,
+        "end_time": 22.371
+      },
+      {
+        "text": "留",
+        "start_time": 22.371,
+        "end_time": 22.627
+      },
+      {
+        "text": "下",
+        "start_time": 22.627,
+        "end_time": 22.798
+      },
+      {
+        "text": "了",
+        "start_time": 22.798,
+        "end_time": 22.883
+      },
+      {
+        "text": "线",
+        "start_time": 22.883,
+        "end_time": 23.096
+      },
+      {
+        "text": "索",
+        "start_time": 23.096,
+        "end_time": 23.395
+      },
+      {
+        "text": "，",
+        "start_time": 23.395,
+        "end_time": 23.566
+      },
+      {
+        "text": "也",
+        "start_time": 23.566,
+        "end_time": 23.779
+      },
+      {
+        "text": "留",
+        "start_time": 23.779,
+        "end_time": 23.95
+      },
+      {
+        "text": "下",
+        "start_time": 23.95,
+        "end_time": 24.12
+      },
+      {
+        "text": "了",
+        "start_time": 24.12,
+        "end_time": 24.206
+      },
+      {
+        "text": "尚",
+        "start_time": 24.206,
+        "end_time": 24.419
+      },
+      {
+        "text": "未",
+        "start_time": 24.419,
+        "end_time": 24.504
+      },
+      {
+        "text": "回",
+        "start_time": 24.504,
+        "end_time": 24.76
+      },
+      {
+        "text": "答",
+        "start_time": 24.76,
+        "end_time": 24.888
+      },
+      {
+        "text": "的",
+        "start_time": 24.888,
+        "end_time": 24.974
+      },
+      {
+        "text": "问",
+        "start_time": 24.974,
+        "end_time": 25.102
+      },
+      {
+        "text": "题",
+        "start_time": 25.102,
+        "end_time": 25.358
+      },
+      {
+        "text": "。",
+        "start_time": 25.358,
+        "end_time": 25.827
+      },
+      {
+        "text": "\n",
+        "start_time": 25.827,
+        "end_time": 25.848
+      },
+      {
+        "text": "\n",
+        "start_time": 25.848,
+        "end_time": 25.87
+      },
+      {
+        "text": "我",
+        "start_time": 25.87,
+        "end_time": 25.998
+      },
+      {
+        "text": "是",
+        "start_time": 25.998,
+        "end_time": 26.126
+      },
+      {
+        "text": "录",
+        "start_time": 26.126,
+        "end_time": 26.254
+      },
+      {
+        "text": "忆",
+        "start_time": 26.254,
+        "end_time": 26.424
+      },
+      {
+        "text": "者",
+        "start_time": 26.424,
+        "end_time": 26.595
+      },
+      {
+        "text": "。",
+        "start_time": 26.595,
+        "end_time": 27.15
+      },
+      {
+        "text": "器",
+        "start_time": 27.15,
+        "end_time": 27.406
+      },
+      {
+        "text": "物",
+        "start_time": 27.406,
+        "end_time": 27.534
+      },
+      {
+        "text": "留",
+        "start_time": 27.534,
+        "end_time": 27.704
+      },
+      {
+        "text": "下",
+        "start_time": 27.704,
+        "end_time": 27.832
+      },
+      {
+        "text": "的",
+        "start_time": 27.832,
+        "end_time": 27.918
+      },
+      {
+        "text": "线",
+        "start_time": 27.918,
+        "end_time": 28.088
+      },
+      {
+        "text": "索",
+        "start_time": 28.088,
+        "end_time": 28.344
+      },
+      {
+        "text": "，",
+        "start_time": 28.344,
+        "end_time": 28.643
+      },
+      {
+        "text": "需",
+        "start_time": 28.643,
+        "end_time": 28.814
+      },
+      {
+        "text": "要",
+        "start_time": 28.814,
+        "end_time": 28.899
+      },
+      {
+        "text": "我",
+        "start_time": 28.899,
+        "end_time": 29.027
+      },
+      {
+        "text": "们",
+        "start_time": 29.027,
+        "end_time": 29.155
+      },
+      {
+        "text": "慢",
+        "start_time": 29.155,
+        "end_time": 29.283
+      },
+      {
+        "text": "慢",
+        "start_time": 29.283,
+        "end_time": 29.454
+      },
+      {
+        "text": "观",
+        "start_time": 29.454,
+        "end_time": 29.582
+      },
+      {
+        "text": "察",
+        "start_time": 29.582,
+        "end_time": 29.88
+      },
+      {
+        "text": "。",
+        "start_time": 29.88,
+        "end_time": 30.039637188208616
+      }
+    ],
+    "original_words": [
+      {
+        "text": "这",
+        "start_time": 0.299,
+        "end_time": 0.469
+      },
+      {
+        "text": "只",
+        "start_time": 0.469,
+        "end_time": 0.555
+      },
+      {
+        "text": "铜",
+        "start_time": 0.555,
+        "end_time": 0.768
+      },
+      {
+        "text": "鸟",
+        "start_time": 0.768,
+        "end_time": 0.939
+      },
+      {
+        "text": "昂",
+        "start_time": 0.939,
+        "end_time": 1.237
+      },
+      {
+        "text": "首",
+        "start_time": 1.237,
+        "end_time": 1.493
+      },
+      {
+        "text": "收",
+        "start_time": 1.707,
+        "end_time": 1.963
+      },
+      {
+        "text": "翼",
+        "start_time": 1.963,
+        "end_time": 2.176
+      },
+      {
+        "text": "尾",
+        "start_time": 2.389,
+        "end_time": 2.731
+      },
+      {
+        "text": "羽",
+        "start_time": 2.731,
+        "end_time": 2.901
+      },
+      {
+        "text": "折",
+        "start_time": 2.901,
+        "end_time": 3.072
+      },
+      {
+        "text": "而",
+        "start_time": 3.072,
+        "end_time": 3.157
+      },
+      {
+        "text": "下",
+        "start_time": 3.157,
+        "end_time": 3.371
+      },
+      {
+        "text": "垂",
+        "start_time": 3.371,
+        "end_time": 3.584
+      },
+      {
+        "text": "请",
+        "start_time": 4.011,
+        "end_time": 4.181
+      },
+      {
+        "text": "转",
+        "start_time": 4.181,
+        "end_time": 4.352
+      },
+      {
+        "text": "动",
+        "start_time": 4.352,
+        "end_time": 4.48
+      },
+      {
+        "text": "光",
+        "start_time": 4.48,
+        "end_time": 4.693
+      },
+      {
+        "text": "线",
+        "start_time": 4.693,
+        "end_time": 4.907
+      },
+      {
+        "text": "看",
+        "start_time": 5.077,
+        "end_time": 5.248
+      },
+      {
+        "text": "看",
+        "start_time": 5.248,
+        "end_time": 5.376
+      },
+      {
+        "text": "它",
+        "start_time": 5.376,
+        "end_time": 5.504
+      },
+      {
+        "text": "的",
+        "start_time": 5.504,
+        "end_time": 5.589
+      },
+      {
+        "text": "轮",
+        "start_time": 5.589,
+        "end_time": 5.76
+      },
+      {
+        "text": "廓",
+        "start_time": 5.76,
+        "end_time": 6.016
+      },
+      {
+        "text": "外",
+        "start_time": 6.272,
+        "end_time": 6.827
+      },
+      {
+        "text": "方",
+        "start_time": 6.827,
+        "end_time": 7.04
+      },
+      {
+        "text": "内",
+        "start_time": 7.04,
+        "end_time": 7.168
+      },
+      {
+        "text": "圆",
+        "start_time": 7.168,
+        "end_time": 7.381
+      },
+      {
+        "text": "是",
+        "start_time": 7.765,
+        "end_time": 7.893
+      },
+      {
+        "text": "这",
+        "start_time": 7.893,
+        "end_time": 8.021
+      },
+      {
+        "text": "件",
+        "start_time": 8.021,
+        "end_time": 8.192
+      },
+      {
+        "text": "玉",
+        "start_time": 8.192,
+        "end_time": 8.32
+      },
+      {
+        "text": "琮",
+        "start_time": 8.32,
+        "end_time": 8.533
+      },
+      {
+        "text": "醒",
+        "start_time": 8.533,
+        "end_time": 8.747
+      },
+      {
+        "text": "目",
+        "start_time": 8.747,
+        "end_time": 8.917
+      },
+      {
+        "text": "的",
+        "start_time": 8.917,
+        "end_time": 9.045
+      },
+      {
+        "text": "构",
+        "start_time": 9.045,
+        "end_time": 9.216
+      },
+      {
+        "text": "形",
+        "start_time": 9.216,
+        "end_time": 9.429
+      },
+      {
+        "text": "眼",
+        "start_time": 9.643,
+        "end_time": 9.81
+      },
+      {
+        "text": "前",
+        "start_time": 9.81,
+        "end_time": 10.023
+      },
+      {
+        "text": "的",
+        "start_time": 10.023,
+        "end_time": 10.109
+      },
+      {
+        "text": "机",
+        "start_time": 10.109,
+        "end_time": 10.237
+      },
+      {
+        "text": "关",
+        "start_time": 10.237,
+        "end_time": 10.45
+      },
+      {
+        "text": "是",
+        "start_time": 10.663,
+        "end_time": 10.834
+      },
+      {
+        "text": "我",
+        "start_time": 10.834,
+        "end_time": 10.962
+      },
+      {
+        "text": "们",
+        "start_time": 10.962,
+        "end_time": 11.047
+      },
+      {
+        "text": "为",
+        "start_time": 11.047,
+        "end_time": 11.175
+      },
+      {
+        "text": "探",
+        "start_time": 11.175,
+        "end_time": 11.389
+      },
+      {
+        "text": "索",
+        "start_time": 11.389,
+        "end_time": 11.559
+      },
+      {
+        "text": "创",
+        "start_time": 11.559,
+        "end_time": 11.773
+      },
+      {
+        "text": "作",
+        "start_time": 11.773,
+        "end_time": 11.901
+      },
+      {
+        "text": "的",
+        "start_time": 11.901,
+        "end_time": 11.986
+      },
+      {
+        "text": "谜",
+        "start_time": 11.986,
+        "end_time": 12.157
+      },
+      {
+        "text": "题",
+        "start_time": 12.157,
+        "end_time": 12.413
+      },
+      {
+        "text": "石",
+        "start_time": 12.925,
+        "end_time": 13.138
+      },
+      {
+        "text": "虎",
+        "start_time": 13.138,
+        "end_time": 13.309
+      },
+      {
+        "text": "身",
+        "start_time": 13.309,
+        "end_time": 13.437
+      },
+      {
+        "text": "上",
+        "start_time": 13.437,
+        "end_time": 13.607
+      },
+      {
+        "text": "的",
+        "start_time": 13.607,
+        "end_time": 13.693
+      },
+      {
+        "text": "深",
+        "start_time": 13.693,
+        "end_time": 13.863
+      },
+      {
+        "text": "浅",
+        "start_time": 13.863,
+        "end_time": 14.034
+      },
+      {
+        "text": "纹",
+        "start_time": 14.034,
+        "end_time": 14.162
+      },
+      {
+        "text": "带",
+        "start_time": 14.162,
+        "end_time": 14.418
+      },
+      {
+        "text": "来",
+        "start_time": 14.631,
+        "end_time": 14.802
+      },
+      {
+        "text": "自",
+        "start_time": 14.802,
+        "end_time": 14.93
+      },
+      {
+        "text": "石",
+        "start_time": 14.93,
+        "end_time": 15.101
+      },
+      {
+        "text": "材",
+        "start_time": 15.101,
+        "end_time": 15.271
+      },
+      {
+        "text": "自",
+        "start_time": 15.271,
+        "end_time": 15.442
+      },
+      {
+        "text": "身",
+        "start_time": 15.442,
+        "end_time": 15.613
+      },
+      {
+        "text": "顺",
+        "start_time": 15.997,
+        "end_time": 16.338
+      },
+      {
+        "text": "着",
+        "start_time": 16.338,
+        "end_time": 16.466
+      },
+      {
+        "text": "纹",
+        "start_time": 16.466,
+        "end_time": 16.594
+      },
+      {
+        "text": "带",
+        "start_time": 16.594,
+        "end_time": 16.722
+      },
+      {
+        "text": "观",
+        "start_time": 16.722,
+        "end_time": 16.893
+      },
+      {
+        "text": "察",
+        "start_time": 16.893,
+        "end_time": 17.191
+      },
+      {
+        "text": "让",
+        "start_time": 17.447,
+        "end_time": 17.575
+      },
+      {
+        "text": "碎",
+        "start_time": 17.575,
+        "end_time": 17.789
+      },
+      {
+        "text": "片",
+        "start_time": 17.789,
+        "end_time": 17.917
+      },
+      {
+        "text": "重",
+        "start_time": 17.917,
+        "end_time": 18.13
+      },
+      {
+        "text": "新",
+        "start_time": 18.13,
+        "end_time": 18.301
+      },
+      {
+        "text": "相",
+        "start_time": 18.301,
+        "end_time": 18.514
+      },
+      {
+        "text": "接",
+        "start_time": 18.514,
+        "end_time": 18.77
+      },
+      {
+        "text": "四",
+        "start_time": 19.239,
+        "end_time": 19.453
+      },
+      {
+        "text": "只",
+        "start_time": 19.453,
+        "end_time": 19.581
+      },
+      {
+        "text": "鸟",
+        "start_time": 19.581,
+        "end_time": 19.837
+      },
+      {
+        "text": "围",
+        "start_time": 19.837,
+        "end_time": 20.007
+      },
+      {
+        "text": "绕",
+        "start_time": 20.007,
+        "end_time": 20.178
+      },
+      {
+        "text": "十",
+        "start_time": 20.178,
+        "end_time": 20.391
+      },
+      {
+        "text": "二",
+        "start_time": 20.391,
+        "end_time": 20.519
+      },
+      {
+        "text": "道",
+        "start_time": 20.519,
+        "end_time": 20.647
+      },
+      {
+        "text": "光",
+        "start_time": 20.647,
+        "end_time": 20.818
+      },
+      {
+        "text": "芒",
+        "start_time": 20.818,
+        "end_time": 21.031
+      },
+      {
+        "text": "古",
+        "start_time": 21.475,
+        "end_time": 21.688
+      },
+      {
+        "text": "人",
+        "start_time": 21.688,
+        "end_time": 21.816
+      },
+      {
+        "text": "的",
+        "start_time": 21.816,
+        "end_time": 21.902
+      },
+      {
+        "text": "想",
+        "start_time": 21.902,
+        "end_time": 22.072
+      },
+      {
+        "text": "象",
+        "start_time": 22.072,
+        "end_time": 22.371
+      },
+      {
+        "text": "留",
+        "start_time": 22.371,
+        "end_time": 22.627
+      },
+      {
+        "text": "下",
+        "start_time": 22.627,
+        "end_time": 22.798
+      },
+      {
+        "text": "了",
+        "start_time": 22.798,
+        "end_time": 22.883
+      },
+      {
+        "text": "线",
+        "start_time": 22.883,
+        "end_time": 23.096
+      },
+      {
+        "text": "索",
+        "start_time": 23.096,
+        "end_time": 23.395
+      },
+      {
+        "text": "也",
+        "start_time": 23.566,
+        "end_time": 23.779
+      },
+      {
+        "text": "留",
+        "start_time": 23.779,
+        "end_time": 23.95
+      },
+      {
+        "text": "下",
+        "start_time": 23.95,
+        "end_time": 24.12
+      },
+      {
+        "text": "了",
+        "start_time": 24.12,
+        "end_time": 24.206
+      },
+      {
+        "text": "尚",
+        "start_time": 24.206,
+        "end_time": 24.419
+      },
+      {
+        "text": "未",
+        "start_time": 24.419,
+        "end_time": 24.504
+      },
+      {
+        "text": "回",
+        "start_time": 24.504,
+        "end_time": 24.76
+      },
+      {
+        "text": "答",
+        "start_time": 24.76,
+        "end_time": 24.888
+      },
+      {
+        "text": "的",
+        "start_time": 24.888,
+        "end_time": 24.974
+      },
+      {
+        "text": "问",
+        "start_time": 24.974,
+        "end_time": 25.102
+      },
+      {
+        "text": "题",
+        "start_time": 25.102,
+        "end_time": 25.358
+      },
+      {
+        "text": "我",
+        "start_time": 25.87,
+        "end_time": 25.998
+      },
+      {
+        "text": "是",
+        "start_time": 25.998,
+        "end_time": 26.126
+      },
+      {
+        "text": "录",
+        "start_time": 26.126,
+        "end_time": 26.254
+      },
+      {
+        "text": "忆",
+        "start_time": 26.254,
+        "end_time": 26.424
+      },
+      {
+        "text": "者",
+        "start_time": 26.424,
+        "end_time": 26.595
+      },
+      {
+        "text": "器",
+        "start_time": 27.15,
+        "end_time": 27.406
+      },
+      {
+        "text": "物",
+        "start_time": 27.406,
+        "end_time": 27.534
+      },
+      {
+        "text": "留",
+        "start_time": 27.534,
+        "end_time": 27.704
+      },
+      {
+        "text": "下",
+        "start_time": 27.704,
+        "end_time": 27.832
+      },
+      {
+        "text": "的",
+        "start_time": 27.832,
+        "end_time": 27.918
+      },
+      {
+        "text": "线",
+        "start_time": 27.918,
+        "end_time": 28.088
+      },
+      {
+        "text": "索",
+        "start_time": 28.088,
+        "end_time": 28.344
+      },
+      {
+        "text": "需",
+        "start_time": 28.643,
+        "end_time": 28.814
+      },
+      {
+        "text": "要",
+        "start_time": 28.814,
+        "end_time": 28.899
+      },
+      {
+        "text": "我",
+        "start_time": 28.899,
+        "end_time": 29.027
+      },
+      {
+        "text": "们",
+        "start_time": 29.027,
+        "end_time": 29.155
+      },
+      {
+        "text": "慢",
+        "start_time": 29.155,
+        "end_time": 29.283
+      },
+      {
+        "text": "慢",
+        "start_time": 29.283,
+        "end_time": 29.454
+      },
+      {
+        "text": "观",
+        "start_time": 29.454,
+        "end_time": 29.582
+      },
+      {
+        "text": "察",
+        "start_time": 29.582,
+        "end_time": 29.88
+      }
+    ]
+  }
+}

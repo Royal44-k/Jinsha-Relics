@@ -1,0 +1,88 @@
+{
+  "repository": "https://github.com/sgossner/VSCO-2-CE",
+  "commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+  "license": "CC0-1.0",
+  "homepage": "https://versilian-studios.com/vsco-community/",
+  "files": [
+    {
+      "id": "flute-a",
+      "path": "Woodwinds/Flute/expvib/LDFlute_expvib_A3_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Flute/expvib/LDFlute_expvib_A3_v1_1.wav",
+      "bytes": 2837844,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "flute-c",
+      "path": "Woodwinds/Flute/expvib/LDFlute_expvib_C4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Flute/expvib/LDFlute_expvib_C4_v1_1.wav",
+      "bytes": 3142338,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "flute-e",
+      "path": "Woodwinds/Flute/expvib/LDFlute_expvib_E4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Woodwinds/Flute/expvib/LDFlute_expvib_E4_v1_1.wav",
+      "bytes": 2878710,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "cello-d",
+      "path": "Strings/Cello Section/susvib/susvib_D2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D2_v1_1.wav",
+      "bytes": 2550956,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "cello-a",
+      "path": "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_A2_v1_1.wav",
+      "bytes": 2336738,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "cello-high",
+      "path": "Strings/Cello Section/susvib/susvib_D4_v1_1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Cello%20Section/susvib/susvib_D4_v1_1.wav",
+      "bytes": 2153228,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "harp-d",
+      "path": "Strings/Harp/KSHarp_D4_mf.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Harp/KSHarp_D4_mf.wav",
+      "bytes": 1921690,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "harp-a",
+      "path": "Strings/Harp/KSHarp_A4_mf.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Harp/KSHarp_A4_mf.wav",
+      "bytes": 2143618,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "harp-g",
+      "path": "Strings/Harp/KSHarp_G3_mf.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Strings/Harp/KSHarp_G3_mf.wav",
+      "bytes": 1806874,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    },
+    {
+      "id": "gong",
+      "path": "Miscellania Raw/Misc 1/cymbgong_pp.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VSCO-2-CE/440300901dfe9275fd84e0b7763af1f8443ae62e/Miscellania%20Raw/Misc%201/cymbgong_pp.wav",
+      "bytes": 515560,
+      "license": "CC0-1.0",
+      "credit": "Versilian Studios / Sam Gossner; Ivy Audio / Simon Dalzell"
+    }
+  ]
+}

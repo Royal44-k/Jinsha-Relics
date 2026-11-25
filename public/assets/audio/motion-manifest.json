@@ -1,0 +1,54 @@
+{
+  "creator": "Original deterministic offline synthesis; not field recordings",
+  "sampleRate": 22050,
+  "files": [
+    {
+      "name": "motion-step",
+      "seconds": 0.28,
+      "bytes": 12392,
+      "peak": 0.33947962522506714
+    },
+    {
+      "name": "motion-land",
+      "seconds": 0.65,
+      "bytes": 28708,
+      "peak": 0.4847579002380371
+    },
+    {
+      "name": "motion-wing",
+      "seconds": 0.65,
+      "bytes": 28708,
+      "peak": 0.27261388301849365
+    },
+    {
+      "name": "motion-splash",
+      "seconds": 1.4,
+      "bytes": 61782,
+      "peak": 0.4236842691898346
+    },
+    {
+      "name": "motion-dive",
+      "seconds": 1.2,
+      "bytes": 52964,
+      "peak": 0.12542425096035004
+    },
+    {
+      "name": "motion-surface",
+      "seconds": 1.2,
+      "bytes": 52964,
+      "peak": 0.17775298655033112
+    },
+    {
+      "name": "motion-perch",
+      "seconds": 0.5,
+      "bytes": 22094,
+      "peak": 0.17586630582809448
+    },
+    {
+      "name": "flight-wind",
+      "seconds": 12,
+      "bytes": 529244,
+      "peak": 0.1361706554889679
+    }
+  ]
+}

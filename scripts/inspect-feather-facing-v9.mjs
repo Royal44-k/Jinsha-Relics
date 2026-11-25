@@ -1,0 +1,4 @@
+import './geometry-character-v9.mjs';
+import * as T from 'three';
+const {buildShuoyu}=await import('./build-shuoyu.source.js');
+const model=buildShuoyu(),m=model.getObjectByName('Shuoyu_contour'),g=m.geometry,p=g.attributes.position,ns=g.attributes.normal,si=g.attributes.skinIndex,idx=g.index;const a=new T.Vector3(),b=a.clone(),c=a.clone(),n=a.clone(),sum=a.clone(),stats={};for(let i=0;i<idx.count;i+=3){let ia=idx.getX(i),ib=idx.getX(i+1),ic=idx.getX(i+2),bone=m.skeleton.bones[si.getX(ia)].name;stats[bone]??={positive:0,negative:0,zero:0};a.fromBufferAttribute(p,ia);b.fromBufferAttribute(p,ib);c.fromBufferAttribute(p,ic);n.subVectors(b,a).cross(c.sub(a));sum.fromBufferAttribute(ns,ia).add(a.fromBufferAttribute(ns,ib)).add(b.fromBufferAttribute(ns,ic));const dot=n.dot(sum);stats[bone][Math.abs(dot)<1e-12?'zero':dot<0?'negative':'positive']++;}console.log(JSON.stringify(stats,null,2));
